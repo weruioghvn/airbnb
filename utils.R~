@@ -1,0 +1,6 @@
+# Utiliy functions for Airbnb market analysis.
+# It's composed of several components.
+#   1. database constants
+
+kDriver <- dbDriver("PostgreSQL")
+kHost <- "airbnbrdb.cvuvrunlpgtc.us-west-2.rds.amazonaws.com"

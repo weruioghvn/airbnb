@@ -145,7 +145,7 @@ def saveToCsv(city, guests = 4, checkin = "", checkout = "", page = 10):
     dailyData.to_csv(filename + "_daily.csv", index = False)
     
 def main():
-    city = "Las-Vegas-NV"
+    city = "San-Francisco-CA"
     saveToCsv(city, page = 80)
 
 if __name__ == '__main__':
