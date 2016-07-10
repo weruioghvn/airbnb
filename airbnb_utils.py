@@ -3,9 +3,47 @@
 from lxml import html
 import re
 import requests
+import numpy as np
+import copy
+import time
 
 # Constants
 kRoomUrlPrefix = "https://www.airbnb.com/rooms/"
+kBaseUrlPrefix = "https://www.airbnb.com/s/"
+kProxiesFile = "proxyList.txt"
+kTimeOut = 2
+
+# Get proxy list
+proxyList = []
+with open(kProxiesFile, "r") as f:
+    while True:
+        line = f.readline()
+        if not line:
+            break
+        proxyList.append(line.strip())
+
+
+def monkeypatch_mechanize():
+    """Work-around for a mechanize 0.2.5 bug. See: https://github.com/jjlee/mechanize/pull/58"""
+    import mechanize
+    if mechanize.__version__ < (0, 2, 6):
+        from mechanize._form import SubmitControl, ScalarControl
+
+        def __init__(self, type, name, attrs, index=None):
+            ScalarControl.__init__(self, type, name, attrs, index)
+            # IE5 defaults SUBMIT value to "Submit Query"; Firebird 0.6 leaves it
+            # blank, Konqueror 3.1 defaults to "Submit".  HTML spec. doesn't seem
+            # to define this.
+            if self.value is None:
+                if self.disabled:
+                    self.disabled = False
+                    self.value = ""
+                    self.disabled = True
+                else:
+                    self.value = ""
+            self.readonly = True
+
+        SubmitControl.__init__ = __init__
 
 class redshiftConnection:
     def __init__(self):
@@ -53,9 +91,21 @@ class redshiftConnection:
 def getListingUrl(listingId):
     return kRoomUrlPrefix + str(listingId)
 
-def getPage(url):
-    page = requests.get(url)
-    return page
+def getPage(url, local = True):
+    if local:
+        return requests.get(url)
+
+    while True:
+        proxy = np.random.choice(proxyList)
+        try:
+            proxies = {'https': proxy}
+            page = requests.get(url, proxies = proxies, timeout = kTimeOut)
+            print proxy + " succeeded"
+            return page
+        except:
+            print proxy + " failed"
+            proxyList.remove(proxy)
+            print "Proxy list has %s remaining" % str(len(proxyList))
 
 def getCoordinates(page):
     floatPattern = "\s*(-?\d*.\d+)"
@@ -68,11 +118,7 @@ def getCoordinates(page):
     longitude = getCoordinate("lng")
     return (latitude, longitude)
 
-def main():
-    listingId = 8541471
-    url = getListingUrl(listingId)
-    page = getPage(url)
-    print getCoordinates(page)
-
-if __name__ == "__main__":
-    main()
+def getBaseUrl(city, guests, checkIn, checkOut, roomType, page = 1):
+    guestsUrl = "guests=" + str(guests) + "&"
+    
+    page = "page=" + str(page) + "&"
