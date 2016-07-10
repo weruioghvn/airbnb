@@ -20,6 +20,7 @@ import pandas
 import urllib
 import copy
 import sets
+import argparse
 from airbnb_utils import *
 DEBUG = True
 
@@ -145,10 +146,12 @@ def saveToCsv(city, guests = 4, checkin = "", checkout = "", page = 10):
     dailyData.to_csv(filename + "_daily.csv", index = False)
     
 def main():
-    city = "San-Francisco-CA"
-    saveToCsv(city, page = 80)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c', '--city', type = str, required = True,
+                        help = "City Name with State Code")
+    args = vars(parser.parse_args())
+    # city = "San-Francisco-CA"
+    saveToCsv(args['city'].replace(' ', '-'), page = 80)
 
 if __name__ == '__main__':
     main()
-
-

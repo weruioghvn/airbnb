@@ -15,7 +15,8 @@ library(RPostgreSQL)
 library(reshape2)
 library(xtable)
 
-kCityName <- "San Francisco CA"
+args <- commandArgs(TRUE)
+kCityName <- args[1]
 kCityNameUnderscored <- gsub(" ", "-", kCityName)
 kZoom <- 11
 kMonthDays <- 30

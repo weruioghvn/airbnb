@@ -11,7 +11,7 @@ import time
 kRoomUrlPrefix = "https://www.airbnb.com/rooms/"
 kBaseUrlPrefix = "https://www.airbnb.com/s/"
 kProxiesFile = "proxyList.txt"
-kTimeOut = 2
+kTimeOut = 4
 
 # Get proxy list
 proxyList = []
@@ -91,7 +91,7 @@ class redshiftConnection:
 def getListingUrl(listingId):
     return kRoomUrlPrefix + str(listingId)
 
-def getPage(url, local = True):
+def getPage(url, local = False):
     if local:
         return requests.get(url)
 
@@ -99,7 +99,8 @@ def getPage(url, local = True):
         proxy = np.random.choice(proxyList)
         try:
             proxies = {'https': proxy}
-            page = requests.get(url, proxies = proxies, timeout = kTimeOut)
+            page = requests.get(url, proxies = proxies, 
+                                timeout = (kTimeOut, kTimeOut))
             print proxy + " succeeded"
             return page
         except:
