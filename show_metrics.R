@@ -16,7 +16,7 @@ library(reshape2)
 library(xtable)
 
 args <- commandArgs(TRUE)
-kCityName <- args[1]
+kCityName <- "Katy TX"#args[1]
 kCityNameUnderscored <- gsub(" ", "-", kCityName)
 kZoom <- 11
 kMonthDays <- 30
@@ -188,9 +188,10 @@ showSummaryStats <- function(percent, reviewLb = 0) {
           type = "html")
 }
 
-showMapPlots <- function(zoom = 11) {
-    title = sprintf("Rate and Occupancy Map with Zoom %s", zoom)
-    center <- t(us.cities[us.cities$name == kCityName, c('lat', 'long')])
+showMapPlots <- function(f = f) {
+    title = sprintf("Rate and Occupancy Map with f %s", f)
+    # center <- t(us.cities[us.cities$name == kCityName, c('lat', 'long')])
+    # center <- geocode(kCityName)
     dat <- getListingTable()
     
     midRate <- median(dat$rate)
@@ -198,11 +199,13 @@ showMapPlots <- function(zoom = 11) {
     midOccupancy <- median(dat$occupied_days)
     occupancyLimits <- c(max(0, 2 * midOccupancy - kMonthDays),
                          min(kMonthDays, 2 * midOccupancy))
-    map <- get_googlemap(center = center[2:1], zoom = zoom, maptype = 'roadmap')
+    bbox <- make_bbox(lon = longitude, lat = latitude, data = dat, f = f)
+    # map <- get_googlemap(center = c(center$lon, center$lat), zoom = zoom, maptype = 'roadmap')
+    map <- get_map(bbox, maptype = 'roadmap', source = 'osm')
 
     # Rate
-    gg1 <- ggplot(aes(y = latitude, x = longitude, color = rate), data = dat)
-    
+    e <- parent.frame(n = 2)
+    e$gg1 <- ggplot(aes_string(y = "latitude", x = "longitude", color = "rate"), data = dat)   
     g1 <- ggmap(map, base_layer = gg1, alpha = 0.1, darken = c(0.2, 'black')) +
         geom_point(alpha = 1, size = 3) +
         scale_colour_gradient2(midpoint = midRate,
@@ -212,7 +215,7 @@ showMapPlots <- function(zoom = 11) {
               legend.key.width = unit(2, 'cm'))
 
     # Occupied Days
-    gg2 <- ggplot(data = dat, aes(y = latitude, x = longitude, color = occupied_days))
+    e$gg2 <- ggplot(data = dat, aes(y = latitude, x = longitude, color = occupied_days))
     g2 <- ggmap(map, base_layer = gg2, alpha = 0.1, darken = c(0.3, 'black')) +
         geom_point(alpha = 1, size = 3) +
         scale_colour_gradient2(midpoint = midOccupancy,
@@ -237,17 +240,19 @@ plotRateToOccupiedDays <- function(ylimits = c(NA, 250)) {
 }
 
 main <- function() {
-    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 10)
-    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 0)
-    showListingTable(TRUE, 10)
-    showListingTable(TRUE, 1)
-    showListingTable(TRUE)
-    showListingTable(FALSE)
-    showSummaryStats(seq(0.1, 0.9, by = 0.1))
-    getReviewDistribution()
-    ## showMapPlots(zoom = 10)
-    ## showMapPlots(zoom = 11)
-    ## showMapPlots(zoom = 12)
+    ## plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 10)
+    ## plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 0)
+    ## showListingTable(TRUE, 10)
+    ## showListingTable(TRUE, 1)
+    ## showListingTable(TRUE)
+    ## showListingTable(FALSE)
+    ## showSummaryStats(seq(0.1, 0.9, by = 0.1))
+    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 1)
+    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 5)
+    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 10)
+    ## getReviewDistribution()
+    showMapPlots(f = 0.1)
+    showMapPlots(f = 0.15)
 }
 
 main()

@@ -1,3 +1,8 @@
+# Script to scrape Airbnb page.
+# Example:
+#     python scrapeAirbnb.py --city "Austin TX"
+#     Rscript show_metrics.R 'Austin TX'
+
 import mechanize
 import os
 import cookielib
@@ -87,6 +92,8 @@ def getSearchStats(page):
     text = tree.xpath('//div[@class = "map-search"]/@data-bootstrap-data')[0]
     text = re.sub("&quot;", '"', text)
     js = json.loads(text)
+    with open("debug/prettified_json.txt", "wb") as f:
+        f.write(json.dumps(js, indent = 4))
     searchResults = js["results_json"]["search_results"]
     numResults = len(searchResults)
     listings = []
@@ -106,7 +113,7 @@ def getSearchStats(page):
             listing["listing_id"] = i["listing"]["id"]
             listing["star_rating"] = i["listing"]["star_rating"]
             listing["room_type"] = i["listing"]["room_type"]
-            listing["beds"] = i["listing"]["beds"]
+            listing["bedrooms"] = i["listing"]["bedrooms"]
             listing["counter"] = counter
             currentListings.append(listing["listing_id"])
             listings.append(listing)

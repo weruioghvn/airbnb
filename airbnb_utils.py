@@ -91,7 +91,7 @@ class redshiftConnection:
 def getListingUrl(listingId):
     return kRoomUrlPrefix + str(listingId)
 
-def getPage(url, local = False):
+def getPage(url, local = True):
     if local:
         return requests.get(url)
 
