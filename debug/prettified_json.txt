@@ -1,0 +1,1427 @@
+{
+    "canonical_location_en": "Katy, TX", 
+    "urgent_message_type": null, 
+    "guests": "4", 
+    "guidebook": null, 
+    "s_tag": "XM8OhSX5", 
+    "center_lat": 29.7857853, 
+    "urgent_icon": null, 
+    "per_month": false, 
+    "p2_ib_filter_on_last_minute_default": null, 
+    "room_types": "Entire home/apt", 
+    "ib_override": null, 
+    "has_airbnb_plus_availability": false, 
+    "show_btr_banner": false, 
+    "location": "Katy TX", 
+    "path_location": "Katy-TX", 
+    "cdn_locale_redirect": "1", 
+    "checkout": "", 
+    "search_geo_info": {
+        "geo_location": "Katy, TX, USA", 
+        "geo_accuracy": 4, 
+        "geo_result_type": "locality"
+    }, 
+    "sorted_listing_tags": {
+        "listing_characteristics": [
+            14, 
+            16, 
+            13, 
+            18, 
+            17, 
+            15
+        ], 
+        "surrounding_area": [
+            7, 
+            4, 
+            10, 
+            1, 
+            2, 
+            3, 
+            9, 
+            11, 
+            5, 
+            6
+        ]
+    }, 
+    "urgent_body_string": null, 
+    "results_json": {
+        "search_results": [
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 156
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Angela", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/10801798-7f0a-4acf-a2e9-2836c5b4050e.jpg?aki_policy=profile_medium", 
+                        "id": 63225802, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.46419439136751, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 13287116, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/31927cb9-1eb4-4f57-953e-46b797abfb1d.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/37121d1a-cb19-4fec-9424-dac27972b701.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/e903021c-54bf-435c-a5cf-d79facb8853e.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/6e746618-868f-4ecd-bfaf-a1c7c383bb28.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/a7f91d0d-e622-44bf-aac9-a9ccff62fe02.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/31927cb9-1eb4-4f57-953e-46b797abfb1d.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Angela", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/10801798-7f0a-4acf-a2e9-2836c5b4050e.jpg?aki_policy=profile_medium", 
+                        "id": 63225802, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 32, 
+                    "lat": 29.74418846899448, 
+                    "star_rating": 0, 
+                    "name": "Galleria mall 333  2BR/2BT", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "My place is close to restaurants and dining, parks, and art and culture. You\u2019ll love my place because of walking distance to galleria mall, the people, the ambiance, the neighborhood. My place is good for couples, solo adventurers, business travelers, and families (with kids).", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 95
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 2, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Reza", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/7bab959c-30e4-4487-870d-c639f78b6b16.jpg?aki_policy=profile_medium", 
+                        "id": 50199248, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.48280364343044, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 9727176, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/239f3881-5b52-4a0f-89ac-bb6840e16bcd.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/e0a175ba-d97d-4048-9442-4c2752cf60fd.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/d6261824-36ea-40e0-a0b5-1d6617ad25fe.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/b7aad0ac-3843-42cf-8983-0e5f1243eff7.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/45417404-9ae6-4e3e-b131-61c46c59f1b4.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "One of the best neighborhoods you'll find. In the heart of the Galleria in a gated and quite complex with a resort style pool.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/239f3881-5b52-4a0f-89ac-bb6840e16bcd.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Reza", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/7bab959c-30e4-4487-870d-c639f78b6b16.jpg?aki_policy=profile_medium", 
+                        "id": 50199248, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 37, 
+                    "lat": 29.755696340239165, 
+                    "star_rating": 0, 
+                    "name": "A Large 2 bedroom Business Class Condo in Galleria", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Newly on Airbnb, A cozy apartment in a gated community in the heart of Galleria, Houston. It is close to YMCA gym, a brand new HEB, a world class shopping center, park and variety of classy restaurants and bars. Available for business as well as vacation. It has a nice tropical pool and out door hot tub. Covered parking and great landscaping. \nClose to a coffee house, a Texas bbq, a bar and an executive dry cleaning. Residents are a mix of young and mid age professionals.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/8bb68eed-188c-45b5-98cf-021afd1a4393.jpg?aki_policy=small", 
+                            "comments": "Nice place!", 
+                            "reviewer_first_name": "Jamal"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 350
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Alejandro", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/05559ce2-bb52-41a5-8e17-4d93ab68d65c.jpg?aki_policy=profile_medium", 
+                        "id": 63075378, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.42460703379975, 
+                    "neighborhood_overview": "Apartment near NRG\n2nd floor\nFree parking\nQuiet community\n\nMetro system walking distance from apartment \nUber is all around", 
+                    "is_business_travel_ready": false, 
+                    "id": 12018671, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/a30f4e29-c58d-408c-9cbd-285fa2c0d335.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/0c3d2924-96e4-4a62-bcd1-808b1c192fcb.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/f12d40df-6bd7-4031-a078-2d48d9570dfb.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "Close to many downtown attractions :\nNRG stadium \nMid Town bars\nZoo\nMuseums \nHighways\n\n1 bed \n1 bath\nKitchen\nInternet\n40\" tv\nCarpet floor\n10 min walk from NRG stadium\n\nCall me if you have any questions whenever.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/a30f4e29-c58d-408c-9cbd-285fa2c0d335.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Alejandro", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/05559ce2-bb52-41a5-8e17-4d93ab68d65c.jpg?aki_policy=profile_medium", 
+                        "id": 63075378, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 3, 
+                    "lat": 29.685222061647732, 
+                    "star_rating": 0, 
+                    "name": "1 bed 1 bath apt near NRG stadium", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Listing for NCAA final four weekend walking distance from NRG. 4/1 - 4/4\nInside 610 loop and 15 min from many downtown attractions. Midtown bars, Zoo, museums, med center. \nContact me for more information.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 140
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Angela", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/10801798-7f0a-4acf-a2e9-2836c5b4050e.jpg?aki_policy=profile_medium", 
+                        "id": 63225802, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.464130040918, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 13539109, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/c296a21f-7b0a-421a-b69b-4e633c2502eb.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/c94805cb-5df0-435d-a898-5d91ec1a70be.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/7680e9d4-9443-4c48-8d98-f275fd346fa9.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/08c5057f-51c3-44ca-b645-98d77586200d.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/2518eaa9-ac5f-4496-a6c1-afd06dcacdb8.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/c296a21f-7b0a-421a-b69b-4e633c2502eb.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Angela", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/10801798-7f0a-4acf-a2e9-2836c5b4050e.jpg?aki_policy=profile_medium", 
+                        "id": 63225802, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 46, 
+                    "lat": 29.7426971139398, 
+                    "star_rating": 0, 
+                    "name": "Galleria Mall 136", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "My place is good for couples, solo adventurers, business travelers, and families (with kids).", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 135
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.43876736320227, 
+                    "neighborhood_overview": "Hostingzak Furnished Apartments Houston", 
+                    "is_business_travel_ready": false, 
+                    "id": 12343859, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/7c35f28f-b3ad-41f0-9c0d-889505a4c33e.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/890188b9-fe65-4797-87d0-d129e3a353d1.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/8c5ca2c0-4da5-4d72-bac7-ac866a87c10c.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/2c403323-162e-4250-9e42-c19fd286b77e.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/9a9770f4-f8e5-4ad3-9d3d-739299c03e6e.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/7c35f28f-b3ad-41f0-9c0d-889505a4c33e.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 38, 
+                    "lat": 29.73400803217998, 
+                    "star_rating": 0, 
+                    "name": "Greenway Plaza PEARL", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Pearl Greenway Apartments in Greenway Plaza/ Upper Kirby are designed with the young urban professional in mind. \nWith the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors, you're surrounded by the best of Houston .\nPlease check my reviews in the link below   -\nhttps://www.airbnb.com/users/show/10216006#reviews", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 122
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Lauren", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/3536717/profile_pic/1429215431/original.jpg?aki_policy=profile_medium", 
+                        "id": 3536717, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.47226364212746, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 9387102, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/1bef5681-e47e-4bcf-b223-7205be746616.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/9b3d0f1b-5caf-46f0-8389-e42b95cefaee.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/29f2bc10-3dfc-42f3-88e0-b9d176239507.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/838eeadd-9f52-4a26-9ea5-2f361574811e.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/5872e7f5-dee7-4466-aff6-2a3c529b501f.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/1bef5681-e47e-4bcf-b223-7205be746616.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [
+                        "es", 
+                        "he"
+                    ], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Lauren", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/3536717/profile_pic/1429215431/original.jpg?aki_policy=profile_medium", 
+                        "id": 3536717, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 22, 
+                    "lat": 29.73204008342055, 
+                    "star_rating": 0, 
+                    "name": "Avenue R 2BR2BA 2GA54554078", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Nestled on the edge of Uptown, minutes from the Galleria and The Loop; your new home has it all. Enjoy easy access to work plus your favorite restaurants and outlets for retail therapy.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 150
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Andres", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/9839cff2-ed2f-4dd7-9b61-82f318d2d41e.jpg?aki_policy=profile_medium", 
+                        "id": 51415847, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.43896302667547, 
+                    "neighborhood_overview": "With the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors, you're surrounded by the best of Houston.\n\nA walk score of 91 means that if you live at the Luxury Community of Pearl Greenway in Greenway Plaza, most activities and errands can be accomplished on foot!\n\nA walk score of 91 means that if you live at the Luxury Community of Pearl Greenway in Greenway Plaza, most activities and errands can be accomplished on foot!", 
+                    "is_business_travel_ready": false, 
+                    "id": 12323054, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/c22e06ad-775f-439e-8deb-00f6d73ca7c5.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/b49806b9-7721-4149-8d2e-7451c840cabe.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/f966b9fe-b648-4b2e-a696-951ab3ae8bed.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/0ff34964-7834-439d-988c-04ed0423de8a.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/00428631-21e4-47ac-b12e-168ccc46a5e7.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "If you\u2019re looking for apartment rentals in Greenway Plaza, Pearl Greenway in nearby Upper Kirby is the perfect place for you. Sleek and modern without compromising comfort, Pearl Greenway in Greenway Plaza has achieved the perfect balance between style and practicality.\n\nLoaded with amenities to suit your every need. Prepare meals in your fully equipped kitchen, complete with new stainless steel appliances, and dine out on your private patio. With luxurious extras like high-end wood flooring, quartzite countertops, and integrated surround sound, Pearl Greenway will keep you smiling every day.\n\nCommunity \nClubhouse with after hours common areas\nSocial Room with TV and sound system\nBusiness center with Apple computers, printer and fax\nCyber caf\u00e9 with large screen TV and coffee station\nLounge area with Wi-Fi\nVegas style pool with shallow-water sunshelves\nZen style lap pool\nCustom cabanas with TVs\nDog park with fountain, play obstacles, dog wash, benches and covered bar area\nCovered BBQ Grill Area\neVgo\u00a9 Electric car charging stations\nWireless Access in select locations\nPlatinum Athletic Club\nMatrix Treadmills and Ellipticals with touch screen TV's, Nike+iPod and Virtual Active\nWoodway Curve Treadmill\nStepmill Stairmaster\nJacob's Ladder\nFreeweight area, circuit training area and cardio area\nSeparate aerobics and spinning room with spin bikes featuring MyRide system\nWalk score: 91/100 - Pearl Greenway is walking distance to: Costco, LA Fitness, Edwards Greenway Movie Theater, Central Market, Fresh Market (coming soon), Tony's, Smoothie King, Chipotle, Buffalo Wild Wings, Oishii, Michiru, Caf\u00e9 Express, Potbelly, Little Jimmy's Deli, Collina's, Oporto Wine Bar, Starbucks, Pizzeria Solario, Skewers, Berrypop Frozen Yogurt, Kobecue.\n\nI'm very happy to help you\n24/7 for you", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/c22e06ad-775f-439e-8deb-00f6d73ca7c5.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Andres", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/9839cff2-ed2f-4dd7-9b61-82f318d2d41e.jpg?aki_policy=profile_medium", 
+                        "id": 51415847, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 48, 
+                    "lat": 29.734136569690563, 
+                    "star_rating": 0, 
+                    "name": "Pearl Greenway | Upper Kirby APT", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Luxury, comfort and impeccable style come together to make Pearl Greenway the perfect place to call home. \nWith the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors, you're surrounded by the best of Houston .", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 160
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.46312911789079, 
+                    "neighborhood_overview": "Hostingzak Furnished Apartments Houston", 
+                    "is_business_travel_ready": false, 
+                    "id": 10328586, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/3f97efea-fa2a-4b43-a30d-a3b9097df1fe.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/7bd6e958-63f6-4469-90bc-e0403d5ae555.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/2f2cdacf-9d9e-4f11-95ac-d6988712db63.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/8303533e-01b9-4ed5-95c6-409d0860e776.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/d9b0d01e-c24b-4877-b0ef-08048cb0ca3d.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "Gorgeous apts in Houston Texas with everything you'd expect for your stay \nTop-notch customer service, fantastic value.\nThanks\nHostingzak", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/3f97efea-fa2a-4b43-a30d-a3b9097df1fe.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 38, 
+                    "lat": 29.743072609481818, 
+                    "star_rating": 0, 
+                    "name": "THE BEST & UNIQUE in The Galleria", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Ideally located in the heart of the Uptown District The Galleria.\nWalking distance of BLVD Place and The Galleria mall and only minutes from Uptown Park. World-class shopping, dining and entertainment venues as well as the city\u2019s business districts.\nHostingzak Furnished Apartments Houston\nPlease check my reviews in the link below  - \nhttps://www.airbnb.com/users/show/10216006#reviews", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 126
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 2, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Lauren", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/3536717/profile_pic/1429215431/original.jpg?aki_policy=profile_medium", 
+                        "id": 3536717, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.48393209072529, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 4321835, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/54287482/a3391129_original.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/54287499/12d68747_original.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/54287517/20aec16b_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/54287524/bae6951b_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/54287537/5eef035d_original.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "If you're looking for a place that provides great convenience for a short term furnished apartment in Houston without breaking your wallet, this is an excellent option.\n\nQuick, easy access to the Houston Galleria, fine dining, and entertainment, without the hassle of being right in the middle of it all when you don't want to be.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/54287482/a3391129_original.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [
+                        "es", 
+                        "he"
+                    ], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Lauren", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/3536717/profile_pic/1429215431/original.jpg?aki_policy=profile_medium", 
+                        "id": 3536717, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 25, 
+                    "lat": 29.74079180738386, 
+                    "star_rating": 0, 
+                    "name": "Augusta 2BD/2BA - 2GA2660H202", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": null, 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "November 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/16093588/profile_pic/1438093329/original.jpg?aki_policy=small", 
+                            "comments": "Although I did not meet Lauren personally, she was responsive to emails in a timely manner.  The apartment worked well for my needs.  There are a number of restaurants nearby and the location was great.", 
+                            "reviewer_first_name": "Kathleen"
+                        }, 
+                        {
+                            "created_at": "October 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/40547692/profile_pic/1438745014/original.jpg?aki_policy=small", 
+                            "comments": "Comfortable. Convenient location. Everything we needed.", 
+                            "reviewer_first_name": "Erick"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 2500
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 10, 
+                    "primary_host": {
+                        "first_name": "Arthur", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/9605040/profile_pic/1382583238/original.jpg?aki_policy=profile_medium", 
+                        "id": 9605040, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.5055962753155, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 12593106, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/f5842162-fe07-4a0b-8043-7abda11426ef.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/f5842162-fe07-4a0b-8043-7abda11426ef.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 5, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Arthur", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/9605040/profile_pic/1382583238/original.jpg?aki_policy=profile_medium", 
+                        "id": 9605040, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 1, 
+                    "lat": 29.78010246093761, 
+                    "star_rating": 0, 
+                    "name": "Arthur L. Smith", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "This my home in Hedwig Village Houston on the west side of town (about 7 miles from downtown and 11 miles from NRG stadium where the Super Bowl '16/'17 will be held.)  It sits on one acre and has a fabulous pool and hot tub/spa.  Plus fish pond.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 330
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "D\u00e9bora", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/35fd030a-581a-44d9-8f00-ab663ebd6883.jpg?aki_policy=profile_medium", 
+                        "id": 55327050, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.48380992011502, 
+                    "neighborhood_overview": "The townhome is located in a very quiet and well protected neighborhood called Tanglewood, in the Galleria area. The neighborhood is family friendly one.\n\nWalking distance (3 to 10 min): Tanglewood park and Dog park / Starbucks / Cleaners / Nail salon / Hair dresser / American, Tex-Mex, Japanese, French and Mediterranean restaurants / Pharmacy / HEB / YMCA and much more.\nBy car \n5 minutes to Memorial Park + Golf course\n10 minutes to Memorial City (I-10) \n15 minutes to City Center\n20 minutes to Downtown (Memorial drive)\n20 minutes to the Museums Center.\n\nPlease be aware that when no one is renting a little beagle owns the house and even though I always clean the house it is impossible to clean out 100% of dog fur.\nIf you want to rent out only a single room instead of the whole house, I also rent out the guest bedroom by itself.", 
+                    "is_business_travel_ready": false, 
+                    "id": 13327449, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/b08c07b3-1b9c-4a43-b48a-7cb7b478750c.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/7b2bae33-efcb-4054-b09d-32ca46ad5b82.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/0ae77fcc-b60d-4572-af34-9b4499ed117d.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/e1bef008-bb35-442f-b49a-87425bbd7054.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/db46f6ee-0f5a-4612-8071-8cd9196e868f.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Townhouse", 
+                    "space": "Kitchen \u2013 Mediterranean style kitchen, wood cabinets, includes dishwasher, garbage disposal, Keurig coffee machine, Cuisinart toaster, KitchenAid mixer, electric stove and all the cookware necessary to make tasty meals. \n3 bedrooms -  quiet, comfortable and clean (bedsheets provided). Master bedroom has a large TV. There is plenty of space in the closets. \n3 bathrooms \u2013 2 upstairs and one downstairs. You will find all you need (soap, shampoo and toothpaste for few days but we kindly ask you to bring your own towels).\nWasher and a dryer on the second floor available + detergent and fabric softener. \nLiving room - sunny, spacious and quiet. View on the Mediterranean patio. \nDining room \u2013 10 people French style wooden table. \nPatio - ping pong table + Mediterranean patio table for 4 and umbrella + 1 lounge chair.\nAttached garage - can hold 2 cars and if you need there are parking spaces next to house along the fence.\n\nPools 2\nTennis courts 2\nWIFI\nGuests can have access to the entire house, however I ask that you stay away from the attic and that you avoid taking things out of the storage/cleaning closets.\n\nMy husband will meet and greet the guests. If you need anything he will be happy to help you out.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/b08c07b3-1b9c-4a43-b48a-7cb7b478750c.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 3, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "D\u00e9bora", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/35fd030a-581a-44d9-8f00-ab663ebd6883.jpg?aki_policy=profile_medium", 
+                        "id": 55327050, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 7, 
+                    "lat": 29.757457286438132, 
+                    "star_rating": 0, 
+                    "name": "Mediterranean 3 BDRM Townhome Galleria Fr-Eng Spkr", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Sunny Mediterranean townhome in Tanglewood, the city\u2019s finest neighborhood, with lovely old oak trees and easy access to nearby shopping and dining in Uptown and the Galleria. The house is good for couples, business travelers, families (with kids), and furry friends (pets).\n1800 sq feet\nREQUEST TO BOOK Please!", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 150
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Andres", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/9839cff2-ed2f-4dd7-9b61-82f318d2d41e.jpg?aki_policy=profile_medium", 
+                        "id": 51415847, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.45736466319369, 
+                    "neighborhood_overview": "IMT Uptown Post Oak is a distinctive, well-established community located in the desirable Uptown area of Houston. Enjoy the luxury of being just minutes away from the Houston\u2019s iconic Gerald D. Hines Waterfall Park, and enjoy the convenience of being centered in the business district, along Post Oak Boulevard and Westheimer Road, and just west from the heart of Downtown District.\n\nIMT Uptown Post Oak is a distinctive, well-established community located in the desirable Uptown area of Houston. Enjoy the luxury of being just minutes away from the Houston\u2019s iconic Gerald D. Hines Waterfall Park, and enjoy the convenience of being centered in the business district, along Post Oak Boulevard and Westheimer Road, and just west from the heart of Downtown District.", 
+                    "is_business_travel_ready": false, 
+                    "id": 13701833, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/da7744a1-c376-47e0-8781-cfeddfa73b5f.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/fcfcad58-2cfc-49f3-82de-d1ce71f847d2.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/99d171d7-6097-40df-8137-8f1647466414.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/4b15791b-fc72-413f-b074-9add340368f2.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/0a5b7b6d-adab-49ab-a43a-da4151bc63b2.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": true, 
+                    "property_type": "Apartment", 
+                    "space": "MT Uptown Post Oak is a well-established community located in the desirable area of Uptown Houston, TX. Simply put, IMT Uptown Post Oak is the Houston apartments you\u2019ve been dreaming of. Located just minutes away from the Houston\u2019s iconic Gerald D. Hines Waterfall Park, and being centered in the business district, along Post Oak Boulevard and Westheimer Road, and just west from the heart of Downtown District, you will have no problem finding great shopping, dining and entertainment.\n\nCOMMUNITY AMENITIES\n\nResort-style pool with waterfall and attached shallow wadding/tanning pool\nSeparate lap pool with waterfall\nSummer kitchen with built-in BBQ grill\nCourtyard with bench seating\nAthletic club with cardio equipment, free weights and resistance training\nTwo trellised BBQ plazas with fireplaces and lounge seating\nInternet lounge / Business center\nConference room with seating for six\nDemonstration kitchen\nActivity area with billiards table, bistro seating, and wine tasting room\nResident lounge seating area\nDry cleaning service\nValet trash service\nElevators\nAir conditioned corridors\nGated entrance\nTwo-level parking garage with direct access to apartment homes\nBeautiful landscaping throughout\nWi-Fi in common areas\nDedicated customer service representative\nLocated in the heart of Uptown\nOnline Resident Services: utilities connection, rent payment, service requests and account information\n\n24/7", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/da7744a1-c376-47e0-8781-cfeddfa73b5f.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Andres", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/9839cff2-ed2f-4dd7-9b61-82f318d2d41e.jpg?aki_policy=profile_medium", 
+                        "id": 51415847, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 25, 
+                    "lat": 29.75275708798082, 
+                    "star_rating": 0, 
+                    "name": "IMT Uptown Post Oak | Corporate Housing Galleria", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "My place is close to the city center, nightlife, family-friendly activities, and public transport. You\u2019ll love my place because of the views, the location, the people, the ambiance, and the high ceilings. My place is good for couples, solo adventurers, business travelers, and families (with kids).\n\nIMT Uptown Post Oak is a well-established community located in the desirable area of Uptown Houston, TX. Simply put, IMT Uptown Post Oak is the Houston apartments you\u2019ve been dreaming of.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 107
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 2, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Tony", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/ea9dcbd6-e610-410d-9501-992c0b7fa892.jpg?aki_policy=profile_medium", 
+                        "id": 22125464, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.443528183114, 
+                    "neighborhood_overview": "Just please respect my space and amenities. Please clean up after yourself. If anything breaks OR MALFUNCTION call me ASAP.\n\n(PHONE NUMBER HIDDEN) CELL.", 
+                    "is_business_travel_ready": false, 
+                    "id": 13167290, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/b3d153eb-c25c-4952-a901-03eb4ea11e50.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/b530873b-bb4b-4267-b878-dead61a4a623.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/a4e4a647-1e75-434b-b86e-0b97f808faa2.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/601bef04-f749-42b6-8fd2-11b5472a484d.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/5023cbc9-21b7-4809-a382-f337e905b010.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/b3d153eb-c25c-4952-a901-03eb4ea11e50.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Tony", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/ea9dcbd6-e610-410d-9501-992c0b7fa892.jpg?aki_policy=profile_medium", 
+                        "id": 22125464, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 8, 
+                    "lat": 29.737603573634402, 
+                    "star_rating": 0, 
+                    "name": "Comfy apt", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": null, 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 200
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Brad", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/82ba497c-db7f-4eb5-b05a-35427225e9dd.jpg?aki_policy=profile_medium", 
+                        "id": 3008402, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.46614446733973, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 11925065, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/26cdc398-12e9-4e0f-bf19-96cd83733c5a.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/37d35891-27bf-44f3-b763-ca0e077c1ccd.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/6aa8d22d-7f8c-429e-a6db-6b270f62a021.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/e169a836-d1bd-47bd-8748-4275c721328e.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/e78521ff-3608-42ba-a806-dac2569f6a67.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/26cdc398-12e9-4e0f-bf19-96cd83733c5a.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Brad", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/82ba497c-db7f-4eb5-b05a-35427225e9dd.jpg?aki_policy=profile_medium", 
+                        "id": 3008402, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 6, 
+                    "lat": 29.746970761248146, 
+                    "star_rating": 0, 
+                    "name": "Galleria area apartment Houston Tx", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Located in the heart of the Galleria area in Houston Texas, this two bedroom apt is mins away from fine dinning, shopping and easy access to the best of what Houston has to offer.  Private patio, full kitchen, and space to unwind.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 150
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Jeremy", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/e7989ea3-c782-4b51-b3a9-1f9b87d797f4.jpg?aki_policy=profile_medium", 
+                        "id": 77790135, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.54144740207522, 
+                    "neighborhood_overview": "Very calm and quiet community with pond and walking track.\n\nLocation is convenient to Metro bus as well as major highways for car travel. Able to get to North, West, South and Central Houston very easily.", 
+                    "is_business_travel_ready": false, 
+                    "id": 13540118, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/7c268bfc-b6ff-4f61-ac45-e90bd97a7cfb.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/ee31febe-f812-4d81-952a-1c3b38f123d0.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/92dfbfb2-c10d-4a77-82b5-d50b699bba8c.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/bd42423f-b92d-4dd9-96be-3132c838cead.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/5b4faca2-2d94-4da9-8f76-7c1cba37ef15.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "Comfortable living room with large sofa for relaxation with large TV, beautiful kitchen, desk/work area, upstairs living room with TV and sectional couch, and a homey space!\n\nOnly one room of three will be off limits and completely separated, leaving everything else for the guests (2 bedrooms, 1.5 baths, living room, upstairs game room, kitchen, dining room, desk/work area, and backyard).\n\nInteraction with guests will be limited, unless initiated by guests. Come and go as you please.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/7c268bfc-b6ff-4f61-ac45-e90bd97a7cfb.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Jeremy", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/e7989ea3-c782-4b51-b3a9-1f9b87d797f4.jpg?aki_policy=profile_medium", 
+                        "id": 77790135, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 29, 
+                    "lat": 29.807254533103265, 
+                    "star_rating": 0, 
+                    "name": "Huge 2BR/1.5BA close to Galleria!", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "This unit is a great place to stay - located in a quiet gated community and is central to everything in Houston. Located in the Memorial/Spring Branch area, close to two major highways (I-10 and Beltway 8), restaurants and dining, Memorial City shopping mall, Houston City Centre, Houston Galleria area, Energy corridor, Chinatown, 15 miles to downtown Houston, 17 miles to NRG Arena. Full kitchen, free parking.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 99
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 16, 
+                    "person_capacity": 7, 
+                    "primary_host": {
+                        "first_name": "Mark", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/8c092749-69c8-4dd1-9bb0-4b013302641a.jpg?aki_policy=profile_medium", 
+                        "id": 30512827, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.59178428542471, 
+                    "neighborhood_overview": "Ft. Bend County, Lowest crime rate. Clean and secure environment. Resort Feel with Palm trees and stucco building\n\nTaxi, uber, rental car.\n\nBedding Arrangement:\nMater Bedroom with Attach Bath has 2 queen beds, Bedroom 2 has King Bed, Bedroom 3 has queen over queen bunk bed and a single twin bed.\n\nThe apartment is on second floor, (one floor above ground floor) with a full balcony overlooking resort style pool.", 
+                    "is_business_travel_ready": false, 
+                    "id": 6004672, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/88666200/04a1bb41_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/87324733/030b7e76_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/80261978/aec0f3af_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/81032279/2f027465_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/81032329/30ca31df_original.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "******Please Note: We have multiple apartments near each other within the same building and in complex.\nIf you need a place to stay for large group, we can book multiple apartments together with advance planning and waive the cleaning fee of $117.86 for each additional apartment booked together.******\n\nCheckout listings of our nearby apartments by clicking on the links.\n\nhttps://www.airbnb.com/rooms/6365123 Apt # 327\nhttps://www.airbnb.com/rooms/9189942 Apt # 428\nhttps://www.airbnb.com/rooms/10214426 Apt # 317\n\nINTRODUCTION:\nSought-after southwest Houston location: POOL VIEW WITH BALCONY. Available for Daily, Weekly or Monthly Rentals. Priced less than a moderate Hotel Room.\n\nLOCATION: \nClose to hwy 59 and Kirkwood Rd. Driving time is just 15 Minutes drive from world famous Houston Medical Center and 5 minutes from Famous Sugar Land Town Center & Entertainment District. The Galleria is 12 miles, downtown is 17miles, Hobby Airport is 25miles, Houston George Bush airport is 36 miles and NRG STADIUM IS JUST 15 MILES AWAY. \n\nBENEFITS: \nWhy stay in a Hotel Room when you can get so much more staying in a cozy fully-furnished apartment. All you need to bring is your clothes; we also provide complimentary coffee, sugar and creamer. \n\n\u2022It will allow you to save money by cooking your own food in a fully equipped kitchen.\n\u2022Save money by washing your clothes with the washer/dryer inside the apartment at no additional cost. \n\u2022Blow dryer, Iron & board are also provided. \n\u2022Enjoy this huge 1388 sq-ft apartment on the sought-after 2nd floor with close to resort style pool. \n\u2022In the apartment, you will have access to fast-mbps wireless internet, 48\" flat screen TV with Cable channels including HBO, Comcast Movie Stream are also available your leisure time.\n\u2022This luxurious furnished apartment offers garden tubs, Expansive walk-in closets. \n\u2022You also have access to a picnic area with BBQ grills.\n\nAPARTMENT COMPLEX AMENITIES:\nHere you will find exquisite architectural dramatic nine-foot ceilings combine with luxury amenities including a spacious clubhouse, business center, state-of-the-art fitness center and a sparkling resort-style pool to help you escape life's daily demands. \n\nSUMMARY: \nThis beautiful resort style apartment complex is the ONLY place which offers so much for the price. This fantastic place will meet and exceed your expectations. We are looking forward to having you as our guest and will greatly appreciate your reviews after your stay.\n\nTHE APARTMENT IS EQUIPPED with KEYLESS ENTRY. Check-in instructions are posted on airbnb site under your itinerary.\n\nStep down from the apartment to main Resort Style Pool, Club House, Gym, Business Center, BBQ Grilling, Smoker.\n\nAvailable anytime to meet and assist guest with information on the city or services.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/88666200/04a1bb41_original.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 3, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Mark", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/8c092749-69c8-4dd1-9bb0-4b013302641a.jpg?aki_policy=profile_medium", 
+                        "id": 30512827, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 26, 
+                    "lat": 29.637174643997085, 
+                    "star_rating": 5.0, 
+                    "name": "(328) Corporate Furnished Apartment with POOL VIEW", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Huge 3bed/2 full bath Fully Furnished Apartment with Fantastic View overlooking Resort Resort POOL, Close to to Sugar Land.  In Unit W/D. Ceiling fans, TV, FREE wifi, cable & utilities.", 
+                    "listing_tags": [
+                        {
+                            "tagId": 23
+                        }, 
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 14
+                        }, 
+                        {
+                            "tagId": 16
+                        }, 
+                        {
+                            "tagId": 19
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "July 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/4480870/profile_pic/1429284373/original.jpg?aki_policy=small", 
+                            "comments": "Great place and Mark is a great host! The apartment has all of what is advertised. The  Pool and BBQ area is very close to the apartment, as well as the parking lot. The place is very clean and comfortable. We were looking for to have a great vacation and this was the perfect place. We stayed a week and enjoyed it completely! The location is in a very nice area with stores, restaurants, movie theater, etc minutes away. Downtown Houston is around 15 minutes away. If we were to travel again to Houston, we would definitely rent this apartment again!", 
+                            "reviewer_first_name": "Marcela"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/21999531/profile_pic/1412176052/original.jpg?aki_policy=small", 
+                            "comments": "I booked this apartment for our wedding party and was not able to communicate and plan as well as I'd have liked, but mark was very accommodating, bringing an air mattress, fresh towels, etc. the apartment was very nice and very pristine, would definitely recommend.", 
+                            "reviewer_first_name": "Carlisle"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/18882267/profile_pic/1419825805/original.jpg?aki_policy=small", 
+                            "comments": "Mark was very accommodating and easy to work with the place was really nice and family enjoyed the stay. I would recommend Mark to everyone and for my next trip this place is on top of my list.    Thank you again for all your help recommendation for the area and tips.     Salman Ghaffar", 
+                            "reviewer_first_name": "Salman"
+                        }, 
+                        {
+                            "created_at": "July 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/8054abaa-3591-44b4-a32b-4a32d26ef78f.jpg?aki_policy=small", 
+                            "comments": "Host was very nice, and Mark was readily available for anything we needed and was responsive.   Place is very large and spacious.  Close to large shopping center and restaurants. ", 
+                            "reviewer_first_name": "Kristina"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/7059635/profile_pic/1378535338/original.jpg?aki_policy=small", 
+                            "comments": "It is a great place. Very comfortable. Easy access around Houston. ", 
+                            "reviewer_first_name": "Moshe (Tomi)"
+                        }, 
+                        {
+                            "created_at": "July 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/df587c89-da40-4bcc-ad9b-a2bbee947d07.jpg?aki_policy=small", 
+                            "comments": "Mark was a great host. I hosted my birthday and had a few guest come from out of town and mark made me feel very welcomed and even got me a birthday cake. He made sure all my requests were accommodated and was very easy to contact during my stay.", 
+                            "reviewer_first_name": "Tony"
+                        }, 
+                        {
+                            "created_at": "June 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/27901867/profile_pic/1424997113/original.jpg?aki_policy=small", 
+                            "comments": "My family and I had a wonderful time in this bright clean spacious apartment. It was plenty of room for the 5 of us and can easily accommodate 8 comfortably. The pool was just steps away and was a major plus during the hot summer days. The kids loved it! Mark was a gracious host and the apartment had everything necessary for a comfortable stay. It was a home away from home. Will definitely stay again!", 
+                            "reviewer_first_name": "Alex"
+                        }, 
+                        {
+                            "created_at": "July 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/38680001/profile_pic/1437077492/original.jpg?aki_policy=small", 
+                            "comments": "Mark was a wonderful host. Although we never got to meet him, he kept in contact with us throughout our stay via phone or text. He made sure we didn't need anything and made us feel more than welcome to call in the event that we did need something. The apartment was just like the listing description. It was very homey and comfortable and it is equipped with practically anything you need. From dishes, glassware, silverware, pots, pans cooking utensils, you name it, it was there. The washer and dryer were an added bonus for me! It was definately a home away from home. Thank you so much for our wonderful stay!", 
+                            "reviewer_first_name": "Adriana"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 225
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 30, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Andrew", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/d4869ed8-12c7-4d7d-b6ed-a9685361230e.jpg?aki_policy=profile_medium", 
+                        "id": 24243249, 
+                        "is_superhost": true
+                    }, 
+                    "lng": -95.48024134730066, 
+                    "neighborhood_overview": "1/2 mile from the Galleria and some of Houston finest steak restaurants are 2 minutes away.\n\nWe suggest Uber!\n\nThere is a 70\" flat screen 3D tv downstairs over the woodburning fire place. \n\nEnjoy a 50\" flat screen over the upstairs fireplace/gameroom.\n\nThere is a 42\" flat screen in the large master bedroom. Each bedroom has a private bath.\n\nEach tv has direct tv premium package with pay per view options plus enjoy netflix or hula on us!", 
+                    "is_business_travel_ready": false, 
+                    "id": 4688914, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/86841177/769c2454_original.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/59629084/811f766f_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/59781646/e3eb92d8_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/60555196/9089f731_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/79389178/0f7f7e4a_original.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "Upstairs family room located inbetwen both bedrooms has Queen size sofa bed with 55\" flat screen with Netflix and dtv  amd it's own fireplace.\n\nKick back in the spacious salt water hot tub and/or cook out on a nice gas grill. Wood deck includes a small yard and semi grassy area.\n\nAs needed \nWill stop to get mail from box.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/86841177/769c2454_original.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Andrew", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/d4869ed8-12c7-4d7d-b6ed-a9685361230e.jpg?aki_policy=profile_medium", 
+                        "id": 24243249, 
+                        "is_superhost": true
+                    }, 
+                    "picture_count": 16, 
+                    "lat": 29.74033669686878, 
+                    "star_rating": 5.0, 
+                    "name": "Perfect 4 SuperBowl\nGalleria area !", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "You are less than one mile from the Galleria mail and some of the best restaurants and shopping in Houston. \n My home is perfect for those visiting family or extending business stays. \nExtremely kid friendly.", 
+                    "listing_tags": [
+                        {
+                            "tagId": 4
+                        }, 
+                        {
+                            "tagId": 23
+                        }, 
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 16
+                        }, 
+                        {
+                            "tagId": 1
+                        }, 
+                        {
+                            "tagId": 19
+                        }, 
+                        {
+                            "tagId": 14
+                        }, 
+                        {
+                            "tagId": 13
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "April 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/17473786/profile_pic/1404258807/original.jpg?aki_policy=small", 
+                            "comments": "Andrew was a wonderful host. Made a last minute trip to Houston. And he was accommodating at the last minute. He really accessible for any questions we had. His condo was lovely. Great location. Easy access to all attractions. He has plenty of space. And the jacuzzi was a nice addition. I would definitely use again for my next trip to Houston. And would recommend this to all my friends.", 
+                            "reviewer_first_name": "Emmett"
+                        }, 
+                        {
+                            "created_at": "October 2015", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/28402383/profile_pic/1433629503/original.jpg?aki_policy=small", 
+                            "comments": "What a fabulous location!  Minutes from the Galleria and shopping galore!  Andrew was a wonderful host.  He met us at the door on Friday, gave us a quick tour of his lovely home and then stayed to enjoy a glass of wine with us!  The next time we are in Houston the only place we'll want to stay is right here!", 
+                            "reviewer_first_name": "Earl"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/24732504/profile_pic/1418319745/original.jpg?aki_policy=small", 
+                            "comments": "Andrew was very welcoming...great communication beforehand and very flexible about our arrival time.  Left out drinks and snacks which were much appreciated after the plane trip.  Was available for questions and responded quickly.  House was immaculate and perfect for our needs.", 
+                            "reviewer_first_name": "Haea"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/e95df5e4-9da6-40fa-a116-9b6382cffcc8.jpg?aki_policy=small", 
+                            "comments": "The location of Andrew's property was perfect for our needs. Close to the medical center where I had appointments each day and near to my two favorite things in Houston, the Montrose District and The Galleria. His place was well stocked with all of imenities of home and then some - everything we could possibly need. He was communitive and attentive every step of the way.", 
+                            "reviewer_first_name": "Shelley"
+                        }, 
+                        {
+                            "created_at": "July 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/21485097/profile_pic/1411054519/original.jpg?aki_policy=small", 
+                            "comments": "I went to Houston with some friends on a shopping trip for home furniture and d\u00e9cor, and stayed at Andy's place.  His home is clean and well laid out, and the location cannot be beat. Everything we needed was within a mile or two of the home, and there were several restaurants we could walk to in the evening. The parking was easy, and the neighborhood felt safe. I would recommend this home highly, and I would certainly stay here again.", 
+                            "reviewer_first_name": "Mary"
+                        }, 
+                        {
+                            "created_at": "February 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/4610344/profile_pic/1364074120/original.jpg?aki_policy=small", 
+                            "comments": "Andrew was a great host! I booked it very last minute and he was so kind to get everything set up all by the time I arrived!     He was communicative, quick with responses, and all around nice guy.    The house was great, if you're allergic to cats... Obviously it's not for you... But the kitty is a sweetie!    The hot tub was fantastic and the master bed was ridiculously comfy. Would recommend to anyone! ", 
+                            "reviewer_first_name": "Daniel"
+                        }, 
+                        {
+                            "created_at": "October 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/26744055/profile_pic/1422465411/original.jpg?aki_policy=small", 
+                            "comments": "Andrew was extremely helpful hosting my colleagues that were visiting Houston for a conference. I received great reviews of the place, and Andrew went out of his way to ensure my team arrived without a hiccup. I look forward to sending the team down to Houston again, and highly recommend Andrew as a host.", 
+                            "reviewer_first_name": "Jonathan"
+                        }, 
+                        {
+                            "created_at": "October 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/25072757/profile_pic/1419203061/original.jpg?aki_policy=small", 
+                            "comments": "Andrew is a kind and generous host. His place is very close to many hip and cool Houston sites. We enjoyed his dry parking garage during a record wild and rare Texas hurricane. He was respectful with our needs. Andrew also cared enough to check in on our comfort and safety level during the rain storm.", 
+                            "reviewer_first_name": "H"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 135
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 3, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -95.4387165048569, 
+                    "neighborhood_overview": "Location\nWith the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors, you're surrounded by the best of Houston.\n\nWalkscore 91\nA walk score of 91 means that if you live at the Luxury Community of Pearl Greenway in Greenway Plaza, most activities and errands can be accomplished on foot!\n\nLocation\nWith the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors, you're surrounded by the best of Houston.\n\nWalkscore 91\nA walk score of 91 means that if you live at the Luxury Community of Pearl Greenway in Greenway Plaza, most activities and errands can be accomplished on foot!\n\nHostingzak Furnished Apartments Houston", 
+                    "is_business_travel_ready": false, 
+                    "id": 9051323, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/156f94bc-b76a-4abc-94dd-daefba0f7251.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/ea1ae96d-b543-40ed-b5de-711250d99170.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/7c74b6b2-9e6b-4987-8c23-abeaf476dbdc.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/bde23242-f8be-4a7f-894e-cd45313af258.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/da00c77d-f65b-4bf1-b770-b0f7b97b0b0c.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "Luxury, comfort and impeccable style come together to make this apartment the perfect place to call home. \nThoughtfully designed gourmet kitchens, large open bedroom and living room with private balconie, or taking advantage of our generous amenities package, you\u2019ll fall in love with this apartment over and over again. Enjoy our Vegas-style pool with cabanas and outdoor grilling stations, Platinum Athletic Club, Cyber Cafe with large-screen TV, lap pool, and dog park with a fountain, play obstacles, dog wash and covered bar area.\n\nClubhouse with after hours common areas\nSocial Room with TV and sound system\nBusiness center with Apple computers, printer and fax\nCyber caf\u00e9 with large screen TV and coffee station\nLounge area with Wi-Fi\nVegas style pool with shallow-water sunshelves\nZen style lap pool\nCustom cabanas with TVs\nDog park with fountain, play obstacles, dog wash, benches and covered bar area\nCovered BBQ Grill Area\neVgo\u00a9 Electric car charging stations\nWireless Access in select locations\nPlatinum Athletic Club\nMatrix Treadmills and Ellipticals with touch screen TV's, Nike+iPod and Virtual Active\nWoodway Curve Treadmill\nStepmill Stairmaster\nJacob's Ladder\nFreeweight area, circuit training area and cardio area\nSeparate aerobics and spinning room with spin bikes featuring MyRide system\nWalk score: 91/100 - Pearl Greenway is walking distance to: Costco, LA Fitness, Edwards Greenway Movie Theater, Central Market, Fresh Market (coming soon), Tony's, Smoothie King, Chipotle, Buffalo Wild Wings, Oishii, Michiru, Caf\u00e9 Express, Potbelly, Little Jimmy's Deli, Collina's, Oporto Wine Bar, Starbucks, Pizzeria Solario, Skewers, Berrypop Frozen Yogurt, Kobecue.\n\n24/7 available", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/156f94bc-b76a-4abc-94dd-daefba0f7251.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Houston", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Houston", 
+                    "user": {
+                        "first_name": "Hostingzak", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/10216006/profile_pic/1440878142/original.jpg?aki_policy=profile_medium", 
+                        "id": 10216006, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 54, 
+                    "lat": 29.731947150121584, 
+                    "star_rating": 4.5, 
+                    "name": "Airbnb Greenway Plaza Apartment Houston", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Situated in the growing Greenway Plaza Business District, My apartment \nIs surrounded by every convenience you could imagine. \nWith the Galleria, Highland Village, River Oaks and Upper Kirby as your neighbors.\nHostingzak.\nPlease check my reviews in the link below  -\nhttps://www.airbnb.com/users/show/10216006#reviews", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "December 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/9402116/profile_pic/1381685612/original.jpg?aki_policy=small", 
+                            "comments": "Zak is a great and very attentive host. The apartment is great and in a very nice and conveniently located building. I would stay with Zak again.", 
+                            "reviewer_first_name": "Stephan"
+                        }, 
+                        {
+                            "created_at": "November 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/32877534/profile_pic/1432017329/original.jpg?aki_policy=small", 
+                            "comments": "The apartment was clean. Not in a very walkable area though. There werent too many places around. Also, there was never any parking close or on the first floor.  The walk from the garage to the apartment is quite a hike, especially if you are carrying bags. The air bnb ad advertises \"Cable TV\"... However, there is no cable. It has roku but no subscriptions so you are left with very few channels. He did bring by an antennae but the reception was horrible and there wasnt much other than religious channels. There was a huge leak with the bathtub (no fault of the owners)...the maintenance team was slow to respond. However, the owner was very apologetic and refunded some money for the inconvenience. Pictures of the apt are accurate and it was clean. ", 
+                            "reviewer_first_name": "Suni"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }
+        ], 
+        "metadata": {
+            "pagination": {
+                "next_offset": 318, 
+                "result_count": 18
+            }, 
+            "search": {
+                "mobile_session_id": "XM8OhSX5", 
+                "search_id": "fc163208-3d2a-41bd-b3dd-47e42fda4316"
+            }, 
+            "listings_count": 300, 
+            "listing_tags": {
+                "listing_characteristics": [
+                    14, 
+                    16, 
+                    13, 
+                    18, 
+                    17, 
+                    15
+                ], 
+                "surrounding_area": [
+                    7, 
+                    4, 
+                    10, 
+                    1, 
+                    2, 
+                    3, 
+                    9, 
+                    11, 
+                    5, 
+                    6
+                ]
+            }, 
+            "location": {
+                "canonical_location": "Katy, TX", 
+                "display_location": "Katy"
+            }, 
+            "guidebook": null, 
+            "nearby_cities": [
+                {
+                    "canonical_location": "Galveston, TX", 
+                    "display_location": "Galveston Vacation Rentals", 
+                    "is_vr": true
+                }, 
+                {
+                    "canonical_location": "Templeton, CA", 
+                    "display_location": "Templeton Vacation Rentals", 
+                    "is_vr": true
+                }, 
+                {
+                    "canonical_location": "St Louis, MO", 
+                    "display_location": "St Louis", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Dallas, TX", 
+                    "display_location": "Dallas", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "San Antonio, TX", 
+                    "display_location": "San Antonio", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Austin, TX", 
+                    "display_location": "Austin", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Dublin, OH", 
+                    "display_location": "Dublin", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Houston, TX", 
+                    "display_location": "Houston", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Orinda, CA", 
+                    "display_location": "Orinda", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Bowie, MD", 
+                    "display_location": "Bowie", 
+                    "is_vr": false
+                }
+            ], 
+            "geography": {
+                "lat": 29.7857853, 
+                "lng": -95.8243956, 
+                "result_type": "locality"
+            }
+        }
+    }, 
+    "checkin": "", 
+    "controller": "search", 
+    "is_total_price": false, 
+    "urgent_headline_string": null, 
+    "center_lng": -95.8243956, 
+    "visible_results_count": 300, 
+    "urgent_context_string": null, 
+    "results_count_string": "300+ Rentals &middot; Katy", 
+    "prefetch": false, 
+    "action": "index", 
+    "page": 80
+}

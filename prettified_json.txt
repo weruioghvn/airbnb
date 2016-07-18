@@ -1,0 +1,1695 @@
+{
+    "canonical_location_en": "Santa Clara, CA", 
+    "urgent_message_type": null, 
+    "guests": "4", 
+    "guidebook": null, 
+    "s_tag": "WRseA0Aa", 
+    "center_lat": 37.3541079, 
+    "urgent_icon": null, 
+    "per_month": false, 
+    "p2_ib_filter_on_last_minute_default": null, 
+    "room_types": "Entire home/apt", 
+    "ib_override": null, 
+    "has_airbnb_plus_availability": false, 
+    "show_btr_banner": false, 
+    "location": "Santa Clara CA", 
+    "path_location": "Santa-Clara-CA", 
+    "cdn_locale_redirect": "1", 
+    "checkout": "", 
+    "search_geo_info": {
+        "geo_location": "Santa Clara, CA, USA", 
+        "geo_accuracy": 4, 
+        "geo_result_type": "locality"
+    }, 
+    "sorted_listing_tags": {
+        "listing_characteristics": [
+            13, 
+            14, 
+            18, 
+            16, 
+            17, 
+            15
+        ], 
+        "surrounding_area": [
+            7, 
+            10, 
+            4, 
+            2, 
+            1, 
+            6, 
+            3, 
+            8, 
+            11, 
+            9, 
+            5
+        ]
+    }, 
+    "urgent_body_string": null, 
+    "results_json": {
+        "search_results": [
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 135
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 29, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Tammy", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/5996a37f-83ae-476f-a856-91c1aaba9d2d.jpg?aki_policy=profile_medium", 
+                        "id": 52091606, 
+                        "is_superhost": true
+                    }, 
+                    "lng": -121.95127947139883, 
+                    "neighborhood_overview": "We have a quiet neighborhood with friendly neighbors.  Our neighborhood is located within walking distance to Santa Clara University, independent coffee shops, neighborhood restaurants, and a farmer's market.  We are a short drive to Santana Row and Levi Stadium. (Levi Stadium is 40 minutes \naway by bus/regional train and 1.5 hours away via bus/light rail combinations.) Within a two mile radius, there are Target, Walgreens, Safeway, Lucky, Sprouts, Chipotle, Panera, 7-11, Santa Clara Public Library, Peet's Coffee and halal and Indian grocery stores.  There is a convenience market a half a block down the street if you need milk or most any other convenience.\n\nWe are located a block away from a stop for public bus routes.  The Super Bowl bus will pick you up two blocks from our home!  We are biking distance to Santana Row and a walk to Santa Clara University.  We are located in a prime residential location with easy access to several major South Bay highways and expressways. Amtrak San Jose station is 45 minutes by bus and Caltrain Santa Clara Station is 20 minutes away via bus. Taxi from San Jose Mineta airport is 10-15 minutes.\n\nWe have a dog, but we will not allow guest pets.  Our dog is kept mostly inside and we will keep her on a leash when out front.  She is very obedient, quiet and friendly.\nWe will always provide you with clean linens and towels.  We will provide two sets of towels--if you need more, please let us know.  We can also provide extra blankets, if you need them. If you need additional utensils in the kitchen or toiletries in the bathroom, please let use know--we may be able to help you.", 
+                    "is_business_travel_ready": false, 
+                    "id": 10149826, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/d3672dd7-1d6e-491f-af0d-7f4f24b4ae0d.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/137a82fc-c24b-4dc9-bf50-8dfd29d8603b.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/39559a9a-e12d-4142-8f3f-6e48a9df5319.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/0c80c456-ea56-4ce6-a3c1-59ea5cae4d3e.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/bdcb1a5f-9977-4fc5-bae7-3d095bdd8833.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "We renovated this ground-level bungalow in December 2015.  A home away from home!  It features sustainable hardwood (bamboo) floors, new rugs, new cabinets throughout, and a new queen bed/mattress.  The kitchen table comfortably seats two or can be used as a work space by business travelers. We also have new appliances including a dishwasher, full-sized refrigerator, microwave, and Keurig coffee maker.  In the attached private bathroom we provide luxury spa towels, toiletries, and updated features.  We offer free Wi-Fi, digital TV antenna, and Wi-Fi-connected Blu-Ray player.  The room has a cozy and quiet gas wall heater and an air conditioning unit and there is a private entrance for your convenience.\n\nIf you are bringing children, we offer a pack n' play or a blow up bed with bumpers with bedding included for your convenience.  We also now have a futon love seat that folds out to an extra twin size bed.  This all fits nicely near the main queen bed.\n\nYou will be able to access the cottage through a private entrance near the driveway parking spot through a side gate.\n\nWe will offer our help to make your stay more comfortable.  We invite  your questions and feedback and we will make ourselves available to make your stay a great one! We just ask that you limit any non-emergency interaction with us to between 8AM-8PM as we have young children. Please use the door bell at the front of the house--the back room of the main house is used for storage and we may not hear your knocks at that door.  You may also call or text us at our number:  (408) 417-6496.\n\nWhen you book with us, we will give you full privacy and not bother you unless you need our assistance.", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/d3672dd7-1d6e-491f-af0d-7f4f24b4ae0d.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Tammy", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/5996a37f-83ae-476f-a856-91c1aaba9d2d.jpg?aki_policy=profile_medium", 
+                        "id": 52091606, 
+                        "is_superhost": true
+                    }, 
+                    "picture_count": 39, 
+                    "lat": 37.342048303277046, 
+                    "star_rating": 5.0, 
+                    "name": "Luxury Home. Private Bath & Kitchen", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "This private home features hardwood floors, new appliances, luxury linens & towels, & complimentary coffee.   Convenience of proximity to SCU & Santana Row!", 
+                    "listing_tags": [
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 23
+                        }, 
+                        {
+                            "tagId": 18
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/2c292117-c155-4da8-ba4b-a338daf2ac0f.jpg?aki_policy=small", 
+                            "comments": "Had a great stay at Tammys place. She was welcoming. The room is well equipped. It's private and nice silent neighborhood. Would definitely recommend to stay here.   Thanks, Veeresh", 
+                            "reviewer_first_name": "Veeresh"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/1276183/profile_pic/1432114956/original.jpg?aki_policy=small", 
+                            "comments": "My experience was very smooth and pleasant while staying at Tammy&John's guest house. The quality of the place is just as wonderful as is described and even more. Tammy was super responsive and hospitable, making sure that I had everything that was needed.  Highly recommend this listing to other guests who are looking for comfort at a reasonable price while visiting the Valley. ", 
+                            "reviewer_first_name": "Yoanna"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/a39b84ca-479d-4440-824b-26b4b9c85836.jpg?aki_policy=small", 
+                            "comments": "The room is well-equipped and it is exactly the same as the photos shown here. And Tammy is really nice! Enjoyed staying here. I strongly recommend the studio to those who are looking for a sweet and private room which is located in a nice and quiet neighborhood. ", 
+                            "reviewer_first_name": "Xiaoting"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/2851126/profile_pic/1405540194/original.jpg?aki_policy=small", 
+                            "comments": "This was a return visit to Tammy's haven. As a commuter to Silicon Valley for work, her beautiful and private space is a welcome respite. This location is my #1 choice... After  several months of staying in the area. It feels like home.", 
+                            "reviewer_first_name": "Bethany "
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/45208092/profile_pic/1443369767/original.jpg?aki_policy=small", 
+                            "comments": "We were their 1st guest and Tammy and John were incredibly welcoming and helpful! Their studio setup is brand new , beautiful and it had everything I needed. This place looks just like the photos with private entrance, attached washroom and parking along with fully loaded kitchen and wi-fi. They have also kept basic necessities like breakfast essentials, toiletries and many more that too from premium brands for us to use.... I was very amazed to get such a nice luxurious place for the price I paid.  I highly recommend their studio to anyone who is looking for a quality stay with absolute no disturbance and will definitely book here again for my next time in Bay Area.", 
+                            "reviewer_first_name": "debashis"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/442708/profile_pic/1300168106/original.jpg?aki_policy=small", 
+                            "comments": "Everything went really well with my stay at Tammy's cottage. The pictures were exactly how I expected the place to be, all nicely appointed and very convenient to have a full kitchen, fridge, living space. I didn't have a car, but it was convenient to use a ride sharing app to get around - I'd definitely come back to stay next time I need to be in the area again!", 
+                            "reviewer_first_name": "Christopher"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/2730740/profile_pic/1420269832/original.jpg?aki_policy=small", 
+                            "comments": "Was nice to meet Tammy and her family on a recent business trip to SC.  Their place was very comfortable, clean, fully stocked and centrally located.  Great alternative to typical corporate hotel when staying in the area.  Would definitely recommend to others.  Thx again!", 
+                            "reviewer_first_name": "Bob & Kimberly"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/6062143/profile_pic/1366818829/original.jpg?aki_policy=small", 
+                            "comments": "The listing was absolutely accurate.   Lovely large studio, well equipped, lots of light and everything you need to (EMAIL HIDDEN)fortable bed and comfortable futon for a 3rd person. Excellent shower and water pressure. Well equipped kitchen with everything you need.  Goodies to greet us and toiletries in the bathroom.  The one very small problem was handled within 10 seconds of asking for help.  Highly recommend.", 
+                            "reviewer_first_name": "Julie"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 300
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 10, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Teresa", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/daa4c7a6-2c7a-4b4f-83c2-0b62cda9d877.jpg?aki_policy=profile_medium", 
+                        "id": 47850823, 
+                        "is_superhost": true
+                    }, 
+                    "lng": -121.99200408941601, 
+                    "neighborhood_overview": "It is located in a quiet neighborhood and very close to major entertainment/sporting events, medical care and education for all ages.  It provides a haven of rest in the heart of Silicon Valley and a bike ride to the Apple Campus.  The house is more affordable than a 5* hotel, more private than an apartment, more spacious than a condo,  more central than most other options and, it's very convenient!\n\nParking is provided in the garage, driveway and/or street.  The house is located 3.5 miles from the Santa Clara Station, where you can jump on Amtrak or Caltrain to get to the East Bay or San Francisco.\n\nOur goal is to provide comfort and convenience for your stay.", 
+                    "is_business_travel_ready": false, 
+                    "id": 9199361, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/64124e0c-ec46-48f0-b9db-cd10177cce2a.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/5a9da22f-c7ee-410a-b238-715031ee2b39.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/0461a780-281f-414a-9a92-56b483c82205.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/024e91ee-2f7a-49ec-a3b8-dfc3a899fe42.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/25a23c79-115c-4d07-ab46-6842f6147fec.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "This beautiful Santa Clara home is perfectly located to experience all the Bay Area has to offer. Minutes from Silicon Valley\u2019s major technology companies, shopping, restaurants, sporting events, California nature and medical centers.  \n\nIt is the ideal home base to relax.  It is more spacious and private then what you will find at a hotel, condo or apartment.   A fenced back yard and a covered patio offer additional outdoor living space ideal for children and a small dog.  \n\nBeautifully furnished in a Pottery Barn-like style with special attention paid to exclusive extras including high-speed cable, Wi-Fi, and a 50\u201d HDTV.  The open kitchen with stylized wood cabinetry, beautiful granite countertops and quality appliances including a side-by-side refrigerator to fill with grocery favorites and a Bosch dishwasher for easy cleanup.  Cookware, dishes and cutlery are all included for enjoyable in home dining and entertaining your friends and family.\n\nThe three comfortable bedrooms are ready to sleep up to six of your nearest and dearest. The master suite opens onto a covered patio with seating.  The second bedroom, also with a queen-sized bed, and the third bedroom with two twin-sized beds, share the hallway guest bathroom. \n\nA laundry area and two-car garage are included as well.  The neighborhood is quiet and welcoming.  Less than two blocks walk away, is a neighborhood park, complete with tennis courts. \n\nSanta Clara is the heart of Silicon Valley.   A gateway to many world renowned technology companies such as Yahoo!, Intel, Apple, Google, HP, Hewlett Packard Enterprise, Cisco, Facebook, Palo Alto Networks and major event centers such as Levi\u2019s Stadium, the San Jose Shark Tank- SAP Center and the new Home of the Earthquakes - Avaya Stadium.   Located right off of Highway 101, very near the San Jose International Airport (SJC) and connected to Highways 680, 880 and 280.  There are many iconic and historic areas and experiences to be found in nearby Mountain View, Palo Alto, Los Gatos and Santa Cruz. San Francisco is a straight shot North about 45 minutes and important California universities including Santa Clara University, Stanford and San Jose State University, surround the area. \n\nSPORTS:  Levi\u2019s Stadium, Home of Super Bowl 50 is less than 6 miles, drive from this ideal Santa Clara house.  Walk or drive to the George F. Haines International Swim Center, the site of international swim meets, and a \"home\" for world-class and Olympic swimmers, divers, and synchronized swimmers.  The SAP Center, home of San Jose Sharks, is only 9 miles out the front door.   Don\u2019t miss the San Francisco Giants play at AT&T, only 45 miles away.  \n\nFor COLLEGE, GRADUATIONS & WEDDINGS:  Santa Clara University, San Jose State, Stanford, and the area\u2019s best wedding venues are all very nearby including Mission Santa Clara de Asis, Villa Montalvo, Los Gatos and The Mountain Winery.\n\nMEDICAL APPOINTMENTS: Kaiser Permanente Hospital is only 1 mile from the house; Lucile Packard Children\u2019s Hospital, Stanford Hospital, El Camino Hospital, Palo Alto Medical Foundation, and O'Connor Hospital are all a quick drive away.\n\nADVENTURE: The surrounding sights, sounds and sensations are unforgettable.  Drive about 35 miles to the SANTA CRUZ beaches for boating, surfing, beach combing and a great amusement arcade.  Hike, ride a zip line, bike, or train through the beautiful redwood forests of the Santa Cruz Mountains. Or, drive up the coast to SAN FRANCISCO and walk across the Golden Gate Bridge, explore Angel Island and experience Pier 39, Fisherman\u2019s Wharf, Lombard Street, Union Square, and Golden Gate Park. The scenery, fresh air, and vibrations are unforgettable.  Down the coast in the other direction is MONTEREY BAY Aquarium, 'Seventeen Mile Drive', Carmel and many golf courses along the way \u2013 Spy Glass and Spanish Bay are favorites.\n\nSHOPPING:  There are endless opportunities to shop in Santa Clara as well as anywhere from the East Bay to San Francisco. Some of our favorites are Santana Row (4 miles away), Stanford Shopping Center (15 miles away) and Carmel-by-The-Sea (76 miles).  Oh, and outlet shopping in Gilroy and Livermore an easy 45 minutes away.\n\nENTERTAINMENT PARKS & MUSUEMS:  Great America Theme Park, less than 5 miles; great museums including the Tech Museum of Innovation, San Jose Museum of Art and the Rosicrucian are all no more than 9 miles away; Shoreline Park (SF Bay Wetlands), 10 miles; All amazing places for the entire family to explore.\n\nFull exclusive access to the house, garage,  patio and yard.\n\nI live and work nearby, so I am a phone call away if you need to reach me.", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/64124e0c-ec46-48f0-b9db-cd10177cce2a.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 3, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Teresa", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/daa4c7a6-2c7a-4b4f-83c2-0b62cda9d877.jpg?aki_policy=profile_medium", 
+                        "id": 47850823, 
+                        "is_superhost": true
+                    }, 
+                    "picture_count": 25, 
+                    "lat": 37.34341563902404, 
+                    "star_rating": 5.0, 
+                    "name": "Santa Clara 3bd/2ba Home with Outdoor Living Space", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "This beautiful vacation rental is perfectly located to experience all the Bay Area has to offer.  It\u2019s the ideal home base for family, work, sporting events, entertainment and medical care.   A fenced back yard & a covered patio for additional space.", 
+                    "listing_tags": [
+                        {
+                            "tagId": 13
+                        }, 
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 4
+                        }, 
+                        {
+                            "tagId": 23
+                        }, 
+                        {
+                            "tagId": 10
+                        }, 
+                        {
+                            "tagId": 14
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/22076158/profile_pic/1432402824/original.jpg?aki_policy=small", 
+                            "comments": "Perfect Air Bnb experience! House was as described, reasonably priced and offered everything me and my family needed for a great weekend. The neighborhood was quiet and the house was charming and had everything one would need to feel at home away from home. Great backyard and relaxing indoor/outdoor patio. well supplied kitchen and great system in place for arrivals and departure. thanks Teresa!", 
+                            "reviewer_first_name": "Nathaniel"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/d8bb68d1-2a2a-485b-a78b-321aceb026de.jpg?aki_policy=small", 
+                            "comments": "We enjoyed our stay. Neighborhood was great, house was clean and cozy.", 
+                            "reviewer_first_name": "Eiri"
+                        }, 
+                        {
+                            "created_at": "December 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/1190791/profile_pic/1421913579/original.jpg?aki_policy=small", 
+                            "comments": "We had a wonderful time staying here. Teresa was an amazing host even though we did not meet her. Communication before and during our stay was great, check-in and check-out went smoothly. House was very clean, spacious and comfortable. Everything was in perfect condition and we felt like at home. Area was nice and peaceful, and park with playground was just around the corner. I recommend this place!", 
+                            "reviewer_first_name": "Marina"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/be90a6a2-21be-4fc6-83ca-8bee6c627112.jpg?aki_policy=small", 
+                            "comments": "Teresa was prompt, and excellent communicator, her home was as advertised--an excellent stay and experience.", 
+                            "reviewer_first_name": "Michael"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/3635723/profile_pic/1403459098/original.jpg?aki_policy=small", 
+                            "comments": "Place was great, exactly how it is represented in photos and description. Teresa did a great job of letting us know exactly where everything was and also made sure that all of the little things were taken care of before our arrival so that we immediately felt at home. Absolutely no complaints, Teresa's place was exactly what we needed and more!", 
+                            "reviewer_first_name": "Charles"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/e135a6c1-c7e0-4bf5-a807-8dd9deb8e569.jpg?aki_policy=small", 
+                            "comments": "Feel like home. Nice place to stay", 
+                            "reviewer_first_name": "Yuyu"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/71deb70d-84a6-4663-90d5-7708577f472b.jpg?aki_policy=small", 
+                            "comments": "Highly highly recommend!", 
+                            "reviewer_first_name": "Prabhakar"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/890b158b-f30c-431a-b49a-e63967831e71.jpg?aki_policy=small", 
+                            "comments": "Casa muy bien, muy limpia y buena ubicaci\u00f3n gracias", 
+                            "reviewer_first_name": "CARLOS"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 100
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 4, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Charlene", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/060e0a98-f1b8-4108-9add-c9431c4b2abc.jpg?aki_policy=profile_medium", 
+                        "id": 17807198, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.95929417425668, 
+                    "neighborhood_overview": "In the Rivermark neighborhood, walking distance to the Levi's stadium.  Only 8.5 year old condo is next to a neighborhood with townhomes and single family homes less than 12 years old.  1 mile away from Levi's stadium, easy to walk to.\n\nWalking distance to Rivermark Plaza - Safeway, restaurants, salon.  0.7 miles away.\n\nOne parking space is included.  Another one is available for another $10/day, just let me know.\n\nFully furnished with 2 beds, couch, dinner table with chairs.  Basic kitchenware will be available for light cooking.\n\nCentral heating and AC.  Double pane windows.\n10 foot ceilings, highest ceilings in this condo building.  Top floor of condo building which means no one is above you.\nSecurity patrols the building.", 
+                    "is_business_travel_ready": false, 
+                    "id": 10626471, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/f95441a9-2c76-4a70-9395-d0206b1eef49.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/55837610-4b67-4cb5-ab4f-18e5a871f3da.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/d52f6bf8-529d-4150-acd1-3510081a38b2.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/949774a9-7449-4051-bd0f-da2f21d3effd.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/ad587bbd-f2f9-4bbc-ba6f-241fafe46c1c.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Condominium", 
+                    "space": "Very well taken care of and is relatively new, it's only 8.5 years old.  Insulation is fantastic and is very comfortable.\n\nNon heated Pool, Gym, Yoga room\n\nHere to give you the keys and reclaim the keys.  Accessible by phone, text, email if you have any questions.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/f95441a9-2c76-4a70-9395-d0206b1eef49.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Charlene", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/060e0a98-f1b8-4108-9add-c9431c4b2abc.jpg?aki_policy=profile_medium", 
+                        "id": 17807198, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 21, 
+                    "lat": 37.3960841685248, 
+                    "star_rating": 5.0, 
+                    "name": "Beautiful entire 2/2 condo 1152sqft", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "1152 sq feet!  Relatively new condo, is only 8.5 years old.    1 mile away from Levi's stadium, easy to walk to!  Oracle is across the street.  Cisco, EMC2 close by.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/53d415d3-43d0-4513-8265-5e04e694e40e.jpg?aki_policy=small", 
+                            "comments": "Charlene was great. The condo was as described and processing etc. was smooth as can be. ", 
+                            "reviewer_first_name": "Bryce"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/921e4f6d-c99f-4801-8f69-3911826c7d6a.jpg?aki_policy=small", 
+                            "comments": "Charlene was a great host. She explained all the features of the condo and showed us around the building. The condo is in a great location if you are looking for a place near the 49ers stadium. ", 
+                            "reviewer_first_name": "Christopher"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/22866186/profile_pic/1414035168/original.jpg?aki_policy=small", 
+                            "comments": "Host was lovely, place was very convenient to work and Huge!  This is a great place and I would stay here again - way better than a hotel!", 
+                            "reviewer_first_name": "John, Maureen & Keira"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/16535361/profile_pic/1402253694/original.jpg?aki_policy=small", 
+                            "comments": "Enjoyed my stay at Charlene's Condo. Charlene is an excellent communicator and was very quick to respond to any communication, as well as right on time to meet me on site to get me the keys. The Condo is spacious and clean. It is in a good location and the unit is close to its designated parking spot. Overall a great experience. One thing to be aware of for future visitors is that the largest bed available is I believe a Full Size. Just something to keep in mind for couples wishing to visit.", 
+                            "reviewer_first_name": "Paul"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 220
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 33, 
+                    "person_capacity": 5, 
+                    "primary_host": {
+                        "first_name": "Peter", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/da61a599-8b9d-461b-8475-c0c8d4c09797.jpg?aki_policy=profile_medium", 
+                        "id": 7664442, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.95050716207005, 
+                    "neighborhood_overview": "This is a very quiet and safe complex. Most neighbors work for Hi-Tech companies around this area. There is a park just next to our complex. It's just in the central of Silicon Valley. Best location for business and Silicon Valley visitors.\n\nless than 10 minutes to Levi's Stadium,  Santa Clara Convention Center, Great America, Cisco, Intel, San Jose Airport and many Hi-Tech companies; Close to 101 and 237\n\nOne block to shopping mall and Safeway;\nOne block to Montague Expressway;\nOne minute to VTA Orchard Station;\nThree minutes to Highway 101 and 237.\n\nWe live in a quiet community and like to keep it that way please;\nBe nice to other neighbors.", 
+                    "is_business_travel_ready": false, 
+                    "id": 8403527, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/111317522/3391001b_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/111317639/1cfe06cc_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/111319027/8f95bea2_original.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/111317235/f7ea1c5d_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/111318880/cf431cbc_original.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "This newly furnished 1150 sq/ft luxury 2bedroom/2bathroom Apt is in a beautiful community in central Silicon Valley, Santa Clara. It's on top 4th floor with private balcony and mountain view in an elevator Condo building. Fully size quiet washer and dryer in home. Walking distance to Safeway, Chipotle, Posh Bagel, Peets, and more; shopping mall just across our community. One mile to Intel Headquarters, highway 101 and VTA Orchard Station, two miles to Levi's Stadium and Santa Clara Convention Center. It's best location for visiting Silicon Valley. \n\nLiving room has new leather sofa and loveseat, 48\" Samsung Smart HDTV;\n\nDinning Area has a new modern glass dinning table with 4 leather chairs;\n\nGourmet kitchen with granite counter-tops, and is newly renovated with high quality equipment, such as high quality refrigerator, very quiet dish washer, nice oven, big microwave, dishware, coffee pot, toaster, Rice cooker, Wok, etc.. \n\nTwo bedrooms are carpeted, each bedroom has queen-sized bed, high quality mattress, night stand and walk in closet.\n\nTwo huge bathrooms have big bath tubs. \n\nMulti-zone central heating and air conditioning\n\nFree High Speed Wifi;\nFree cable TV with with HD extended service;\nFree HBO and Netflix;\nFree Parking spot and it's on the same floor.\n\nGreat amenities in our complex:\nSwimming pool\nFitness center\nConference room with Wi-Fi\nFire pit\nSpa\nClubhouse\nPoolside BBQ\n\nSince you are our guests, you can use all community facilities- pool, gym, rest area, all for free!\n\nLess than 10 minutes to Levi's Stadium,  Santa Clara Convention Center, Great America, Cisco, Intel, San Jose Airport and many Hi-Tech companies; Close to 101 and 237.\n\n****\nThis is a review from one of my guests:\nThe room was absolutely great. Property was very clean and well maintained. It is spacious and has a lot of daylight that comes in. The washing machine was the amenity that I didn't know I needed. Peter even left single-use laundry tabs for use! The onsite facilities were very nice. I frequently used the business center and gym; had no complaints about them. The property itself is located walking distance from a great plaza. The plaza has great restaurants (Chipotle, RedRobin, Pizza, Subs) and a SafeWay. Anything that you need/want or forget, you can get within minutes. Peter was very welcoming. When arriving at the location; I arrived 30 minutes early, and peter was there within 5 minutes of me sending him a message. When I left, I was leaving at an odd time, but Peter again was very accommodating and met up at my requested time. Overall it was a great experience. If I am back in this area, I would book this room again. \n--Bhavesh Patel\n\nEntire apartment;\nSwimming pool;\nGym;\nParking garage.\n\nNo interaction unless guests have questions. \nTotal privacy. However, if you need to know anything and everything about Silicon Valley and this area - We are more than happy to tell you. We have lived in Silicon Valley for a long time.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/111317522/3391001b_original.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [
+                        "zh"
+                    ], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Peter", 
+                        "thumbnail_url": "https://a0.muscache.com/im/pictures/da61a599-8b9d-461b-8475-c0c8d4c09797.jpg?aki_policy=profile_medium", 
+                        "id": 7664442, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 27, 
+                    "lat": 37.392220736610064, 
+                    "star_rating": 5.0, 
+                    "name": "Lux 2BR/2BA Central Silicon Valley", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Newly furnished  2 bedroom/2 Bathroom Apt in a nice complex in central Silicon Valley, Santa Clara: on top floor with elevator; full size washer & dryer in home; walk to shopping mall; close to Levi's Stadium, Convention Center, Intel & 101 highway.", 
+                    "listing_tags": [
+                        {
+                            "tagId": 4
+                        }, 
+                        {
+                            "tagId": 16
+                        }, 
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 19
+                        }, 
+                        {
+                            "tagId": 14
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/44275795/profile_pic/1442342758/original.jpg?aki_policy=small", 
+                            "comments": "Everything is as described. Property is convenient to shopping & restaurants.", 
+                            "reviewer_first_name": "Michael"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/09583058-2bc8-4e13-b53f-c3439673316b.jpg?aki_policy=small", 
+                            "comments": "Very clean and very nice home.  Couldn't ask for a nicer place.  ", 
+                            "reviewer_first_name": "Carlton"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/07f522fb-0ba7-4f98-9849-1fd0ace82d09.jpg?aki_policy=small", 
+                            "comments": "The apartment was very clean, and the host had sent detailed instructions about everything well in advance. Neighborhood was very convenient with access to restaurants, grocery stores, bank etc.", 
+                            "reviewer_first_name": "Milind"
+                        }, 
+                        {
+                            "created_at": "December 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/34633923/profile_pic/1433069818/original.jpg?aki_policy=small", 
+                            "comments": "This appartment is really great! So comfertable. You have inside of it everything you need. It is very nice decorated. I highly recommend you to take this place!  Peter is great, helping us with all we needed.  We will definitely come back here again.", 
+                            "reviewer_first_name": "Maya"
+                        }, 
+                        {
+                            "created_at": "November 2015", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/25421897/profile_pic/1420067214/original.jpg?aki_policy=small", 
+                            "comments": "Peter's house was very clean and comfortable. And market is very close. Very recommended!!!!!", 
+                            "reviewer_first_name": "Tommy"
+                        }, 
+                        {
+                            "created_at": "November 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/4169457/profile_pic/1355435863/original.jpg?aki_policy=small", 
+                            "comments": "I was in Santa Clara with my family and attending a conference at the convention center. This place was perfect for our needs and has a super convenient location near both the convention center and a shopping plaza with a Safeway. Peter keeps the place very clean and we had no issues while staying here. I would recommend Peter's place to anyone traveling to Silicon Valley on business.", 
+                            "reviewer_first_name": "Patrick"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/58d03da8-66d4-406b-9a20-a43d50976592.jpg?aki_policy=small", 
+                            "comments": "We had an enjoyable stay in Peter's clean, well-maintained apartment.  This was an ideal location across the street from restaurants and grocery, and within walking distance to Oracle and the Guadalupe River Trail.  I found Peter to be a very responsive host.  Thanks for hosting us!", 
+                            "reviewer_first_name": "Benjamin"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/45466599/profile_pic/1443650270/original.jpg?aki_policy=small", 
+                            "comments": "Peters was very easy to coordinate with and quick to respond. The place was immaculate and furnishing was beautiful.", 
+                            "reviewer_first_name": "KENNY"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 200
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 25, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Dawn", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/45948605/profile_pic/1444185489/original.jpg?aki_policy=profile_medium", 
+                        "id": 45948605, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.94197198490677, 
+                    "neighborhood_overview": "Gated community with pool, gym, great parks, and more.\n\nWalking distance to Rivermark shopping plaza. Close to shopping, restaurants, Levi's Stadium, Avaya Stadium, Santa Clara Convention Center, San Jose Convention Center, and Silicon Valley companies.", 
+                    "is_business_travel_ready": false, 
+                    "id": 8762283, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/44a68279-f5f2-4dbb-b96d-b0830e2487b3.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/00593d28-37e2-46f6-abb1-473f60ae9a16.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/015cbdb8-b2e7-4de1-b6c7-e07e9595f833.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/59591a45-ad2a-44fd-adb1-a8fddf047899.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/99b14c13-9c63-4bad-878f-a19036d1c4f1.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "2 bedroom and 2 bath apartment. Master bedroom has its own ensuite bathroom. Queen bed in master bedroom and 2 twins in the second bedroom. A queen sleeper sofa in the living room. \n\nFull kitchen, fully equipped with all the utensils, spices, oils, cookware (pots, pans, etc.), microwave, toaster, coffee maker, etc. \n\nClean sheets and towels are always provided. Shampoo and conditioner are also provided in each bathroom. \n\nHigh-speed wireless internet, TV, cable TV.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/44a68279-f5f2-4dbb-b96d-b0830e2487b3.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Dawn", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/45948605/profile_pic/1444185489/original.jpg?aki_policy=profile_medium", 
+                        "id": 45948605, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 11, 
+                    "lat": 37.396929693661775, 
+                    "star_rating": 5.0, 
+                    "name": "Comfortable 2 Bedroom Apartment", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Good location. 2 bedroom 2 bath apartment in a nice complex. Very close to shopping, tech companies, Levi's stadium and convention center.", 
+                    "listing_tags": [
+                        {
+                            "tagId": 14
+                        }, 
+                        {
+                            "tagId": 4
+                        }, 
+                        {
+                            "tagId": 23
+                        }, 
+                        {
+                            "tagId": 10
+                        }, 
+                        {
+                            "tagId": 2
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/89291ef7-6920-45fd-8131-84a206135a4a.jpg?aki_policy=small", 
+                            "comments": "Excellent experience with this apartment and with Dawn.  The directions were good, apartment was spotless and very comfortable.  I wouldn't hesitate to use this again.  ", 
+                            "reviewer_first_name": "Raymond"
+                        }, 
+                        {
+                            "created_at": "December 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/8370141b-bc2e-40de-b356-ba5a92d02c73.jpg?aki_policy=small", 
+                            "comments": "My family felt very comfortable staying in Dawn's great home! The apartment was very clean, cozy, and furnished well. I would definitely recommend staying here. The surrounding areas have a Safeway a block away and coffee shops!", 
+                            "reviewer_first_name": "Mike"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/f27a81e0-48d2-49a0-943f-d4a22f33c72c.jpg?aki_policy=small", 
+                            "comments": "Dawn was very helpful , the house was very neat and clean . Bothered with all details ofproducts bath and cleanliness. We were very well attended .", 
+                            "reviewer_first_name": "Jose"
+                        }, 
+                        {
+                            "created_at": "December 2015", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/cc085186-c89b-4b78-9c6a-508c6a0e2557.jpg?aki_policy=small", 
+                            "comments": "The apartment was clean and comfortable. It was also conveniently located to a grocery store and freeways. Thanks", 
+                            "reviewer_first_name": "Brian"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/3606192/profile_pic/1367964832/original.jpg?aki_policy=small", 
+                            "comments": "We enjoyed our stay in Dawn's apartment, very nice neighborhood, close to shops and parks. It got all we needed (as described in the listings), very clean, lot of space, totally recommended.  ", 
+                            "reviewer_first_name": "Christian"
+                        }, 
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/26024686/profile_pic/1421266116/original.jpg?aki_policy=small", 
+                            "comments": "We enjoyed staying at Dawn's apartment.  It was very clean and well equipped.  It is very close to a nice supermarket and restaurants that made our stay easier.  Easy access to the main freeways as well.", 
+                            "reviewer_first_name": "Fernando"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/0edf2b6b-271c-42e3-ba24-273ba0837686.jpg?aki_policy=small", 
+                            "comments": "Very nice apartment. Great location with quick access to 101 and close to groceries and other necessities. Laundry is a little bit of a chore being outside the apartment so plan for that. Other than that great choice. Hosts live in the same complex if you need quick access to them. ", 
+                            "reviewer_first_name": "Prashant"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/cbf353f0-f738-4df8-94ec-8959173c70fa.jpg?aki_policy=small", 
+                            "comments": "We stayed at Dawn's place while in town for business.  The apartment was large, clean, and exactly as advertised. The check in instructions were very detailed and very much appreciated, including detailed driving directions and parking information.  It had everything we needed for a great stay with plenty of room for us to work and relax. There are tons of restaurants within walking distance in the surrounding area.  I would definitely recommend and can't wait to stay again when we are back in the area.  ", 
+                            "reviewer_first_name": "John"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 299
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 9, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Jason", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/11377707/profile_pic/1398197629/original.jpg?aki_policy=profile_medium", 
+                        "id": 11377707, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.94690102212235, 
+                    "neighborhood_overview": "This will be a real home base for your stay in Silicon Valley. \n\nLocation is centrally located within walking distance of the Rivermark Village, Don Callejon School, Santa Clara No and the VTA light rail transit system. \n\nRivermark Village is full of shops, cafes, and restaurants.\n\nOnly 1.5 mile to the San Francisco 49ers New Santa Clara Stadium, walk to the game! \n\nMinutes to Intel, Cisco, G00GLE Campus, Oracle, YAH00 Campus, Santa Clara University, Mission College, Great America and North First Street with easy access to Highway 101 and 237, I-880 and San Jose International Airport.\n\nNearby Airports:  SJC: 4 miles: 15 minutes\n\n Nearby Train:  River Oaks Station VTA: .5 miles\n\nNearby Highway:  US 101: 2 miles, I 880: 3 miles, CA-237: 3 miles, I-680: 5 miles\n\n\n\nThe home is located in Santa Clara County California.\n\n2 car garage and street parking. \n\nCommunity pool.\n\n*This property is under new management (effective January 2016), as such, the property's previous 5-star review history spanning 3+ years is no longer available online.  The new management and hospitality team has over 15 years of property management experience and oversees properties throughout the Bay Area.", 
+                    "is_business_travel_ready": false, 
+                    "id": 10593515, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/ab635a04-a4ae-4290-918d-19d6713f69f2.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/049cfdd4-6b22-4222-a0d0-8c883f27a815.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/6ccd4a91-9c71-4338-ab7a-44e76ac4a2ac.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/790fb49a-f104-4be7-98c8-4a7079def897.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/63232914-31dd-45e9-b2a1-9e69afb2984b.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "Centrally located and completely updated, this modern high-tech home is the perfect stay during your visit to Silicon Valley!\n\nThe main level of the home has the living room and open Gourmet kitchen/dining area with granite counter-tops.\n\nThe home is equipped with 3 flat-panel TVs (including one in the dining area) and a central sound system provides music throughout the house. The living room is equipped with a 50 inch TV and a complete home entertainment center. All TV's have satellite TV service. \n\nEvery room has WiFi connection, available anywhere in the house or on the patio.\n\nThe main level also has a home office area with USB printer, keyboard, and mouse. The master bedroom and 2nd bedroom both have a comfortable queen bed. The third bedroom has two single beds. \n\nA pool is reserved for the use of the Rivermark Community, and you will have exclusive access during your stay! \n\nThe house opens up directly onto Thamien Park, providing a wide open grass area as your front yard. The Park also provides a tennis court and access to the Guadalupe River Trail walking and biking path, all within sight of the front patio.\n\nA pool \nBesides staying in a house many travelers have rated the best in Santa Clara, you will be in a vibrant neighborhood with a wonderful variety of cafes, restaurants, and a public library within a 5-10 minute walk.\n \nList of Amenities:\n\nPrivate 2-car garage with plenty of extra parking on the street\nMulti-zone central heating and air conditioning\nGourmet kitchen with granite counter-tops\nLiving room w/50\" wall-mounted TV and complete home entertainment system\nHome office area with USB printer, keyboard, and mouse\nFront-loading high-efficiency washer and dryer in home\nOutdoor terrace with patio table and BBQ grill\nHigh speed wireless and wired internet accessible in every room\nSatellite TV w/HD extended service\nCentral sound system provides music to Living Room, Kitchen, Dining Room, & Master Suite\nHardwood floors on main level, with upgraded carpet & tile flooring throughout\nLarge double-pane windows, Hunter Douglas silhouette blinds, and room Black out curtains\nCommunity swimming pool\nSpectacular views\n\nEntire home, garage, community pool.\n\nPlease let us know what you need!", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/ab635a04-a4ae-4290-918d-19d6713f69f2.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 3, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Jason", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/11377707/profile_pic/1398197629/original.jpg?aki_policy=profile_medium", 
+                        "id": 11377707, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 31, 
+                    "lat": 37.401211825018635, 
+                    "star_rating": 4.5, 
+                    "name": "3BR Luxury Home by Tech Cos/Levi's", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "In town for business or to take in a game? This executive 3 bedroom 3.5 bathroom single family residence is the perfect location for your stay! Beautifully furnished in the wonderful, centrally located Rivermark Community. Walk to Levi's Stadium!", 
+                    "listing_tags": [
+                        {
+                            "tagId": 13
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/1214515/profile_pic/1317112392/original.jpg?aki_policy=small", 
+                            "comments": "Excellent rental in a great neighbourhood. Just in front of a park and running and biking trails. The house is in perfect condition and felt luxurious. Thanks!", 
+                            "reviewer_first_name": "Calle"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/ec69eb3d-07b3-4c14-be9f-a5c63dec7655.jpg?aki_policy=small", 
+                            "comments": "Fantastic 1 week stay. Perfect location and warm inviting newer home. Well supplied. Would stay again without any reservations. Jason was very quick in communication. Having the community park out front was anther bonus as was the pool just 5 mins walk away.", 
+                            "reviewer_first_name": "Phil"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/17269291/profile_pic/1403751508/original.jpg?aki_policy=small", 
+                            "comments": "It was clean and quite. There was the park in front of the house. That was good. ", 
+                            "reviewer_first_name": "Zhuwei"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/ec69eb3d-07b3-4c14-be9f-a5c63dec7655.jpg?aki_policy=small", 
+                            "comments": "Second time at this wonderful home. Again a great stay. Very home lime feel. Upscaled with nice touches though out the house. Would stay again without any reservations.", 
+                            "reviewer_first_name": "Phil"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/1477547/profile_pic/1323220967/original.jpg?aki_policy=small", 
+                            "comments": "Great location, and exactly as described. Clean and very well kept at a reasonable price. The host was very responsive to all our communication. Would definitely recommend and stay again.    ", 
+                            "reviewer_first_name": "Per"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/b72b1550-abc9-4869-8d48-625014a3ee01.jpg?aki_policy=small", 
+                            "comments": "\uc219\uc18c\uc788\ub294 \ub3d9\ub124\uac00 \uc544\uc8fc \uae68\ub057\ud558\uace0 \uc88b\uc558\uc2b5\ub2c8\ub2e4. \uc9d1\ub3c4 \ub113\uace0 \ud654\uc7a5\uc2e4\ub4f1 \uc2dc\uc124\ub3c4 \ub9e4\uc6b0 \uc88b\uc558\uc2b5\ub2c8\ub2e4. \uac00\uaca9\ub3c4 \uc8fc\ubcc0\uac00\uaca9\uc744 \uace0\ub824\ud558\uba74 \uc88b\uc558\uc2b5\ub2c8\ub2e4. \ub2e4\ub9cc \uac00\ub77c\uc9c0 \ub9ac\ubaa8\ucf58\uc774 \uc5c6\uc5c8\ub358 \uc810\uc740 \ubd88\ud3b8\ud588\ub124\uc694.", 
+                            "reviewer_first_name": "Byun"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 600
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Thomas", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/7aef03a0-f58f-4d87-a1fa-3e5100ca9d53.jpg?aki_policy=profile_medium", 
+                        "id": 43541740, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.9441856349462, 
+                    "neighborhood_overview": "Victorian-style homes make up this neighborhood only 3 blocks from the beautiful Santa Clara University campus.\n\n0.5 miles from Caltrain/AmTrak station which goes directly to Levi Stadium.", 
+                    "is_business_travel_ready": false, 
+                    "id": 8554799, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/108693606/2898246f_original.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/108693411/9748b09c_original.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/e346ecff-ddf1-46a9-8fc0-361a9920a653.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/c6114249-b6db-4c4d-8cc4-398e577d5430.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/108693376/c20d8424_original.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "The ultimate home for Super Bowl 50! Guests may arrive in the afternoon of Friday, February 5th and must leave by noon on Monday, February 8th.\n\nThe entire house will be accessible - additional couch and futon space for greater than 6 guests.\n\nTenants will be in the area and can be contacted easily.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/108693606/2898246f_original.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 3, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Thomas", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/7aef03a0-f58f-4d87-a1fa-3e5100ca9d53.jpg?aki_policy=profile_medium", 
+                        "id": 43541740, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 11, 
+                    "lat": 37.353595044770444, 
+                    "star_rating": 0, 
+                    "name": "Super Bowl Home (5 miles to Levi)", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "This charming historic Santa Clara home is accented by a comfortable and quaint back porch, spacious kitchen and common areas, and a prolific garden. Perfect for accommodating a large family for the weekend or a tailgate party.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 900
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Brittney", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/19981178/profile_pic/1408117564/original.jpg?aki_policy=profile_medium", 
+                        "id": 19981178, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.97244378471233, 
+                    "neighborhood_overview": "Our home is only 4 miles to Levi Stadium and 5 miles to San Jose International Airport.  Our home is close to several shopping malls, movie theaters, restaurants, and the Sharks Arena.\n\nOur preferred mode of transportation to and from the stadium is either Uber or Lyft. Please feel free to reach out if you have any questions about this.", 
+                    "is_business_travel_ready": false, 
+                    "id": 9886924, 
+                    "picture_urls": [
+                        "https://a1.muscache.com/im/pictures/9a960f60-58d4-4ee8-a9a1-974001bac50c.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/a1667be7-e396-4a33-8991-e382370a1fab.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/1c7d3b5f-66fb-48b7-bbca-2e7d533dd72e.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/2a1e0a55-221c-45d1-8a4f-04e1f2a55fb8.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/c70e6e19-ce47-41d5-a834-d1aafb0034e1.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "The house and its amenities are yours to use. We have a full kitchen with cooking utensils as well as BBQ in the yard. \n\nThe first bedroom has a queen bed. The second bedroom has a Cal King. The third bed is the futon that is located in the living room with two other couches.", 
+                    "picture_url": "https://a1.muscache.com/im/pictures/9a960f60-58d4-4ee8-a9a1-974001bac50c.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Brittney", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/19981178/profile_pic/1408117564/original.jpg?aki_policy=profile_medium", 
+                        "id": 19981178, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 15, 
+                    "lat": 37.35675801511878, 
+                    "star_rating": 0, 
+                    "name": "SuperBowl 50 Home- Levi Stadium", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Please come stay at our home for the Superbowl. This is a two bedroom, 1 bathroom duplex home just 4 miles from Levi Stadium. The living room is spacious with a large tv for your pregame, as well as a spacious yard to BBQ and throw the football.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 160
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 1, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Brian", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/dfb7bc72-cf3c-414c-bf90-925618c84d42.jpg?aki_policy=profile_medium", 
+                        "id": 11821591, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.94135627665776, 
+                    "neighborhood_overview": "Please note that there may be construction going in the Complex on March weekdays. Construction would begin 8am every weekday and so there will be some noise in the morning; as such, we have discounted our March weekdays to account for the noise inconvenience. Weekends are unaffected.", 
+                    "is_business_travel_ready": false, 
+                    "id": 10590606, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/dd30db52-d550-4d5a-ad5a-db2a44c9424c.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/ad1c6ba4-d08c-46fc-ae89-09b075a488e7.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/845cf0a0-9eb1-4ef5-92d4-1b7060baa7db.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/266cb25a-2ea6-4a32-ad1f-b61917fb6eb6.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/cdedc321-bb93-40f9-84c6-25acca07ef4c.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Condominium", 
+                    "space": "We have a cozy place with lots of plants for clean air. We have a bed, air mattress and a couch to sleep on. Guests can bring extra air mattresses to set up in our living room. We have plenty of bedding and pillows for 4+ guests.\n\nGuests will have a key fob for gate and garage access. Guests can also access the gym.\n\nIf we are still in-town, we will greet and show you the space, then it will be yours to enjoy. If we are already out-of-town, we'll leave you detailed instructions on how to get the keys and access the space.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/dd30db52-d550-4d5a-ad5a-db2a44c9424c.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Brian", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/dfb7bc72-cf3c-414c-bf90-925618c84d42.jpg?aki_policy=profile_medium", 
+                        "id": 11821591, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 8, 
+                    "lat": 37.39716437499461, 
+                    "star_rating": 0, 
+                    "name": "Santa Clara home, near Levi's!", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Our condo is in a calm community next to a walking trail, park, and plaza with food and Safeway. The light rail train is walkable and can take you to multiple city downtowns and Levi's. It's also easy access to the major highways.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "January 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/04c9d73a-2e69-4459-9fe2-b154df5e4299.jpg?aki_policy=small", 
+                            "comments": "Brian was a great host. He was very easy to get a hold of and the rental was exactly as described in the posting. Our party had a great experience at his home and I would highly recommend! ", 
+                            "reviewer_first_name": "Richard"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 105
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 1, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Sachin", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/a004bb1e-5a15-43e7-a1bb-dc542783aa95.jpg?aki_policy=profile_medium", 
+                        "id": 54805415, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.9345208677567, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 10619034, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/d5715f49-3fb1-424d-be68-4981eadfb8bd.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/96a40319-3daa-4983-a61f-40f06e1cf0d3.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/800c96f9-c0aa-4934-95a9-0711c2168410.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/3b647fa1-4f8b-43b9-a6ad-433a705ad56f.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/5d9b2bb8-1f3c-437c-a2a6-e58d8dcc7419.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/d5715f49-3fb1-424d-be68-4981eadfb8bd.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Sachin", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/a004bb1e-5a15-43e7-a1bb-dc542783aa95.jpg?aki_policy=profile_medium", 
+                        "id": 54805415, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 16, 
+                    "lat": 37.33960848347427, 
+                    "star_rating": 0, 
+                    "name": "Santa Clara Cozy Cottage", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Close to San Jose Airport. Adjacent to Santa Clara University. No pets. 2br/2ba. Queen bed, full bed, airbed in living room. Ample free parking. Big beautiful backyard.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/3186959/profile_pic/1405974686/original.jpg?aki_policy=small", 
+                            "comments": "Sachin was a wonderful host. He is kind, generous and an excellent cook! Sachin is always very interesting to speak with, however, as he is very busy with his job. I don't think you will be seeing him much. All-in-all, I recommend staying at his place for those of you who would like to be in this, very central, location. The fact that you'll have your own bathroom is a significant plus. There is always a place to park, be it on the driveway or right in front of the house.", 
+                            "reviewer_first_name": "Fred"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 2300
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 6, 
+                    "primary_host": {
+                        "first_name": "Mike", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/95673051-763c-4a32-b622-0dffe679313f.jpg?aki_policy=profile_medium", 
+                        "id": 49657060, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.95406820906076, 
+                    "neighborhood_overview": "House is on a cul-de-sac a quiet residential neighborhood.  1 Mile from Santana Row dining, shopping, and nightlife.\n\nDriveway parking for 2 cars plus overnight street parking.  Close to major highways 280, 880, and 101 for access to San Francisco and other Bay Area attractions.  10 minute drive from San Jose Intl. Airport.\n\nWiFi equipped, cable TV (w sports package).", 
+                    "is_business_travel_ready": false, 
+                    "id": 9594217, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/8e487968-4a2a-469a-9a6e-ef6c927e90f6.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/f1307eaa-66c0-4209-95cd-4b1db98d5bfb.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/5f0f49eb-41de-4888-b52e-60e78bbc549b.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/8c3cda45-e49f-422a-9fba-864fe311a680.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/efa28a9a-4bff-4008-a9ba-dc356577f394.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "House with great deck space for BBQing, hosting, and lounging.  Fireplace indoors and out.  Fully furnished kitchen.\n\nAll bedrooms, bathrooms, living spaces, kitchen, deck, yard, and driveway.\n\nAvailable to help during stay.  Please contact owner ahead of time if needed.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/8e487968-4a2a-469a-9a6e-ef6c927e90f6.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 3, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Mike", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/95673051-763c-4a32-b622-0dffe679313f.jpg?aki_policy=profile_medium", 
+                        "id": 49657060, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 9, 
+                    "lat": 37.33465794184049, 
+                    "star_rating": 0, 
+                    "name": "Super Bowl Home with Great Deck", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "3 beds (1 king, 1 queen, and 1 full), 1 bath. \n\nPerfect house for Super Bowl Week.  6 Miles to Levi's Stadium.  Close to major highways and CalTrain for access into San Francisco or San Jose.  Driveway parking.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 75
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 8, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Roger", 
+                        "thumbnail_url": "https://a2.muscache.com/im/users/9813333/profile_pic/1416005799/original.jpg?aki_policy=profile_medium", 
+                        "id": 9813333, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.98942588064189, 
+                    "neighborhood_overview": "Right the very heart of Silicon Valley. Close to Levi's Stadium. Also San Jose Airport, Santa Clara University, San Jose Arena, Great America & Convention Center.\nStores close by:\n7-Eleven & a Shell gas station is a 5 minute walk\nVito's Famous Pizza is an 8 minute walk\nCostco is less than a mile away\nMany shopping centers & stores on El Camino Real & Lawrence Expressway are around a mile away\n\n5 miles to Levi's Stadium/Great America.\nHwy. #101 (2 mi.) & El Camino Real #82 (1 mi.) & Hwy #280 (4 mi.)\nBus stop (VTA#32 to SCU & SJC) is right around the corner.\n15 minute walk to Caltrain Station (north to San Francisco & SFO, south to San Jose & SJC & Amtrak).\n\n5 miles to San Jose Airport.\n4 miles to Santa Clara University\n\nPets are usually allowed, but check to make sure.", 
+                    "is_business_travel_ready": false, 
+                    "id": 11041098, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/7079d725-0979-4230-b09f-d59c01448a14.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/8b2fe48f-d201-4fb4-9b52-f27f48ca25d4.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/302b0585-2755-4a18-b87e-1454a5e82249.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/a44895ec-4378-483f-ad0f-f90976d18b39.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/a1448ce3-cf61-44f4-ae10-985badc9f11b.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "House", 
+                    "space": "This small pair of rooms is great for visiting sports fans, professionals, students, or tourists. You get Direct TV & high^speed WiFi. \n\nAccommodates up to 4 people (couple & 2 others)\n\nMain Room Includes:\n2 Twin Beds (or set up as a couch)\n40\" Flat Screen TV with Direct TV\nGood-sized Counter/Work Area\nSmall Refrigerator\nMicrowave\nCoffeemaker\nToaster Oven\n\"Hot-Plate\"\nSink Area with soap, clean towels, etc., also pots, pans, dishes, glasses, cups, utensils, etc.\n\nBedroom  Includes:\n32\" Flat Screen TV\nComfortable Full(double) Bed\nClean linens & blankets\nPlenty of closet space, drawers & shelves.\nBathroom with soap, shampoo & rinse.\nClean towels, mats & washcloths\n\n(Summer) Air Conditioner \n(Winter) 'Forced-Air Heat' in the morning & evening, plus electric heaters if needed.\n\nYou have free access to the Laundry Room (washer, dryer, sink & detergent, etc.) \nYou have an 'off street' parking space in the driveway.\n\nI'm available at all times via mobile phone, text, or Email for my guests. I am away at work during the weekdays so face to face interaction is limited. Night and weekends I'm usually around.\n\nNote that, giving my guests access to the space is HIGH PRIORITY. I know how important that can be:)", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/7079d725-0979-4230-b09f-d59c01448a14.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Roger", 
+                        "thumbnail_url": "https://a2.muscache.com/im/users/9813333/profile_pic/1416005799/original.jpg?aki_policy=profile_medium", 
+                        "id": 9813333, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 5, 
+                    "lat": 37.367192894507994, 
+                    "star_rating": 5.0, 
+                    "name": "Private unit  in Santa Clara", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Completely private  and quiet space in the heart of Silicon Valley. Private entrance & bath. It has a double bed in one room & 2 twin beds in the other. Both have TVs, one with Direct TV. Nice high speed Wifi. Refrigerator, microwave, cooking supplies, tableware, etc. Large counter/work space", 
+                    "listing_tags": [
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 18
+                        }, 
+                        {
+                            "tagId": 10
+                        }, 
+                        {
+                            "tagId": 13
+                        }
+                    ], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/41762327/profile_pic/1439911825/original.jpg?aki_policy=small", 
+                            "comments": "Really nice neighborhood, nice one-bedroom apartment on the side of a house that was bigger then I anticipated.  Roger is a good guy, made sure I had everything I needed and was great about making sure I got in when I wanted and  was cool about a late check-out time.  ", 
+                            "reviewer_first_name": "Gerad"
+                        }, 
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/168c66d8-1df3-4e60-a208-8e243d3d930a.jpg?aki_policy=small", 
+                            "comments": "Roger was great, as was the room. Lots of natural light, super clean, and much more spacious than the pictures make it out to be.  He let me park in the driveway and take grapefruits from the tree in the backyard! ", 
+                            "reviewer_first_name": "Daniel"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a1.muscache.com/im/users/31369350/profile_pic/1429231639/original.jpg?aki_policy=small", 
+                            "comments": "Great cozy place! Roger was extremely responsive during our visit.", 
+                            "reviewer_first_name": "Kenneth"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/78117dde-c084-4595-9f4e-91e0420f1945.jpg?aki_policy=small", 
+                            "comments": "Roger is a really cool guy - even offered to let us use his bicycle to move around. The house had gathered a bit of dust since the last tenant but Roger did some quick cleaning up as soon as I told him about it.    The house itself is nice and small but very adequate for 2 people.    The train is quite close-by, 15 minute walk. Not much available around the neighbourhood though, you'll most likely need a cab (or a bike) to find a nice eating place.", 
+                            "reviewer_first_name": "Billy"
+                        }, 
+                        {
+                            "created_at": "May 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/e5d946b1-1777-47c9-8f41-d8b8f94e818d.jpg?aki_policy=small", 
+                            "comments": "Roger was a real great host. When we checked in at his place, it was pretty hot and humid. There was no AC in the unit but Roger quickly came to help with three table top fans to help cool the house. He also offered to disconnect the AC from his house and place it in the guest house.   The house was a tiny and comfy one with very comfortable beds. The most useful was the backyard washing and drying unit which he let us use (We had a pile of laundry from our travels in the US which we didn't get time for before :P)   Roger also offered to take us on a tour of the cathedral he works at, but we didn't have time. We forgot to give him snacks and sweets we had got from India for his hospitality. (Sorry  Roger! ).  Regards, Vinayak", 
+                            "reviewer_first_name": "Vinayak"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/2408808/profile_pic/1431557667/original.jpg?aki_policy=small", 
+                            "comments": "Roger was a great host! The space was a great place to get work done.   The location was quiet and was cozy enough for 2 people to work out.    Thanks for the productive week Roger! :)", 
+                            "reviewer_first_name": "Sid"
+                        }, 
+                        {
+                            "created_at": "March 2016", 
+                            "reviewer_image_url": "https://a0.muscache.com/im/users/16938266/profile_pic/1403084811/original.jpg?aki_policy=small", 
+                            "comments": "It was a pleasure to stay at Roger's for a couple of weeks. The house is split into 4 completely separate apartments, one of them is yours. It is more than enough space even for 2-3 people, and you have everything you need in the kitchen and bathroom. There is even a washer machine with a dryer in the house, which is very convenient for a long stay.  The neighborhood is very nice and quiet. 2 grocery stores and caltrain station are in a walking distance.", 
+                            "reviewer_first_name": "Alex"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 400
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 7, 
+                    "primary_host": {
+                        "first_name": "Gloria", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/75ab8531-8889-4c01-86aa-e8c71a4bf0cd.jpg?aki_policy=profile_medium", 
+                        "id": 78954122, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.96370541880198, 
+                    "neighborhood_overview": "Nice park nearby (200 feet).  People biking and walking for exercise in the area.\n\nTrain station (Caltrain) that takes you to San Francisco is about 6.5 miles with address: 121 W. Evelyn Ave., Sunnyvale, CA.  You may park car there.\n\nNO SMOKING, NO PETS (service animals excepted - contact us for details)", 
+                    "is_business_travel_ready": false, 
+                    "id": 13625030, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/e295a2b7-da75-489d-a583-4806d7b2d77d.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/66e7972d-d7b4-4477-b94f-67e48004026f.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/a8ed9a86-b25e-44a8-ad66-970a08b80926.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/89ff0570-e30d-4f5b-8b01-d268cf0e6e4f.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/5669fdd6-6774-4aa1-8f7a-c4cf6567de22.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": true, 
+                    "property_type": "House", 
+                    "space": "Whole house.  Look in Welcome Booklet on counter for such things as TV operation and WiFi access, etc.\n\nGuests have access to entire house, garage, and backyard.\n\nYou can contact us via AirBNB, text, or email if any questions arise.", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/e295a2b7-da75-489d-a583-4806d7b2d77d.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 4, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Gloria", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/75ab8531-8889-4c01-86aa-e8c71a4bf0cd.jpg?aki_policy=profile_medium", 
+                        "id": 78954122, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 26, 
+                    "lat": 37.3954801941351, 
+                    "star_rating": 0, 
+                    "name": "Whole home in center of Silicon Valley (near Levi)", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "My place is close to parks and restaurants and dining. You\u2019ll love my place because it's close to Great America amusement park, wine tasting, many company headquarters in Silicon Valley.  New shopping center.  High speed Internet and cable.  40 minutes from San Francisco (SFO).  10 minutes from San Jose International Airport (SJC).  My place is good for couples, business travelers, and families (with kids).", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 188
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Michael", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/f94a51a3-d5b7-4bde-983f-7bf155af69ee.jpg?aki_policy=profile_medium", 
+                        "id": 48826122, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.99964514858678, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 9416936, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/076ea541-9d87-4195-8419-bc8c5c5e7bed.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/297b3cdb-2180-4e6c-ab54-a414829deb1f.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/61855e56-2c97-48d5-85bf-69ddebe43a69.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/847847ab-d8cb-4d4c-ab1a-c86bcbfe92f2.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/a2314446-f440-4c4b-b705-9243c098fcde.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Condominium", 
+                    "space": "", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/076ea541-9d87-4195-8419-bc8c5c5e7bed.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Michael", 
+                        "thumbnail_url": "https://a1.muscache.com/im/pictures/f94a51a3-d5b7-4bde-983f-7bf155af69ee.jpg?aki_policy=profile_medium", 
+                        "id": 48826122, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 10, 
+                    "lat": 37.35646265136691, 
+                    "star_rating": 0, 
+                    "name": "Less than 5 Miles to SUPER BOWL 50!", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Charming Santa Clara condo on the border of Sunnyvale. Very safe and quiet in a gated community, top floor with patio, artistic decor, vaulted ceilings, CA King bed, office: desk, pull out sofa-bed, and 50inch flat screen with premium cable and wifi. Only Long-term rentals please.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 1500
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 0, 
+                    "person_capacity": 5, 
+                    "primary_host": {
+                        "first_name": "Monica", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/30236486/profile_pic/1427673692/original.jpg?aki_policy=profile_medium", 
+                        "id": 30236486, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.9646089497673, 
+                    "neighborhood_overview": "Keep in mind that Tasman will be closed from Feb 1-9th so you'll need to use Lafayette and Montague Expressway (to the 101) or to the 237.\nClosest big supermarket is Safeway at Rivermark (off of Agnew). Next to it is Peet's Coffee, Chipotle, Red Robin, Yo Yo Sushi, Coldstone Creamery, the Prolific Bakery, Piatti, Yan-Can Cook, Jamba Juice, Jersey Mike, Premier Pizza, Mezbaan (Indian) restaurant, Smashburger, Wells Fargo bank. http://www.rivermarkvillage.com/directory/dining/2138212958\n\nQuiet hours are 10pm to 7am daily. Please be respectful of our neighbors.", 
+                    "is_business_travel_ready": false, 
+                    "id": 8593202, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/77219028-0860-4093-9fc6-53180de8d965.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/f50cb98f-1f5c-42e7-8a69-0881a2a8ce47.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/7c76f5bb-f37d-41ab-a306-6d3684ae7990.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/d2cfafc4-e3a3-4079-b5ee-093ff3d8eec5.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/7197038e-70b7-464f-b146-ccb9c77627a4.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Townhouse", 
+                    "space": "Location location location.  The stadium is as close to a residence as you can possibly get.  I have two parking spaces:  one under carport, one uncovered spot.  I'll need to lend you my residence parking permit.\n\nI will be staying in the area and would be happy to deliver your pizza/takeout order if you 'd like and with advance notice I'd be happy to pick up any small food/beverage items (i.e. fruit, cereal with milk, yogurt and granola, etc.) to stock in fridge before you arrive. Just be specific about brands/types you'd like.  I also have a brand-new raised queen airbed for an extra guest, (which could be set up in the living room) if needed.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/77219028-0860-4093-9fc6-53180de8d965.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [
+                        "es", 
+                        "it"
+                    ], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Monica", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/30236486/profile_pic/1427673692/original.jpg?aki_policy=profile_medium", 
+                        "id": 30236486, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 30, 
+                    "lat": 37.40609320422372, 
+                    "star_rating": 0, 
+                    "name": "Walk to Superbowl 50!", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "You cannot get any closer than this;  literally walk across the street and you're at the game!  2-story townhouse, 2 parking spaces, 2 bedrms, (1 king, 1 queen) 1.5 bath, cable, wifi. (+new Queen air mattress if needed).  Train station across street.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": true, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 195
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 3, 
+                    "person_capacity": 5, 
+                    "primary_host": {
+                        "first_name": "Rental", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/2120205/profile_pic/1379923357/original.jpg?aki_policy=profile_medium", 
+                        "id": 2120205, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.97777045182146, 
+                    "neighborhood_overview": "Condo complex in a nice wooded setting.  Close to El Camino and tons of shopping.  The large park in Santa Clara, Central Park, is across the street and easily accessible to guests.  At the park are a nice library, a swim center, pond, and sports areas.  Walking trials.\n\nCar is the best way to get around the valley.  Uber is also good.  From the airport we recommend taxi or Uber, or perhaps Caltrain as the stop is not very far from the unit.\n\nSanta Clara is central to so many employers, restaurants, shops, companies, and other amenities you will never be for want!", 
+                    "is_business_travel_ready": false, 
+                    "id": 9735293, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/c5f3cd19-5904-427e-8c55-f96ac9f5a975.jpg?aki_policy=x_medium", 
+                        "https://a0.muscache.com/im/pictures/712a2591-7f51-4fd1-afd1-2235e68b41ef.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/67e1b52f-56ba-4122-b7b8-7007de9a1989.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/c9b10ba5-1309-4b3f-a321-97f250d3e97b.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/bd4a6a41-049e-4d5a-9f6c-40d2d7b3a49c.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Condominium", 
+                    "space": "Spacious 900 sq ft condo located near Kaiser and across from Central Park in Santa Clara.  Kitchen and baths are fully remodeled with new cabinetry, granite counters and stainless steel appliances .  King size bed in master bedroom, Queen in second bedroom.  Nice work surface desk, high speed fast wireless internet, and a small patio to relax on.   The living room has a large, comfy sectional sofa, 55\" Smart TV (internet enabled) plus local channels in HD.  1 parking spot included in the carport.  Laundry, play pool, and jaccuzi are in the common area for guests' enjoyment (observe timings please).\n\nGuests have access to the full unit at all times.  They may check in after 4 pm any time (lockbox).   Extra cleanings can be arranged for long-term guests.\n\nText and email.", 
+                    "picture_url": "https://a2.muscache.com/im/pictures/c5f3cd19-5904-427e-8c55-f96ac9f5a975.jpg?aki_policy=x_medium", 
+                    "instant_bookable": true, 
+                    "bedrooms": 2, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [
+                        "hi"
+                    ], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Rental", 
+                        "thumbnail_url": "https://a0.muscache.com/im/users/2120205/profile_pic/1379923357/original.jpg?aki_policy=profile_medium", 
+                        "id": 2120205, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 11, 
+                    "lat": 37.34418196566031, 
+                    "star_rating": 4.5, 
+                    "name": "Dew Drop 2/1, Lux king pool (IB)", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Beautifully remodeled & fully equipped condo in Santa Clara set among majestic redwood trees. Check in freely any time after 4 (lockbox) . Comfortable & large 900sf with luxury beds! 2 Swimming pools, lake, Jacuzzi & laundry are in common area.", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "April 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/b615800c-bf23-43b7-aab2-38776523c710.jpg?aki_policy=small", 
+                            "comments": "The apartment was as in the picture, quality is very high, check-in worked without problems. I am happy to do so again at any time.", 
+                            "reviewer_first_name": "Heiko"
+                        }, 
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/users/36792178/profile_pic/1435330017/original.jpg?aki_policy=small", 
+                            "comments": "Very convenient and exactly as pictured. ", 
+                            "reviewer_first_name": "Rachel"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 108
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 5, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Dan", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/2b8ced87-e10a-4403-a577-2006979419ed.jpg?aki_policy=profile_medium", 
+                        "id": 33473115, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.95609625489297, 
+                    "neighborhood_overview": "", 
+                    "is_business_travel_ready": false, 
+                    "id": 6417733, 
+                    "picture_urls": [
+                        "https://a2.muscache.com/im/pictures/8e3d0fb3-59b2-497b-a1a6-d97bffc3777b.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/c7c4be1c-3208-4414-afde-b324023b36aa.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/0c6c3d4c-1492-4c8d-aa65-179828550739.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/cdef413d-8df2-460e-9316-dd1f4603ef2e.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/0553f41f-fa8e-4dd1-9ff3-bb4dfe191b39.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": null, 
+                    "picture_url": "https://a2.muscache.com/im/pictures/8e3d0fb3-59b2-497b-a1a6-d97bffc3777b.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Dan", 
+                        "thumbnail_url": "https://a2.muscache.com/im/pictures/2b8ced87-e10a-4403-a577-2006979419ed.jpg?aki_policy=profile_medium", 
+                        "id": 33473115, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 27, 
+                    "lat": 37.40264415897259, 
+                    "star_rating": 4.5, 
+                    "name": "Great view,pool,gym,soft bed", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": null, 
+                    "listing_tags": [
+                        {
+                            "tagId": 13
+                        }, 
+                        {
+                            "tagId": 7
+                        }, 
+                        {
+                            "tagId": 4
+                        }, 
+                        {
+                            "tagId": 18
+                        }, 
+                        {
+                            "tagId": 2
+                        }, 
+                        {
+                            "tagId": 10
+                        }
+                    ], 
+                    "seo_reviews": [], 
+                    "room_type": "Entire home/apt"
+                }
+            }, 
+            {
+                "viewed_at": null, 
+                "pricing_quote": {
+                    "check_in": null, 
+                    "is_good_price": null, 
+                    "can_instant_book": false, 
+                    "rate_type": "nightly", 
+                    "rate": {
+                        "currency": "USD", 
+                        "amount": 300
+                    }, 
+                    "guests": 4, 
+                    "average_booked_price": null, 
+                    "check_out": null
+                }, 
+                "listing": {
+                    "reviews_count": 1, 
+                    "person_capacity": 4, 
+                    "primary_host": {
+                        "first_name": "Grant", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/32993656/profile_pic/1431214958/original.jpg?aki_policy=profile_medium", 
+                        "id": 32993656, 
+                        "is_superhost": false
+                    }, 
+                    "lng": -121.97481674088237, 
+                    "neighborhood_overview": "Safe community with plenty of unrestricted street parking. Walking distance to Sara's (a breakfast/brunch spot).\n\nWalking distance to Santa Clara CalTrain. s", 
+                    "is_business_travel_ready": false, 
+                    "id": 10598754, 
+                    "picture_urls": [
+                        "https://a0.muscache.com/im/pictures/59c9bb32-06ee-4037-bc0f-48558982e72b.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/062071ee-7e80-4b83-9581-5329ca378849.jpg?aki_policy=x_medium", 
+                        "https://a2.muscache.com/im/pictures/2da80168-24ca-4741-abb2-2b34bca55505.jpg?aki_policy=x_medium", 
+                        "https://a1.muscache.com/im/pictures/f47c8b26-a787-4aca-858f-9bbdd88fcb7b.jpg?aki_policy=x_medium"
+                    ], 
+                    "is_new_listing": false, 
+                    "property_type": "Apartment", 
+                    "space": "", 
+                    "picture_url": "https://a0.muscache.com/im/pictures/59c9bb32-06ee-4037-bc0f-48558982e72b.jpg?aki_policy=x_medium", 
+                    "instant_bookable": false, 
+                    "bedrooms": 1, 
+                    "public_address": "Santa Clara", 
+                    "extra_host_languages": [], 
+                    "localized_city": "Santa Clara", 
+                    "user": {
+                        "first_name": "Grant", 
+                        "thumbnail_url": "https://a1.muscache.com/im/users/32993656/profile_pic/1431214958/original.jpg?aki_policy=profile_medium", 
+                        "id": 32993656, 
+                        "is_superhost": false
+                    }, 
+                    "picture_count": 4, 
+                    "lat": 37.367973141850754, 
+                    "star_rating": 0, 
+                    "name": "Clean, cozy Santa Clara apartment", 
+                    "airbnb_plus_enabled": false, 
+                    "summary": "Greetings everyone! I am listing a small, cozy, decorated 1 bedroom apartment. The apartment has a 38inch flat scree tv", 
+                    "listing_tags": [], 
+                    "seo_reviews": [
+                        {
+                            "created_at": "February 2016", 
+                            "reviewer_image_url": "https://a2.muscache.com/im/pictures/7a3acd6f-983b-4317-bc7a-f9bbd7bc2c5a.jpg?aki_policy=small", 
+                            "comments": "Grant was a spectacular host! He had the apartment equipped with bath amenities, coffee, snacks and even picked us up from the train station when we arrived to Santa Clara.  It's not a luxurious apartment but it was neat, clean and perfect for our quick 2 night trip. There is also a great diner just a couple blocks away that we could walk to for breakfast.", 
+                            "reviewer_first_name": "Mary Hall"
+                        }
+                    ], 
+                    "room_type": "Entire home/apt"
+                }
+            }
+        ], 
+        "metadata": {
+            "pagination": {
+                "next_offset": 18, 
+                "result_count": 18
+            }, 
+            "search": {
+                "mobile_session_id": "WRseA0Aa", 
+                "search_id": "693219f8-2ce4-4864-8188-289f8af2b93d"
+            }, 
+            "listings_count": 300, 
+            "listing_tags": {
+                "listing_characteristics": [
+                    13, 
+                    14, 
+                    18, 
+                    16, 
+                    17, 
+                    15
+                ], 
+                "surrounding_area": [
+                    7, 
+                    10, 
+                    4, 
+                    2, 
+                    1, 
+                    6, 
+                    3, 
+                    8, 
+                    11, 
+                    9, 
+                    5
+                ]
+            }, 
+            "location": {
+                "canonical_location": "Santa Clara, CA", 
+                "display_location": "Santa Clara"
+            }, 
+            "guidebook": null, 
+            "nearby_cities": [
+                {
+                    "canonical_location": "Berkeley, CA", 
+                    "display_location": "Berkeley Vacation Rentals", 
+                    "is_vr": true
+                }, 
+                {
+                    "canonical_location": "Petaluma, CA", 
+                    "display_location": "Petaluma Vacation Rentals", 
+                    "is_vr": true
+                }, 
+                {
+                    "canonical_location": "Santa Cruz, CA", 
+                    "display_location": "Santa Cruz Vacation Rentals", 
+                    "is_vr": true
+                }, 
+                {
+                    "canonical_location": "Carmel, CA", 
+                    "display_location": "Carmel", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "San Jose, CA", 
+                    "display_location": "San Jose", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "San Francisco, CA", 
+                    "display_location": "San Francisco", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Sunnyvale, CA", 
+                    "display_location": "Sunnyvale", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Oakland, CA", 
+                    "display_location": "Oakland", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "Menlo Park, CA", 
+                    "display_location": "Menlo Park", 
+                    "is_vr": false
+                }, 
+                {
+                    "canonical_location": "San Mateo, CA", 
+                    "display_location": "San Mateo", 
+                    "is_vr": false
+                }
+            ], 
+            "geography": {
+                "lat": 37.3541079, 
+                "lng": -121.9552356, 
+                "result_type": "locality"
+            }
+        }
+    }, 
+    "checkin": "", 
+    "controller": "search", 
+    "is_total_price": false, 
+    "urgent_headline_string": null, 
+    "center_lng": -121.9552356, 
+    "visible_results_count": 300, 
+    "urgent_context_string": null, 
+    "results_count_string": "300+ Rentals &middot; Santa Clara", 
+    "prefetch": false, 
+    "action": "index", 
+    "page": 1
+}
