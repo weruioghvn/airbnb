@@ -26,8 +26,8 @@ import urllib
 import copy
 import sets
 import argparse
-from airbnb_utils import *
 import subprocess
+from airbnb_utils import *
 DEBUG = True
 
 # Constants
@@ -120,32 +120,19 @@ def getSearchStats(page):
             listings.append(listing)
     return listings
 
-def getSearchUrl(city, roomType = 0, guests = 4, \
-                 checkin = None, checkout = None, page = 1, \
-                 width_json_str = ""):
-    # box_size = -1 means no box.
-    params = {'checkin': checkin, 'checkout': checkout, 'guests': guests, \
-              'room_types': kRoomTypes[roomType], 'page': page}
-    if width_json_str != "":
-        params.update(json.loads(width_json_str))
-    paramsCopy = copy.deepcopy(params)
-    for k, v in paramsCopy.iteritems():
-        if v is None:
-            params.pop(k, None)
-#
+def getSearchUrl(city, roomType = 0, guests = 4, **kwargs):
+    # Construct url to be scraped. Arguments could be checkin, checkout
+    # sw_lat, sw_lon, ne_lat, ne_lon and so on.
+    params = {'guests': guests, 'room_types': kRoomTypes[roomType]}
+    params.update(kwargs)
+    
     return kBaseUrlPrefix + city + '?' + urllib.urlencode(params)
 
-def scrapeSearchStats(city, roomType = 0, guests = 4, \
-                      checkin = None, checkout = None, page = 10, box_width = -1):
+def scrapeSearchStats(base_url, page = 10):
+    # Scrape specific number of search pages based on base_url
     result = []
-    if box_width != -1:
-        width_json_str = subprocess.check_output(["Rscript", "get_boundary.R", "Katy TX", str(box_width)])
-    else:
-        width_json_str = ""
     for i in range(1, page + 1):
-        url = getSearchUrl(city, roomType = roomType, guests = guests, \
-                           checkin = checkin, checkout = checkout, page = i, \
-                           width_json_str = width_json_str)
+        url = base_url + "&page=" + str(i)
         pg = getPage(url)
         for row in getSearchStats(pg):
             row.update({"page": i})
@@ -153,29 +140,44 @@ def scrapeSearchStats(city, roomType = 0, guests = 4, \
         print "Scrape %s page out of %s pages" % (i, page)
     return pandas.DataFrame(result)
 
-def saveToCsv(city, guests = 4, checkin = "", checkout = "", page = 10, box_width = -1):
-    filename = '../data/' + city + '_' + str(page) + '_pages' + '_' + str(box_width) + '_width'
-    searchData = scrapeSearchStats(city, checkin = checkin, checkout = checkout, \
-                                   guests = guests, page = page, box_width = box_width)
+def scrapeAllAndDownload(filename, base_url, page = 10):
+    # Scrape search pages and detailed pages together
+    file_dir = '../data/' + filename
+    
+    searchData = scrapeSearchStats(base_url, page = page)
     listingIds = list(set(searchData['listing_id']))
     dailyData = scrapeDailyStats(listingIds)
-    searchData.to_csv(filename + "_search.csv", index = False)
-    dailyData.to_csv(filename + "_daily.csv", index = False)
-    
+    searchData.to_csv(file_dir + "_search.csv", index = False)
+    dailyData.to_csv(file_dir + "_daily.csv", index = False)
+
+def saveToCsv(city, page, guests, roomType = 0, fixed_window = False, radius = 1):
+    if fixed_window == False:
+        base_url = getSearchUrl(city.replace(' ', '-'), guests = guests, roomType = roomType)
+    else:
+        coords_str = subprocess.check_output(["Rscript", "get_boundary.R", city, str(radius)])
+        base_url = getSearchUrl(city.replace(' ', '-'), guests = guests, 
+                                roomType = roomType, **json.loads(coords_str))
+    filename = city.replace(' ', '-') + '_' + str(page) + '_pages'
+    print(base_url)
+    scrapeAllAndDownload(filename, base_url, page)
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--city', type = str, required = True,
-                        help = "City Name with State Code")
-    parser.add_argument('-w', '--width', type = float, default = -1,
-                        help = "Restricted listings to fixed box")
-    parser.add_argument('-p', '--page', type = int, default = 80,
-                        help = "Pages to scrape")
+                        help = "City name with state code")
+    parser.add_argument('-p', '--page', type = int, required = False,
+                        default = 80, help = "Number of pages to scrape")
+    parser.add_argument('-g', '--guests', type = int, required = False,
+                        default = 4, help = "Number of guests to accommodate")
+    feature_parser = parser.add_mutually_exclusive_group(required=False)
+    feature_parser.add_argument('--fixed-window', dest='fixed-window', action='store_true')
+    feature_parser.add_argument('--no-fixed-window', dest='fixed-window', action='store_false')
+    parser.set_defaults(fixed_window = False)
+    parser.add_argument('-r', '--radius', type = int, required = False,
+                        default = 1, help = "Radius around the queried city (mile)"   )
     args = vars(parser.parse_args())
-    # city = "San-Francisco-CA"
-    saveToCsv(args['city'].replace(' ', '-'), page = args['page'], 
-              box_width = args['width'])
-    
-    
+    saveToCsv(args['city'], page = args['page'], guests = args['guests'],
+              fixed_window = args['fixed-window'], radius = args['radius'])
 
 if __name__ == '__main__':
     main()

@@ -16,14 +16,14 @@ library(reshape2)
 library(xtable)
 
 args <- commandArgs(TRUE)
-kCityName <- "Katy TX"#args[1]
+kCityName <- args[1]
 kCityNameUnderscored <- gsub(" ", "-", kCityName)
 kZoom <- 11
 kMonthDays <- 30
 kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kPlotDir <- file.path(kProjectDir, paste0("plot/", kCityNameUnderscored))
-kDailyFilename <- sprintf("data/%s_80_pages_daily.csv", kCityNameUnderscored)
-kSearchFilename <- sprintf("data/%s_80_pages_search.csv", kCityNameUnderscored)
+kDailyFilename <- sprintf("data/%s_5_pages_daily.csv", kCityNameUnderscored)
+kSearchFilename <- sprintf("data/%s_5_pages_search.csv", kCityNameUnderscored)
 setwd(kProjectDir)
 
 system(paste0("mkdir -p ", kPlotDir))
@@ -188,21 +188,50 @@ showSummaryStats <- function(percent, reviewLb = 0) {
           type = "html")
 }
 
-showMapPlots <- function(f = f) {
-    title = sprintf("Rate and Occupancy Map with f %s", f)
-    # center <- t(us.cities[us.cities$name == kCityName, c('lat', 'long')])
-    # center <- geocode(kCityName)
+getMap <- function(cityname = kCityName, zoom = 10, data,
+                   f = 0.05, is_google = TRUE) {
+    if (!missing(data)) {
+        
+        bbox <- make_bbox(lon = lon, lat = lat, data, f = f)
+        if (is_google) {
+            map <- get_map(bbox, maptype = "roadmap", source = "google")
+        } else {
+            map <- get_map(bbox, source = "osm")
+        }
+        
+    } else {
+        if (cityname %in% us.cities$name) {
+            print("City coordinates provided by data.frame us.cities")
+            city_coord <- us.cities %>% filter(name == cityname) %>% select(lat, lon = long)
+        } else {
+            print("City coordinates provided by geocode")
+            city_coord <- geocode(cityname)
+        }
+        
+        map <- get_googlemap(center = c(city_coord$lon, city_coord$lat),
+                             zoom = zoom, maptype = 'roadmap')
+    }
+    return(map)
+}
+
+showMapPlots <- function(cityname = kCityName, zoom = 10, calculate_boundary, f = 0.05, is_google = TRUE) {
+    
+    title = sprintf("Rate and Occupancy Map with args %s", deparse(match.call()))
     dat <- getListingTable()
     
+    if (calculate_boundary) {
+        map <- getMap(data = dat %>% select(lon = longitude, lat = latitude),
+                      f = f,
+                      is_google = is_google)
+    } else {
+        map <- getMap(cityname = cityname, zoom = zoom)
+    }
+
     midRate <- median(dat$rate)
     rateLimits <- c(0, 2 * midRate)
     midOccupancy <- median(dat$occupied_days)
     occupancyLimits <- c(max(0, 2 * midOccupancy - kMonthDays),
                          min(kMonthDays, 2 * midOccupancy))
-    bbox <- make_bbox(lon = longitude, lat = latitude, data = dat, f = f)
-    # map <- get_googlemap(center = c(center$lon, center$lat), zoom = zoom, maptype = 'roadmap')
-    map <- get_map(bbox, maptype = 'roadmap', source = 'osm')
-
     # Rate
     e <- parent.frame(n = 2)
     e$gg1 <- ggplot(aes_string(y = "latitude", x = "longitude", color = "rate"), data = dat)   
@@ -240,19 +269,24 @@ plotRateToOccupiedDays <- function(ylimits = c(NA, 250)) {
 }
 
 main <- function() {
-    ## plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 10)
-    ## plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 0)
-    ## showListingTable(TRUE, 10)
-    ## showListingTable(TRUE, 1)
-    ## showListingTable(TRUE)
-    ## showListingTable(FALSE)
-    ## showSummaryStats(seq(0.1, 0.9, by = 0.1))
-    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 1)
-    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 5)
-    ## showSummaryStats(seq(0.1, 0.9, by = 0.1), 10)
-    ## getReviewDistribution()
-    showMapPlots(f = 0.1)
-    showMapPlots(f = 0.15)
+    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 10)
+    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 0)
+    showListingTable(TRUE, 10)
+    showListingTable(TRUE, 1)
+    showListingTable(TRUE)
+    showListingTable(FALSE)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1))
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), 1)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), 5)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), 10)
+    getReviewDistribution()
+    showMapPlots(calculate_boundary = TRUE, is_google = TRUE, f = 0.1)
+    showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.05)
+    showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.1)
+    ## showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.2)
+    ## showMapPlots(calculate_boundary = FALSE, zoom = 10)
+    ## showMapPlots(calculate_boundary = FALSE, zoom = 11)
+    ## showMapPlots(calculate_boundary = FALSE, zoom = 12)
 }
 
 main()
