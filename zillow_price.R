@@ -216,9 +216,13 @@ plotMonthRate <- function(codes, start_date, end_date) {
 }
 
 getMetroInfo <- function() {
-    for (m in names(metro_map)) {
-        getData(metro2Code(m))
+    dat <- data.frame()
+    for (m in names(metro_map)[1:100]) {
+        d <- data.frame(name = m, price = getData(metro2Code(m))[1, "Value"])
+        dat <- rbind(dat, d)
     }
+
+    dat %>% arrange(price)
 }
 
 
