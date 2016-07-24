@@ -8,6 +8,10 @@ The purpose of this writeup is mainly for taking notes of my daily thought on Ai
 * Remodeling and Photography
 
 ### July 23
-Today I investigated Denver CO, the city my friend once recommended me to take a look. Overall I think it's a city I will consider. I don't want to invest all my asset in only one city because of the risk. Some pros for Denver CO.
+Today I investigated Denver CO, the city my friend once recommended me to take a look. Overall I think it's a city I will consider. I don't want to invest all my asset in only one city because of the risk. Some pros for Denver CO:
 1. Distance: it's on the west coast about two and half hour from San Francisco (where I live). The flight ticket is only $180 if you book one month earlier. The time zone is one hour before that of CA.
-2. Maturity: it might not seem to be too good because the more mature, the less juice you can squeeze. However, think it another way, there are 108 out of 260 listings has more than 10 reviews. 
+2. Maturity: it might not seem to be too good because the more mature, the less juice you can squeeze. However, think it another way, there are 108 out of 260 listings has more than 10 reviews. The market is huge and there are a lot of serious Airbnb host here.
+3. Daily Rate and Occupancy: on average, daily rate is $137 and occupancy is 88% (26 days per month). That's better than a lot of cities I have considered: Houston, Austin, Dallas...
+4. The Housing Price: the housing price is not low but still in reasonable range. I pulled out the data from Zillow API and found out that for single family house, the median price is about 350k. Much expensive than Houston.
+Other stuff I have thought through:
+1. You should buy the house ASAP. Some might worry about the current bull market. Will the house over-priced right now? I would say even it's over-priced and it has tendency to drop in the future, the good thing is you start to make money so what you earn will cover your loss caused by the price drop. 
