@@ -22,8 +22,8 @@ kZoom <- 11
 kMonthDays <- 30
 kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kPlotDir <- file.path(kProjectDir, paste0("plot/", kCityNameUnderscored))
-kDailyFilename <- sprintf("data/%s_5_pages_daily.csv", kCityNameUnderscored)
-kSearchFilename <- sprintf("data/%s_5_pages_search.csv", kCityNameUnderscored)
+kDailyFilename <- sprintf("data/%s_80_pages_daily.csv", kCityNameUnderscored)
+kSearchFilename <- sprintf("data/%s_80_pages_search.csv", kCityNameUnderscored)
 setwd(kProjectDir)
 
 system(paste0("mkdir -p ", kPlotDir))

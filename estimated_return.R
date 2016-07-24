@@ -168,12 +168,13 @@ main <- function() {
                taxRate = 0.027,
                maintenanceFee = 150,
                hoa = 175,
-               occupiedDays = 22,
+               occupiedDays = 20,
                rate = 100,
-               priceLift = 0.0,
+               priceLift = 0.00,
                investYears = 5)
 
-    plotPriceRange(inv, 50000, 200000, hoas = seq(0, 300, by = 50))
+    plotPriceRange(inv, 50000, 200000, hoas = seq(0, 300, by = 50),
+                   downs = c(0.1, 0.2, 0.3, 1))
 }
 
 main()
