@@ -3,24 +3,63 @@ library(ggplot2)
 library(dplyr)
 
 Quandl.api_key("UqQP4MikD_dNnx7h4Vu4")
-# Get area code from quandl API
-state_codes <- read.csv("./zillow_data/state_codes.csv", header = TRUE, sep = "|",
-                        quote = "\"", stringsAsFactors = FALSE)
-county_codes <- read.csv("./zillow_data/county_codes.csv", header = TRUE, sep = "|",
-                         quote = "\"", stringsAsFactors = FALSE)
-metro_codes <- read.csv("./zillow_data/metro_codes.csv", header = TRUE, sep = "|",
-                        quote = "\"", stringsAsFactors = FALSE)
-hood_codes <- read.csv("./zillow_data/hood_codes.csv", header = TRUE, sep = "|",
-                       quote = "\"", stringsAsFactors = FALSE)
-city_codes <- read.csv("./zillow_data/city_codes.csv", header = TRUE, sep = "|",
-                       quote = "\"", stringsAsFactors = FALSE)
+
+# Constants
+kDataDir <- "../data/zillow_data/downloaded/"
+
+loadData <- function() {
+    # Get area code from quandl API
+    state_codes <<- read.csv("./zillow_data/state_codes.csv", header = TRUE, sep = "|",
+                            quote = "\"", stringsAsFactors = FALSE)
+    county_codes <<- read.csv("./zillow_data/county_codes.csv", header = TRUE,
+                             sep = "|",  quote = "\"", stringsAsFactors = FALSE)
+    metro_codes <<- read.csv("./zillow_data/metro_codes.csv", header = TRUE, sep = "|",
+                            quote = "\"", stringsAsFactors = FALSE)
+    hood_codes <<- read.csv("./zillow_data/hood_codes.csv", header = TRUE, sep = "|",
+                           quote = "\"", stringsAsFactors = FALSE)
+    city_codes <<- read.csv("./zillow_data/city_codes.csv", header = TRUE, sep = "|",
+                           quote = "\"", stringsAsFactors = FALSE)
+
+    # Metropolitan data
+    metro_map <<- metro_codes$Code
+    f <- function(x) sub(",", "", x)
+    names(metro_map) <<- sapply(metro_codes$Region, f)
+
+}
+
+metro2Code <- function(..., type = "SF") {
+    metro_name <- c(...)
+    metro_names <- names(metro_map)
+    for (m in metro_name) {
+        if (!(m %in% metro_names)) {
+            stop(sprintf("%s is not a valid name for a metropolitan", m))
+        }
+    }
+    return(paste(sprintf("M%05d", metro_map[metro_name]), type, sep = "_"))
+}
+
+getData <- function(code, new = FALSE, dir = kDataDir) {
+  code_list <- list.files(path = dir)
+  if (!new & (paste0(code, ".csv") %in% code_list)) {
+    f <- file.path(dir, paste0(code, ".csv"))
+    dat <- read.csv(file = f)
+    return(dat)
+  } else {
+    f <- file.path(dir, paste0(code, ".csv"))
+    tryCatch(dat <- Quandl(paste0("ZILL/", code)),
+             error = function(e)
+             {stop(sprintf("%s is not available in zillow API", code))})
+    write.csv(dat, file = f, row.names = FALSE)
+    return(dat)
+  }
+}
 
 getPercentChange <- function(x) 100 * (x - 1)
 plotPriceTrend <- function(codes, start_date, end_date) {
     title <- "Housing Price"
     dat <- data.frame()
     for (code in codes) {
-        d <- Quandl(paste0("ZILL/", code))
+        d <- getData(code)
         d$code <- code
         dat <- rbind(dat, d)
     }
@@ -58,7 +97,7 @@ plotAnnualRate <- function(codes, start_date, end_date) {
     title <- "Housing Price"
     dat <- data.frame()
     for (code in codes) {
-        d <- Quandl(paste0("ZILL/", code))
+        d <- getData(code)
         d$code <- code
         dat <- rbind(dat, d)
     }
@@ -119,7 +158,7 @@ plotMonthRate <- function(codes, start_date, end_date) {
     title <- "Housing Price"
     dat <- data.frame()
     for (code in codes) {
-        d <- Quandl(paste0("ZILL/", code))
+        d <- getData(code)
         d$code <- code
         dat <- rbind(dat, d)
     }
@@ -176,6 +215,16 @@ plotMonthRate <- function(codes, start_date, end_date) {
     g
 }
 
+getMetroInfo <- function() {
+    for (m in names(metro_map)) {
+        getData(metro2Code(m))
+    }
+}
+
+
 plotPriceTrend(c("N00622_SF", "S00001_SF"))
 plotAnnualRate(c("S00001_SF", "S00002_SF"))
-plotMonthRate(c("M00012_SF"))
+plotMonthRate(c("M00022_SF"))
+plotPriceTrend(c("M00022_SF", "M00007_SF"))
+plotAnnualRate(c("M00022_SF", "M00007_SF"))
+
