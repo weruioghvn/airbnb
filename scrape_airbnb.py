@@ -33,6 +33,7 @@ DEBUG = True
 # Constants
 kApiKey = 'd306zoyjsyarp7ifhu67rjxn52tv0t20'
 kRoomTypes = ["Entire home/apt", "Private room", "Shared room"]
+kFileDir = '../data/scrape_data/'
 
 def addMonths(sourcedate, months):
     month = sourcedate.month - 1 + months
@@ -142,7 +143,7 @@ def scrapeSearchStats(base_url, page = 10):
 
 def scrapeAllAndDownload(filename, base_url, page = 10):
     # Scrape search pages and detailed pages together
-    file_dir = '../data/' + filename
+    file_dir = kFileDir + filename
     
     searchData = scrapeSearchStats(base_url, page = page)
     listingIds = list(set(searchData['listing_id']))

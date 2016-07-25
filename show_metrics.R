@@ -14,9 +14,13 @@ library(gridExtra)
 library(RPostgreSQL)
 library(reshape2)
 library(xtable)
+library(RcppRoll)
+library(scales)
 
 args <- commandArgs(TRUE)
-kCityName <- args[1]
+
+# Constants
+kCityName <- "Houston TX"  # args[1]
 kCityNameUnderscored <- gsub(" ", "-", kCityName)
 kZoom <- 11
 kMonthDays <- 30
@@ -24,16 +28,48 @@ kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kPlotDir <- file.path(kProjectDir, paste0("plot/", kCityNameUnderscored))
 kDailyFilename <- sprintf("data/scrape_data/%s_80_pages_daily.csv", kCityNameUnderscored)
 kSearchFilename <- sprintf("data/scrape_data/%s_80_pages_search.csv", kCityNameUnderscored)
-setwd(kProjectDir)
 
+# Command line 
+setwd(kProjectDir)
+system(sprintf("rm -r %s", kPlotDir))
 system(paste0("mkdir -p ", kPlotDir))
 
-datDaily <- unique(read.csv(kDailyFilename))
-datDaily$date <- as.Date(datDaily$date)
+loadData <- function() {
+    # daily data
+    datDaily <- unique(read.csv(kDailyFilename))
+    datDaily$date <- as.Date(datDaily$date)
+    datDaily <- datDaily %>%
+        mutate(occupied = ifelse(availability == "False", 1, 0)) %>%
+        select(-availability)
+    # search data
+    datSearch <- read.csv(kSearchFilename)
+    datSearch$base_rate <- datSearch$rate
+    datSearch$rate <- NULL
+    datSearch <- datSearch %>%
+        arrange(page, counter) %>%
+        select(page, counter, everything())
 
-datSearch <- read.csv(kSearchFilename)
-datSearch$base_rate <- datSearch$rate
-datSearch$rate <- NULL
+    ## datGrouped <- datDaily %>%
+    ##     group_by(listing_id) %>%
+    ##     summarise(rate = mean(rate),
+    ##               occupancy_rate = mean(occupied),
+    ##               occupied_days = kMonthDays * occupancy_rate)
+    
+    ## datSearch <- merge(datSearch, datGrouped, all = TRUE) %>% arrange(page, counter)
+    ## # search data dedup
+    ## datSearchDedup <- datSearch %>%
+    ##     group_by(listing_id) %>%   
+    ##     arrange(page, counter) %>%
+    ##     filter(row_number() == 1) %>%
+    ##     ungroup %>%
+    ##     arrange(page, counter)
+
+    datReview <<- datSearch %>% select(listing_id, reviews_count)
+    datDaily <<- datDaily
+    datSearch <<- datSearch
+}
+
+loadData()
 
 # Utils
 simpleCap <- function(x) {
@@ -46,35 +82,113 @@ simpleUnderscore <- function(x) {
     return(gsub(" ", "_", tolower(x)))
 }
 
-# Evaluation Plots
-getListingTable <- function(dedup = TRUE, reviewLb = 0) {
-    datGrouped <- datDaily %>%
+flatten2String <- function(x) {
+    result <- ""
+
+    f <- function(name) sprintf("%s(%s)", name, x[[name]])
+    paste(sapply(names(x), f), collapse = " ")
+}
+
+communicateData <- function(dat_daily, dat_search) {
+    dat_daily <- dat_daily %>% filter(listing_id %in% dat_search$listing_id)
+    dat_grouped <- dat_daily %>%
         group_by(listing_id) %>%
         summarise(rate = mean(rate),
-                  occupancy_rate = mean(ifelse(availability == "False", 1, 0)),
+                  occupancy_rate = mean(occupied),
                   occupied_days = kMonthDays * occupancy_rate)
-    tbl <- merge(datSearch, datGrouped, all = TRUE)
     
-    if (dedup) {
-        index <- tbl %>%
-        arrange(page, counter) %>%
-        group_by(listing_id) %>%
-        summarise(page = first(page), counter = first(counter))
-        result <- unique(index %>% inner_join(tbl) %>% arrange(page, counter))
-    } else {
-        result <- tbl %>% arrange(page, counter) %>% select(page, counter, everything())
-    }
+    dat_search <- merge(dat_search, dat_grouped, all = TRUE) %>% arrange(page, counter)
+    return(list(dat_daily = dat_daily,
+                dat_search = dat_search))
+}
 
-    result <- result[result$reviews_count >= reviewLb, ]
+# Evaluation Plots
+getFilteredData <- function(search_filter, daily_filter) { 
+    dscopy <- datSearch
+    for (filter in search_filter) {
+        dscopy <- filter(dscopy)
+    }
+    ddcopy <- datDaily
+    for (filter in daily_filter) {
+        ddcopy <- filter(ddcopy)
+    }
+    result <- list(dat_search = dscopy, dat_daily = ddcopy)
     return(result)
 }
 
-getDailyTable <- function(reviewLb = 0) {
-    tbl <- getListingTable(reviewLb = reviewLb)
-    return(datDaily %>% filter(listing_id %in% tbl$listing_id))
+getFilteredDataByKey <- function(...) {
+    search_filter <- list()
+    daily_filter <- list()
+    filters <- list(...)
+    for (key in names(filters)) {
+        if (key == "dedup") {
+            if (filters[[key]] == TRUE) {
+                search_filter <- c(search_filter, list(dedupFilter()))
+            }
+            next
+        }
+
+        if (key == "review") {
+            search_filter <- c(search_filter, list(reviewFilter(filters[[key]])))
+            next
+        }
+
+        if (key == "spam") {
+            daily_filter <- c(daily_filter, list(spamFilter(filters[[key]])))
+            next
+        }
+    }
+    
+    return(do.call(getFilteredData, args = list(search_filter = search_filter,
+                                         daily_filter = daily_filter)))
 }
 
-plotRateQuantileByDay <- function(percent, reviewLb = 0) {
+
+
+# Filters
+# Search Filter
+reviewFilter <- function(reviewLb = 0) {
+    force(reviewLb)
+    function(x) {
+        result <- x %>% filter(reviews_count >= reviewLb)
+        return(data.frame(result))
+    }
+}
+
+# Search Filter
+dedupFilter <- function() {
+    function(x) {
+        if (length(setdiff(c("page", "counter", "listing_id"),
+                           colnames(x))) != 0) {
+            stop("Wrong data frame to filter!!")
+        }
+        result <- x %>%
+            group_by(listing_id) %>%   
+            arrange(page, counter) %>%
+            filter(row_number() == 1) %>%
+            ungroup %>%
+            arrange(page, counter)
+        return(data.frame(result))
+    }
+}
+
+# Daily Filter
+spamFilter <- function(n = 0) {
+    force(n)  # R function will by lazy evaluated if not force n to materialize
+    function(x) {
+        if (n > nrow(x) | n == 0) return(data.frame(x))
+        expr <- quote(.[c(rep(TRUE, n - 1),
+                          !(roll_sum(.$occupied, n) == n)),])
+        dat_filtered <- x %>%
+            group_by(listing_id) %>%
+            arrange(date) %>%
+            do(eval(expr)) %>%
+            ungroup
+        return(data.frame(dat_filtered))
+    }
+}
+
+plotRateQuantileByDay <- function(percent, ...) {
     # Function that plot rate by date. For given date, it calculates all quantiles
     # for given percentiles in the given listing rates on that day.
     #
@@ -83,10 +197,14 @@ plotRateQuantileByDay <- function(percent, reviewLb = 0) {
     #        treated as listings at certain quality tier.
     #     2. Percentile is relatively robust to outliers.
 
-    title = sprintf("rate quantile by day with reviewLb %s", reviewLb)
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE, ...))
+    dat_search <- dat_full$dat_search
+    dat_daily <- dat_full$dat_daily
+    
+    title = sprintf("rate quantile by day with filter %s", flatten2String(list(...)))
     percent.truncated = round(percent, 2)
     colNames = paste0("quantile", floor(100 * percent.truncated))
-    dat <- getDailyTable(reviewLb) %>%
+    dat <- dat_daily %>%
         group_by(date) %>%
         do(as.data.frame(as.list(quantile(.$rate, percent.truncated))))
     colnames(dat) <- c("date", colNames)
@@ -95,7 +213,7 @@ plotRateQuantileByDay <- function(percent, reviewLb = 0) {
         geom_line() +
         ggtitle(simpleCap(title))
     ggsave(filename = file.path(kPlotDir, paste0(simpleUnderscore(title), ".png")), g,
-           width = 20, height = 10)
+           width = 10, height = 5)
 }
 
 getLikeliForFTL <- function() {
@@ -109,16 +227,18 @@ plotOcpyByDay <- function() {
     #     1. variation of occupancy rate by day of week.
 
     title = "Average Occupied Days By Day"
-    tbl <- getListingTable(TRUE, 1)
+    tbl <- getFilteredData(TRUE, 1)
 
     g <- ggplot(aes(x = date, y = occupied_days), data = tbl) +
         geom_line() +
         geom_abline(intercept = kMonthDays) +
         ggtitle(simpleCap(title)) +
-        scale_y_continuous(limits = c(0, kMonthDays))
-
-    
+        scale_x_date(date_breaks = "1 month") +
+        scale_y_continuous(limits = c(0, kMonthDays)) +
+        theme(axis.text.x = element_text(size = 13, angle = 90, hjust = 1),
+              axis.text.y = element_text(size = 13))
 }
+
 plotRateRandomByDay <- function(k) {
     # Same as plotRateQuantileByDay except we pick k random listings from the pool
     # so as to illustrate the pattern of rate trend of actual listings. 
@@ -139,8 +259,9 @@ getReviewDistribution <- function() {
     # Show distribution of number of reviews. Estimate serious host.
 
     title <- "host percentage and counts based on number of reviews"
-    tbl <- getListingTable(dedup = TRUE, reviewLb = 0)
-    tbl <- tbl %>% mutate(bucketizedReviews =
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE))
+    dat_search <- dat_full$dat_search
+    tbl <- dat_search %>% mutate(bucketizedReviews =
                        ifelse(reviews_count == 0, "0",
                        ifelse(reviews_count <= 10, "0 < reviews <= 10",
                        ifelse(reviews_count <= 20, "10 < reviews <= 20",
@@ -155,19 +276,20 @@ getReviewDistribution <- function() {
           type = "html")
 }
 
-showListingTable <- function(dedup = TRUE, reviewLb = 0) {
+showListingTable <- function(..., append = FALSE) {
     # Show features per listing in a tabular form.
 
-    title <- sprintf("Listing Table %s and review lowerbound %s",
-                     ifelse(dedup, "Dedup", "noDedup"), reviewLb)
-    result <- getListingTable(dedup, reviewLb)
-    
-    resultXtable <- xtable(result, caption = title)
-    print(resultXtable, file = paste0(kPlotDir, "/", simpleUnderscore(title), ".html"),
-          type = "html")
+    title = sprintf("Listing table with filter %s", flatten2String(list(...)))
+    dat_full <- do.call(communicateData, getFilteredDataByKey(...))
+    dat_search <- dat_full$dat_search
+    dat_daily <- dat_full$dat_daily
+    resultXtable <- xtable(dat_search, caption = title)
+    cat(print(resultXtable, type = "html"),
+        file = paste0(kPlotDir, "/", simpleUnderscore(title), ".html"),
+          append = append)
 }
 
-showSummaryStats <- function(percent, reviewLb = 0) {
+showSummaryStats <- function(percent, ..., append = TRUE) {
     # Show a bunch of tables
     #
     # Tables to Show:
@@ -175,56 +297,60 @@ showSummaryStats <- function(percent, reviewLb = 0) {
     #     2. Quantile of occupied days and occupancy rate
     #     3. Quantile of monthly gross income
 
-    title <- sprintf("Summary Statistics with reviewLb %s", reviewLb)
-    dat <- getListingTable(TRUE, reviewLb)
-    result <- dat %>%
-        do(data.frame(percent = percent,
-                         rate = quantile(.$rate, percent, names = FALSE),
-                         occupied_days = quantile(.$occupied_days, percent, names = FALSE),
-                         occupancy_rate = quantile(.$occupancy_rate, percent, names = FALSE),
-                         monthly_income = quantile(.$occupied_days * .$rate, percent, names = FALSE)))
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE, ...))
+    dat_search <- dat_full$dat_search
+    dat_daily <- dat_full$dat_daily
+    title = sprintf("Listing table with filter %s and sample size %s", flatten2String(list(...)), nrow(dat_search))
+    
+    result <- dat_search %>%
+        do(data.frame(
+            percent = percent,
+            rate = quantile(.$rate, percent, names = FALSE),
+            occupied_days = quantile(.$occupied_days, percent, names = FALSE),
+            occupancy_rate = quantile(.$occupancy_rate, percent, names = FALSE),
+            monthly_income = quantile(.$occupied_days * .$rate, percent, names = FALSE)))
+   
     resultXtable <- xtable(result, caption = title)
-    print(resultXtable, file = paste0(kPlotDir, "/", simpleUnderscore(title), ".html"),
-          type = "html")
+    cat(print(resultXtable, type = "html"), "<br><br>",
+         file = paste0(kPlotDir, "/", simpleUnderscore("Summary Statistics"), ".html"),
+        append = append)
 }
 
-getMap <- function(cityname = kCityName, zoom = 10, data,
-                   f = 0.05, is_google = TRUE) {
+getMap <- function(data, google = TRUE) {
     if (!missing(data)) {
         
-        bbox <- make_bbox(lon = lon, lat = lat, data, f = f)
-        if (is_google) {
+        bbox <- make_bbox(lon = lon, lat = lat, data, f = 0.10)
+        if (google) {
             map <- get_map(bbox, maptype = "roadmap", source = "google")
         } else {
             map <- get_map(bbox, source = "osm")
         }
         
     } else {
-        if (cityname %in% us.cities$name) {
+        if (kCityName %in% us.cities$name) {
             print("City coordinates provided by data.frame us.cities")
-            city_coord <- us.cities %>% filter(name == cityname) %>% select(lat, lon = long)
+            city_coord <- us.cities %>% filter(name == kCityName) %>% select(lat, lon = long)
         } else {
             print("City coordinates provided by geocode")
-            city_coord <- geocode(cityname)
+            city_coord <- geocode(kCityName)
         }
         
         map <- get_googlemap(center = c(city_coord$lon, city_coord$lat),
-                             zoom = zoom, maptype = 'roadmap')
+                             zoom = 10, maptype = 'roadmap')
     }
     return(map)
 }
 
-showMapPlots <- function(cityname = kCityName, zoom = 10, calculate_boundary, f = 0.05, is_google = TRUE) {
+showMapPlots <- function(auto = TRUE, google = TRUE) {
+    title = sprintf("Maps with args %s", flatten2String(as.list(environment())))
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE))
+    dat <- dat_full$dat_search
     
-    title = sprintf("Rate and Occupancy Map with args %s", deparse(match.call()))
-    dat <- getListingTable()
-    
-    if (calculate_boundary) {
+    if (auto) {
         map <- getMap(data = dat %>% select(lon = longitude, lat = latitude),
-                      f = f,
-                      is_google = is_google)
+                      google = google)
     } else {
-        map <- getMap(cityname = cityname, zoom = zoom)
+        map <- getMap()
     }
 
     midRate <- median(dat$rate)
@@ -268,25 +394,53 @@ plotRateToOccupiedDays <- function(ylimits = c(NA, 250)) {
     return(g)
 }
 
+plotOccupiedDaysByDay <-function(...) {
+    title = sprintf("occupancy trend with filter %s", flatten2String(list(...)))
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE, ...))
+    dat_search <- dat_full$dat_search
+    dat_daily <- dat_full$dat_daily
+    
+    dat <- dat_daily %>%
+        group_by(date) %>%
+        summarise(n = n(),
+                  occupied = mean(occupied)) %>%
+        ungroup
+
+    dat$weekend <- weekdays(dat$date) %in% c("Friday", "Saturday")
+    
+    g <- ggplot(aes(x = date, y = occupied), data = dat) +
+        geom_step() +
+        scale_x_date(date_breaks = "1 week", labels = date_format("%m/%d"),
+                     minor_breaks = NULL) +
+        geom_vline(xintercept = as.numeric(Sys.Date()), color = "red", alpha = 0.5) +
+        geom_step(aes(y = weekend * 1), alpha = 0.5) +
+        theme(axis.text.x = element_text(size = 13, angle = 90, hjust = 1),
+              axis.text.y = element_text(size = 13))
+    ggsave(filename = file.path(kPlotDir, paste0(simpleUnderscore(title), ".png")), g,
+           width = 10, height = 5)
+}
+
 main <- function() {
-    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 10)
-    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), 0)
-    showListingTable(TRUE, 10)
-    showListingTable(TRUE, 1)
-    showListingTable(TRUE)
-    showListingTable(FALSE)
-    showSummaryStats(seq(0.1, 0.9, by = 0.1))
-    showSummaryStats(seq(0.1, 0.9, by = 0.1), 1)
-    showSummaryStats(seq(0.1, 0.9, by = 0.1), 5)
-    showSummaryStats(seq(0.1, 0.9, by = 0.1), 10)
+    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), review = 10)
+    plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), review = 1)
+    
+    showListingTable(dedup = FALSE)
+    showListingTable(dedup = TRUE, review = 0)
+    showListingTable(dedup = TRUE, review = 1)
+    showListingTable(dedup = TRUE, review = 5, spam = 7)
+    showListingTable(dedup = TRUE, review = 10)
+    
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), review = 0, append = FALSE)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), review = 1)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), review = 5, spam = 7)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), review = 5)
+    showSummaryStats(seq(0.1, 0.9, by = 0.1), review = 10)
+    
     getReviewDistribution()
-    showMapPlots(calculate_boundary = TRUE, is_google = TRUE, f = 0.1)
-    showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.05)
-    showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.1)
-    ## showMapPlots(calculate_boundary = TRUE, is_google = FALSE, f = 0.2)
-    ## showMapPlots(calculate_boundary = FALSE, zoom = 10)
-    ## showMapPlots(calculate_boundary = FALSE, zoom = 11)
-    ## showMapPlots(calculate_boundary = FALSE, zoom = 12)
+    plotOccupiedDaysByDay(spam = 7, review = 1)
+    
+    showMapPlots(google = FALSE)
+    showMapPlots(auto = FALSE)
 }
 
 main()

@@ -222,7 +222,9 @@ getMetroInfo <- function() {
         dat <- rbind(dat, d)
     }
 
-    dat %>% arrange(price)
+    write.csv(dat %>% arrange(price),
+              file = "../data/zillow_data/miscellaneous/metro_rank_by_price.csv",
+              row.names = FALSE)
 }
 
 

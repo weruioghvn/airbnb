@@ -159,7 +159,7 @@ plotPriceRange <- function(inv, lowPrice, highPrice,
 main <- function() {
     # New instance
     inv <- new("Investment",
-               price = 100000,
+               price = 64000,
                down = 0.3,
                furniture = 8000,
                renovation = 10000,
@@ -168,8 +168,8 @@ main <- function() {
                taxRate = 0.027,
                maintenanceFee = 150,
                hoa = 175,
-               occupiedDays = 20,
-               rate = 100,
+               occupiedDays = 16,
+               rate = 115,
                priceLift = 0.00,
                investYears = 5)
 
