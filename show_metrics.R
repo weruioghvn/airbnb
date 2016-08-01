@@ -17,10 +17,14 @@ library(xtable)
 library(RcppRoll)
 library(scales)
 
+setwd("/media/sean/disk2/desktop/airbnb-invest/code")
+source("estimated_return.R", local = FALSE)
+source("zillow_price.R", local = FALSE)
+
 args <- commandArgs(TRUE)
 
 # Constants
-kCityName <- "Houston TX"  # args[1]
+kCityName <- args[1]
 kCityNameUnderscored <- gsub(" ", "-", kCityName)
 kZoom <- 11
 kMonthDays <- 30
@@ -48,21 +52,6 @@ loadData <- function() {
     datSearch <- datSearch %>%
         arrange(page, counter) %>%
         select(page, counter, everything())
-
-    ## datGrouped <- datDaily %>%
-    ##     group_by(listing_id) %>%
-    ##     summarise(rate = mean(rate),
-    ##               occupancy_rate = mean(occupied),
-    ##               occupied_days = kMonthDays * occupancy_rate)
-    
-    ## datSearch <- merge(datSearch, datGrouped, all = TRUE) %>% arrange(page, counter)
-    ## # search data dedup
-    ## datSearchDedup <- datSearch %>%
-    ##     group_by(listing_id) %>%   
-    ##     arrange(page, counter) %>%
-    ##     filter(row_number() == 1) %>%
-    ##     ungroup %>%
-    ##     arrange(page, counter)
 
     datReview <<- datSearch %>% select(listing_id, reviews_count)
     datDaily <<- datDaily
@@ -420,6 +409,37 @@ plotOccupiedDaysByDay <-function(...) {
            width = 10, height = 5)
 }
 
+subdivideSFH <- function(...) {
+    title <- sprintf("Investment Return For SFH subdivision with filter %s", flatten2String(list(...)))
+    dat_full <- do.call(communicateData, getFilteredDataByKey(dedup = TRUE, ...))
+    dat_search <- dat_full$dat_search
+    dat_daily <- dat_full$dat_daily
+
+    rate <- median(dat_search$rate)
+    occupiedDays <- median(dat_search$occupied_days)
+    price <- getData(metro2Code(kCityName))$Value[1]
+    price_per_unit <- price / 2
+    # New instance
+    inv <- new("Investment",
+               price = price_per_unit,
+               down = 0.3,
+               furniture = 8000,
+               renovation = 10000,
+               apr = 0.038,
+               year = 30,
+               taxRate = 0.027,
+               maintenanceFee = 150,
+               hoa = 0,
+               occupiedDays = occupiedDays,
+               rate = rate,
+               priceLift = 0.00,
+               investYears = 5)
+
+    g <- plotPriceRange(inv, 50000, 200000, hoas = 0, downs = c(0.2, 0.3, 1))
+    ggsave(filename = file.path(kPlotDir, paste0(simpleUnderscore(title), ".png")), g,
+           width = 10, height = 5)
+}
+
 main <- function() {
     plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), review = 10)
     plotRateQuantileByDay(seq(0.1, 0.9, by = 0.1), review = 1)
@@ -438,6 +458,8 @@ main <- function() {
     
     getReviewDistribution()
     plotOccupiedDaysByDay(spam = 7, review = 1)
+
+    subdivideSFH(review = 5)
     
     showMapPlots(google = FALSE)
     showMapPlots(auto = FALSE)

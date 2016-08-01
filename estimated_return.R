@@ -123,7 +123,7 @@ plotPriceRange <- function(inv, lowPrice, highPrice,
     for (hoa in hoas) {
         for(down in downs) {
             for (i in 1:length(x)) {
-                inv <- new("Investment",
+                inv_new <- new("Investment",
                            price = x[i],
                            down = down,
                            furniture = inv@furniture,
@@ -138,7 +138,7 @@ plotPriceRange <- function(inv, lowPrice, highPrice,
                            priceLift = inv@priceLift,
                            investYears = inv@investYears)
                 d <- rbind(d, data.frame(price = x[i],
-                                         capRate = inv@capRate,
+                                         capRate = inv_new@capRate,
                                          hoa = hoa,
                                          down = down))
             }
@@ -151,31 +151,32 @@ plotPriceRange <- function(inv, lowPrice, highPrice,
         scale_y_continuous(breaks = number_ticks(20)) +
         ggtitle("Cap Rate V. Price Colored by HOA Fee") +
         facet_wrap(~ down) +
+        geom_vline(xintercept = inv@price, linetype = 2) +
         theme(axis.text.x = element_text(angle = 90, hjust = 1))
     g
 }
 
 
-main <- function() {
-    # New instance
-    inv <- new("Investment",
-               price = 64000,
-               down = 0.3,
-               furniture = 8000,
-               renovation = 10000,
-               apr = 0.038,
-               year = 30,
-               taxRate = 0.027,
-               maintenanceFee = 150,
-               hoa = 175,
-               occupiedDays = 16,
-               rate = 115,
-               priceLift = 0.00,
-               investYears = 5)
+## main <- function() {
+##     # New instance
+##     inv <- new("Investment",
+##                price = 64000,
+##                down = 0.3,
+##                furniture = 8000,
+##                renovation = 10000,
+##                apr = 0.038,
+##                year = 30,
+##                taxRate = 0.027,
+##                maintenanceFee = 150,
+##                hoa = 175,
+##                occupiedDays = 16,
+##                rate = 115,
+##                priceLift = 0.00,
+##                investYears = 5)
 
-    plotPriceRange(inv, 50000, 200000, hoas = seq(0, 300, by = 50),
-                   downs = c(0.1, 0.2, 0.3, 1))
-}
+##     plotPriceRange(inv, 50000, 200000, hoas = seq(0, 300, by = 50),
+##                    downs = c(0.1, 0.2, 0.3, 1))
+## }
 
-main()
+## main()
 

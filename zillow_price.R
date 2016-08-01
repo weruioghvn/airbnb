@@ -5,19 +5,20 @@ library(dplyr)
 Quandl.api_key("UqQP4MikD_dNnx7h4Vu4")
 
 # Constants
-kDataDir <- "../data/zillow_data/downloaded/"
+kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
+kDataDir <- file.path(kProjectDir, "data/zillow_data/")
 
 loadData <- function() {
     # Get area code from quandl API
-    state_codes <<- read.csv("./zillow_data/state_codes.csv", header = TRUE, sep = "|",
+    state_codes <<- read.csv(file.path(kDataDir, "quandl_index/state_codes.csv"), header = TRUE, sep = "|",
                             quote = "\"", stringsAsFactors = FALSE)
-    county_codes <<- read.csv("./zillow_data/county_codes.csv", header = TRUE,
+    county_codes <<- read.csv(file.path(kDataDir, "quandl_index/county_codes.csv"), header = TRUE,
                              sep = "|",  quote = "\"", stringsAsFactors = FALSE)
-    metro_codes <<- read.csv("./zillow_data/metro_codes.csv", header = TRUE, sep = "|",
+    metro_codes <<- read.csv(file.path(kDataDir, "quandl_index/metro_codes.csv"), header = TRUE, sep = "|",
                             quote = "\"", stringsAsFactors = FALSE)
-    hood_codes <<- read.csv("./zillow_data/hood_codes.csv", header = TRUE, sep = "|",
+    hood_codes <<- read.csv(file.path(kDataDir, "quandl_index/hood_codes.csv"), header = TRUE, sep = "|",
                            quote = "\"", stringsAsFactors = FALSE)
-    city_codes <<- read.csv("./zillow_data/city_codes.csv", header = TRUE, sep = "|",
+    city_codes <<- read.csv(file.path(kDataDir, "quandl_index/city_codes.csv"), header = TRUE, sep = "|",
                            quote = "\"", stringsAsFactors = FALSE)
 
     # Metropolitan data
@@ -38,7 +39,7 @@ metro2Code <- function(..., type = "SF") {
     return(paste(sprintf("M%05d", metro_map[metro_name]), type, sep = "_"))
 }
 
-getData <- function(code, new = FALSE, dir = kDataDir) {
+getData <- function(code, new = FALSE, dir = file.path(kDataDir, "downloaded")) {
   code_list <- list.files(path = dir)
   if (!new & (paste0(code, ".csv") %in% code_list)) {
     f <- file.path(dir, paste0(code, ".csv"))
@@ -223,14 +224,16 @@ getMetroInfo <- function() {
     }
 
     write.csv(dat %>% arrange(price),
-              file = "../data/zillow_data/miscellaneous/metro_rank_by_price.csv",
+              file = file.path(kDataDir, "zillow_data/miscellaneous/metro_rank_by_price.csv"),
               row.names = FALSE)
 }
 
+loadData()
 
 plotPriceTrend(c("N00622_SF", "S00001_SF"))
 plotAnnualRate(c("S00001_SF", "S00002_SF"))
 plotMonthRate(c("M00022_SF"))
 plotPriceTrend(c("M00022_SF", "M00007_SF"))
 plotAnnualRate(c("M00022_SF", "M00007_SF"))
+plotPriceTrend(metro2Code("Little Rock AR"))
 
