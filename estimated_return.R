@@ -53,8 +53,8 @@ setMethod(
         netIncome = grossIncome - taxPerMonth - managementFee - mortgagePerMonth
         netIncomePerYear = netIncome * 12
         capitalGain = price * ((1 + priceLift) ^ investYears - 1)
-        capRate = netIncomePerYear / invest
         capitalGainPerYear = capitalGain / investYears
+        capRate = (netIncomePerYear + capitalGainPerYear) / invest
         
         .Object@price <- price
         .Object@down <- down
@@ -157,26 +157,69 @@ plotPriceRange <- function(inv, lowPrice, highPrice,
 }
 
 
-## main <- function() {
-##     # New instance
-##     inv <- new("Investment",
-##                price = 64000,
-##                down = 0.3,
-##                furniture = 8000,
-##                renovation = 10000,
-##                apr = 0.038,
-##                year = 30,
-##                taxRate = 0.027,
-##                maintenanceFee = 150,
-##                hoa = 175,
-##                occupiedDays = 16,
-##                rate = 115,
-##                priceLift = 0.00,
-##                investYears = 5)
+main <- function() {
+    # New instance
+    inv <- new("Investment",
+               price = 150000 / 2,
+               down = 0.3,
+               furniture = 8000,
+               renovation = 10000,
+               apr = 0.038,
+               year = 30,
+               taxRate = 0.027,
+               maintenanceFee = 150,
+               hoa = 0,
+               occupiedDays = 16,
+               rate = 115,
+               priceLift = 0.02,
+               investYears = 5)
 
-##     plotPriceRange(inv, 50000, 200000, hoas = seq(0, 300, by = 50),
-##                    downs = c(0.1, 0.2, 0.3, 1))
-## }
+    plotPriceRange(inv, 50000, 200000, hoas = 0,
+                   downs = c(0.1, 0.2, 0.3, 1))
+}
+
+main2 <- function() {
+    # New instance
+    inv <- new("Investment",
+               price = 155000,
+               down = 0.3,
+               furniture = 8000,
+               renovation = 10000,
+               apr = 0.038,
+               year = 30,
+               taxRate = 0.027,
+               maintenanceFee = 150,
+               hoa = 0,
+               occupiedDays = 17,
+               rate = 146,
+               priceLift = 0.02,
+               investYears = 5)
+
+    plotPriceRange(inv, 50000, 200000, hoas = 0,
+                   downs = c(0.1, 0.2, 0.3, 1))
+}
+
+main3 <- function() {
+    # New instance
+    inv <- new("Investment",
+               price = 155000,
+               down = 0.3,
+               furniture = 8000,
+               renovation = 10000,
+               apr = 0.038,
+               year = 30,
+               taxRate = 0.027,
+               maintenanceFee = 150,
+               hoa = 0,
+               occupiedDays = 16,
+               rate = 181,
+               priceLift = 0.02,
+               investYears = 5)
+
+    plotPriceRange(inv, 50000, 200000, hoas = 0,
+                   downs = c(0.1, 0.2, 0.3, 1))
+}
+
 
 ## main()
 

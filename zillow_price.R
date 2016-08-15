@@ -1,25 +1,37 @@
 library(Quandl)
 library(ggplot2)
 library(dplyr)
+library(XML)
 
-Quandl.api_key("UqQP4MikD_dNnx7h4Vu4")
+Quandl.api_key("X1-ZWz1feae0myuiz_a80zd")
 
 # Constants
 kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kDataDir <- file.path(kProjectDir, "data/zillow_data/")
+kZwsID <- "X1-ZWz1feae0myuiz_a80zd"
 
 loadData <- function() {
     # Get area code from quandl API
-    state_codes <<- read.csv(file.path(kDataDir, "quandl_index/state_codes.csv"), header = TRUE, sep = "|",
-                            quote = "\"", stringsAsFactors = FALSE)
-    county_codes <<- read.csv(file.path(kDataDir, "quandl_index/county_codes.csv"), header = TRUE,
-                             sep = "|",  quote = "\"", stringsAsFactors = FALSE)
-    metro_codes <<- read.csv(file.path(kDataDir, "quandl_index/metro_codes.csv"), header = TRUE, sep = "|",
-                            quote = "\"", stringsAsFactors = FALSE)
-    hood_codes <<- read.csv(file.path(kDataDir, "quandl_index/hood_codes.csv"), header = TRUE, sep = "|",
-                           quote = "\"", stringsAsFactors = FALSE)
-    city_codes <<- read.csv(file.path(kDataDir, "quandl_index/city_codes.csv"), header = TRUE, sep = "|",
-                           quote = "\"", stringsAsFactors = FALSE)
+    state_codes <<-
+        read.csv(file.path(kDataDir,
+                 "quandl_index/state_codes.csv"), header = TRUE, sep = "|",
+                 quote = "\"", stringsAsFactors = FALSE)
+    county_codes <<-
+        read.csv(file.path(kDataDir,
+                 "quandl_index/county_codes.csv"), header = TRUE,
+                 sep = "|",  quote = "\"", stringsAsFactors = FALSE)
+    metro_codes <<-
+        read.csv(file.path(kDataDir,
+                 "quandl_index/metro_codes.csv"), header = TRUE, sep = "|",
+                 quote = "\"", stringsAsFactors = FALSE)
+    hood_codes <<-
+        read.csv(file.path(kDataDir,
+                 "quandl_index/hood_codes.csv"), header = TRUE, sep = "|",
+                 quote = "\"", stringsAsFactors = FALSE)
+    city_codes <<-
+        read.csv(file.path(kDataDir,
+                 "quandl_index/city_codes.csv"), header = TRUE, sep = "|",
+                 quote = "\"", stringsAsFactors = FALSE)
 
     # Metropolitan data
     metro_map <<- metro_codes$Code
@@ -228,12 +240,27 @@ getMetroInfo <- function() {
               row.names = FALSE)
 }
 
+getRentInfo <- function(address, citystatezip) {
+    url <- sprintf("http://www.zillow.com/webservice/GetDeepSearchResults.htm?zws-id=%1$s&address=%2$s&citystatezip=%3$s&rentzestimate=true",
+                   kZwsID, URLencode(address), URLencode(citystatezip))
+    dat <- xmlToList(xmlTreeParse(url, useInternal = TRUE))
+    if (dat$message$code == "508") stop("Couldn't get the rent information!!")
+    rent_est <- as.numeric(dat$response$results$result$rentzestimate$amount$text)
+    rent_low <- as.numeric(dat$response$results$result$rentzestimate$valuationRange$low$text)
+    rent_high <- as.numeric(dat$response$results$result$rentzestimate$valuationRange$high$text)
+    return(c(rent_est, rent_low, rent_high))  
+}
+
 loadData()
 
-plotPriceTrend(c("N00622_SF", "S00001_SF"))
-plotAnnualRate(c("S00001_SF", "S00002_SF"))
-plotMonthRate(c("M00022_SF"))
-plotPriceTrend(c("M00022_SF", "M00007_SF"))
-plotAnnualRate(c("M00022_SF", "M00007_SF"))
-plotPriceTrend(metro2Code("Little Rock AR"))
+main <- function() {
+    plotPriceTrend(c("N00622_SF", "S00001_SF"))
+    plotAnnualRate(c("S00001_SF", "S00002_SF"))
+    plotMonthRate(c("M00022_SF"))
+    plotPriceTrend(c("M00022_SF", "M00007_SF"))
+    plotAnnualRate(c("M00022_SF", "M00007_SF"))
+    plotPriceTrend(metro2Code("Little Rock AR"))
+    getRentInfo("5075 Indian River Dr 173", "Las Vegas NV")
+}
 
+# main()

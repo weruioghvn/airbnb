@@ -8,6 +8,7 @@ import os
 import cookielib
 import datetime
 from lxml import html
+import numpy as np
 import csv
 import cStringIO
 import codecs
@@ -19,6 +20,7 @@ import json
 import random
 import psycopg2
 import re
+import logging
 import collections
 import calendar
 import pandas
@@ -30,10 +32,32 @@ import subprocess
 from airbnb_utils import *
 DEBUG = True
 
+parser = argparse.ArgumentParser()
+parser.add_argument('-c', '--city', type = str, required = True,
+                    help = "City name with state code")
+parser.add_argument('-p', '--page', type = int, required = False,
+                    default = 80, help = "Number of pages to scrape")
+parser.add_argument('-g', '--guests', type = int, required = False,
+                    default = 4, help = "Number of guests to accommodate")
+parser.add_argument('-s', '--sleep', type = int, required = False,
+                    default = 0, help = "Sleep time between scrapes")
+parser.add_argument('-r', '--radius', type = int, required = False,
+                    default = 1, help = "Radius around the queried city (mile)")
+feature_parser = parser.add_mutually_exclusive_group(required=False)
+feature_parser.add_argument('--fixed-window', dest='fixed-window', action='store_true')
+feature_parser.add_argument('--no-fixed-window', dest='fixed-window', action='store_false')
+parser.set_defaults(fixed_window = False)
+
+args = vars(parser.parse_args())
+
 # Constants
 kApiKey = 'd306zoyjsyarp7ifhu67rjxn52tv0t20'
 kRoomTypes = ["Entire home/apt", "Private room", "Shared room"]
 kFileDir = '../data/scrape_data/'
+kSleep = args['sleep']
+kLogging = 'debug.log'
+
+logging.basicConfig(filename = kLogging, level = logging.DEBUG)
 
 def addMonths(sourcedate, months):
     month = sourcedate.month - 1 + months
@@ -58,6 +82,7 @@ def getDailyInformation(ListingID, date = None):
           str(month) + "&year=" + str(year) + "&count=3&_format=with_conditions"
 #
     page = getPage(url)
+    time.sleep(np.random.rand(1)[0] * kSleep)
 #
     datesJson = json.loads(page.text)
     dailyInfo = []
@@ -86,13 +111,13 @@ def scrapeDailyStats(listingIds, date = None):
     result = [] 
     for i, listingId in enumerate(listingIds):
         result += getDailyInformation(listingId, date = date)
-        print "Scrape %s page out of %s pages" % (i + 1, len(listingIds))
+        print "Scrape %s list out of %s lists" % (i + 1, len(listingIds))
     return pandas.DataFrame(result)
         
 def getSearchStats(page):
     tree = html.fromstring(page.content)
     text = tree.xpath('//div[@class = "map-search"]/@data-bootstrap-data')[0]
-    text = re.sub("&quot;", '"', text)
+    # logging.debug(text[26400:26500])
     js = json.loads(text)
     with open("debug/prettified_json.txt", "wb") as f:
         f.write(json.dumps(js, indent = 4))
@@ -135,6 +160,7 @@ def scrapeSearchStats(base_url, page = 10):
     for i in range(1, page + 1):
         url = base_url + "&page=" + str(i)
         pg = getPage(url)
+        time.sleep(np.random.rand(1)[0] * kSleep)
         for row in getSearchStats(pg):
             row.update({"page": i})
             result.append(row)
@@ -148,8 +174,9 @@ def scrapeAllAndDownload(filename, base_url, page = 10):
     searchData = scrapeSearchStats(base_url, page = page)
     listingIds = list(set(searchData['listing_id']))
     dailyData = scrapeDailyStats(listingIds)
-    searchData.to_csv(file_dir + "_search.csv", index = False)
-    dailyData.to_csv(file_dir + "_daily.csv", index = False)
+    today = datetime.date.today().isoformat().replace("-", "")
+    searchData.to_csv(file_dir + "_" + today + "_search.csv", index = False)
+    dailyData.to_csv(file_dir + "_" + today + "_daily.csv", index = False)
 
 def saveToCsv(city, page, guests, roomType = 0, fixed_window = False, radius = 1):
     if fixed_window == False:
@@ -163,20 +190,6 @@ def saveToCsv(city, page, guests, roomType = 0, fixed_window = False, radius = 1
     scrapeAllAndDownload(filename, base_url, page)
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-c', '--city', type = str, required = True,
-                        help = "City name with state code")
-    parser.add_argument('-p', '--page', type = int, required = False,
-                        default = 80, help = "Number of pages to scrape")
-    parser.add_argument('-g', '--guests', type = int, required = False,
-                        default = 4, help = "Number of guests to accommodate")
-    feature_parser = parser.add_mutually_exclusive_group(required=False)
-    feature_parser.add_argument('--fixed-window', dest='fixed-window', action='store_true')
-    feature_parser.add_argument('--no-fixed-window', dest='fixed-window', action='store_false')
-    parser.set_defaults(fixed_window = False)
-    parser.add_argument('-r', '--radius', type = int, required = False,
-                        default = 1, help = "Radius around the queried city (mile)"   )
-    args = vars(parser.parse_args())
     saveToCsv(args['city'], page = args['page'], guests = args['guests'],
               fixed_window = args['fixed-window'], radius = args['radius'])
 

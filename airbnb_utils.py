@@ -93,7 +93,13 @@ def getListingUrl(listingId):
 
 def getPage(url, local = True):
     if local:
-        return requests.get(url)
+        while True:
+            try:
+                page = requests.get(url)
+                return page
+            except:
+                pass
+                
 
     while True:
         proxy = np.random.choice(proxyList)

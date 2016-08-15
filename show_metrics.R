@@ -30,13 +30,28 @@ kZoom <- 11
 kMonthDays <- 30
 kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kPlotDir <- file.path(kProjectDir, paste0("plot/", kCityNameUnderscored))
-kDailyFilename <- sprintf("data/scrape_data/%s_80_pages_daily.csv", kCityNameUnderscored)
-kSearchFilename <- sprintf("data/scrape_data/%s_80_pages_search.csv", kCityNameUnderscored)
 
 # Command line 
 setwd(kProjectDir)
 system(sprintf("rm -r %s", kPlotDir))
 system(paste0("mkdir -p ", kPlotDir))
+
+getMostRecentFile <- function(){
+    dir <- paste0(kProjectDir, "/data/scrape_data/")
+    filenames <- list.files(path = dir)
+    re <- sprintf("^%1$s_80_pages_\\d{8}_search.csv|^%1$s_80_pages_\\d{8}_daily.csv",
+                  kCityNameUnderscored)
+    matched <- grep(re, filenames, perl = TRUE, value = TRUE)
+    dates <- gsub(".*_(\\d{8})_.*.csv", "\\1", matched)
+    targeted <- sort(matched[dates == max(dates)])
+    if (length(targeted) != 2) stop("Should only return 1 search data and 1 daily data!!")
+    result <- list(daily = file.path(dir, targeted[1]),
+                   search = file.path(dir, targeted[2]))
+    return(result)
+}
+kDailyFilename <- getMostRecentFile()$daily
+kSearchFilename <- getMostRecentFile()$search
+
 
 loadData <- function() {
     # daily data
@@ -435,7 +450,10 @@ subdivideSFH <- function(...) {
                priceLift = 0.00,
                investYears = 5)
 
-    g <- plotPriceRange(inv, 50000, 200000, hoas = 0, downs = c(0.2, 0.3, 1))
+    price_lb <- price_per_unit / 2
+    price_ub <- price_per_unit * 2
+    g <- plotPriceRange(inv, price_lb, price_ub, hoas = 0,
+                        downs = c(0.2, 0.3, 1))
     ggsave(filename = file.path(kPlotDir, paste0(simpleUnderscore(title), ".png")), g,
            width = 10, height = 5)
 }
