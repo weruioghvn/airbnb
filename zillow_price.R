@@ -2,6 +2,7 @@ library(Quandl)
 library(ggplot2)
 library(dplyr)
 library(XML)
+library(tidyr)
 
 Quandl.api_key("X1-ZWz1feae0myuiz_a80zd")
 
@@ -9,6 +10,7 @@ Quandl.api_key("X1-ZWz1feae0myuiz_a80zd")
 kProjectDir <- "/media/sean/disk2/desktop/airbnb-invest"
 kDataDir <- file.path(kProjectDir, "data/zillow_data/")
 kZwsID <- "X1-ZWz1feae0myuiz_a80zd"
+kZipFile <- file.path(kDataDir, "miscellaneous", "single_family_house_price_by_zipcode.csv")
 
 loadData <- function() {
     # Get area code from quandl API
@@ -38,6 +40,8 @@ loadData <- function() {
     f <- function(x) sub(",", "", x)
     names(metro_map) <<- sapply(metro_codes$Region, f)
 
+    # Zip Codes
+    dt_zip <<- read.csv(kZipFile)
 }
 
 metro2Code <- function(..., type = "SF") {
@@ -51,7 +55,17 @@ metro2Code <- function(..., type = "SF") {
     return(paste(sprintf("M%05d", metro_map[metro_name]), type, sep = "_"))
 }
 
+getZip <- function(zip) {
+    result <- dt_zip %>%
+        filter(RegionName %in% zip) %>%
+        gather(date, price, starts_with("X")) %>%
+        mutate(date = as.Date(gsub("X(\\d{4}).(\\d{2})", "\\1-\\2-01", date, perl = TRUE))) %>%
+        select(Date = date, Value = price)
+    return(result)
+}
+
 getData <- function(code, new = FALSE, dir = file.path(kDataDir, "downloaded")) {
+  # if code starts with "Z" (zipcode data), it will only give you SFH data
   code_list <- list.files(path = dir)
   if (!new & (paste0(code, ".csv") %in% code_list)) {
     f <- file.path(dir, paste0(code, ".csv"))
@@ -59,11 +73,19 @@ getData <- function(code, new = FALSE, dir = file.path(kDataDir, "downloaded")) 
     return(dat)
   } else {
     f <- file.path(dir, paste0(code, ".csv"))
-    tryCatch(dat <- Quandl(paste0("ZILL/", code)),
-             error = function(e)
-             {stop(sprintf("%s is not available in zillow API", code))})
-    write.csv(dat, file = f, row.names = FALSE)
-    return(dat)
+    if (!grepl("^Z", code)) {
+        tryCatch(dat <- Quandl(paste0("ZILL/", code)),
+                 error = function(e)
+                 {stop(sprintf("%s is not available in zillow API", code))})
+        write.csv(dat, file = f, row.names = FALSE)
+        return(dat)
+    } else {
+        tryCatch(dat <- getZip(gsub("^Z(\\d{5}).*$", "\\1", code, perl = TRUE)),
+                 error = function(e)
+                 {stop(sprintf("%s is not available in zillow zipcode csv", code))})
+        write.csv(dat, file = f, row.names = FALSE)
+        return(dat)
+    }
   }
 }
 
@@ -106,6 +128,44 @@ plotPriceTrend <- function(codes, start_date, end_date) {
     g
 }
 
+plotPriceTrendWithBase <- function(codes, base = NULL) {
+    title <- "Housing Price"
+    dat <- data.frame()
+    for (code in codes) {
+        d <- getData(code)
+        d$code <- code
+        dat <- rbind(dat, d)
+    }
+    
+    dat$Date <- as.Date(dat$Date)
+    dat$Value <- dat$Value / 1000
+    if (is.null(base)) {
+        base_year <- data.frame(dat %>%
+            filter(!is.na(Value)) %>%
+            group_by(code) %>%
+            summarise(Date = min(Date, na.rm = TRUE)) %>% ungroup %>%
+            summarise(Date = max(Date)) %>%
+            select(Date))[1, "Date"]
+    } else {
+        base_year <- base
+    }
+    dat <- dat %>%
+        filter(Date >= as.Date(base_year)) %>%
+        arrange(code, Date) %>%
+        group_by(code) %>%
+        mutate(Value = Value / first(Value)) %>% ungroup
+    
+    date_format <- "2000-01-01"
+   
+    g <- ggplot(aes(x = Date, y = Value, color = code), data = dat) + geom_line() +
+    scale_x_date(date_breaks = "6 months", date_minor_breaks = "1 month") +
+    scale_y_continuous(limits = c(0, NA)) +
+    theme(axis.text.x = element_text(size = 13, angle = 90, hjust = 1),
+          axis.text.y = element_text(size = 13)) +
+    ylab("housing price (thousands)") + xlab("date") + ggtitle(title)
+    g
+}
+
 plotAnnualRate <- function(codes, start_date, end_date) {
     title <- "Housing Price"
     dat <- data.frame()
@@ -117,13 +177,14 @@ plotAnnualRate <- function(codes, start_date, end_date) {
     
     dat$Date <- as.Date(dat$Date)
     dat$Value <- dat$Value / 1000
+    dat <- dat %>% filter(as.numeric(format(as.Date(Date), "%m")) == 1)
     date_format <- "2000-01-01"
 
     # Get data 12 months earlier
     dat_before <- dat %>%
         group_by(code) %>%
         arrange(desc(Date)) %>%
-        filter(row_number() > 12) %>%
+        filter(row_number() > 1) %>%
         ungroup() %>%
         select(-Date, -code) %>% 
         rename(value_before = Value)
@@ -131,7 +192,7 @@ plotAnnualRate <- function(codes, start_date, end_date) {
     dat_after <- dat %>%
         group_by(code) %>%
         arrange(desc(Date)) %>%
-        filter(row_number() <= n() - 12) %>%
+        filter(row_number() <= n() - 1) %>%
         rename(value_after = Value)
 
     dat_combined <- cbind(dat_before, dat_after)
@@ -261,6 +322,12 @@ main <- function() {
     plotAnnualRate(c("M00022_SF", "M00007_SF"))
     plotPriceTrend(metro2Code("Little Rock AR"))
     getRentInfo("5075 Indian River Dr 173", "Las Vegas NV")
+    
+    plotPriceTrend(c("Z94027_SF", "Z94301_SF", "Z94555_SF", "Z94022_SF", "Z94303_SF"))
+    plotPriceTrendWithBase(c("Z95014_SF", "Z94555_SF", "Z94303_SF", "Z94601_SF", "Z94121_SF"))
+    plotAnnualRate(c("Z95014_SF", "Z94555_SF", "Z94303_SF", "Z94601_SF", "Z94121_SF"))
+    plotMonthRate(c("Z94027_SF", "Z94301_SF", "Z94555_SF"))
 }
 
 # main()
+
