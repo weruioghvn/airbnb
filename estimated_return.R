@@ -161,19 +161,19 @@ main <- function() {
     # New instance
     inv <- new("Investment",
                price = 150000 / 2,
-               down = 0.3,
+               down = 0.25,
                furniture = 8000,
                renovation = 10000,
                apr = 0.038,
                year = 30,
-               taxRate = 0.027,
+               taxRate = 0.031,
                maintenanceFee = 150,
                hoa = 0,
-               occupiedDays = 16,
-               rate = 115,
+               occupiedDays = 26,
+               rate = 85.5,
                priceLift = 0.02,
                investYears = 5)
-
+    print(inv)
     plotPriceRange(inv, 50000, 200000, hoas = 0,
                    downs = c(0.1, 0.2, 0.3, 1))
 }
@@ -181,7 +181,7 @@ main <- function() {
 main2 <- function() {
     # New instance
     inv <- new("Investment",
-               price = 155000,
+               price = 160888,
                down = 0.3,
                furniture = 8000,
                renovation = 10000,
@@ -202,7 +202,7 @@ main2 <- function() {
 main3 <- function() {
     # New instance
     inv <- new("Investment",
-               price = 155000,
+               price = 160888,
                down = 0.3,
                furniture = 8000,
                renovation = 10000,

@@ -432,7 +432,13 @@ subdivideSFH <- function(...) {
 
     rate <- median(dat_search$rate)
     occupiedDays <- median(dat_search$occupied_days)
-    price <- getData(metro2Code(kCityName))$Value[1]
+    price <- tryCatch(getData(metro2Code(kCityName))$Value[1],
+             error = function(cond) {
+                 message(sprintf("Housing Data is not available for %s",
+                                 kCityName))
+                 return(0)
+             })
+    if (price == 0) return
     price_per_unit <- price / 2
     # New instance
     inv <- new("Investment",
